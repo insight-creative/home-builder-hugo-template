@@ -1,0 +1,113 @@
+.card {
+  position: relative;
+  background-color: $white;
+  transition: $transition;
+
+  .cover-image {
+    height: 250px;
+    position: relative;
+  }  
+
+  &__mt-swoosh {
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+    overflow: hidden;
+
+    .mt-swoosh {
+      width: 105%;
+      height: auto;
+      position: relative;
+      left: -5px;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include breakpoint(xl) {
+      top: -115px;
+    }
+
+    svg {
+      height: $ic-600;
+      width: $ic-600;
+      fill: $white;
+    }
+  }
+
+  &__meta {
+    position: absolute; 
+    top: $ic--100;
+    left: $ic--100;
+    border-radius: 5px;
+    padding: 4px $ic--200;
+  }
+
+  &__body {
+    padding: 0 $ic-200;
+    margin-bottom: $ic-800;
+  }
+
+  &__reading-time {
+    position: absolute;
+    bottom: $ic-200;
+    left: $ic-200;
+
+    svg {
+      fill: $primary-color;
+      height: $ic--100;
+      width: $ic--100;
+      transition: 0.3s ease-out;
+      margin-right: $ic--200;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: $ic-600;
+    width: $ic-600;
+    display: grid;
+    place-items: center;
+
+    svg {
+      fill: $accent-color;
+      height: $ic-400;
+      width: $ic-400;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 6px rgba($primary-color, .35);
+  }
+}
+
+.card--blog {
+  .cover-image {
+    height: 300px;
+  } 
+
+  @include breakpoint(lg) {
+    .card__icon {
+      top: -115px;
+    }
+  }
+}
+
+.card--staff {
+  .card__body {
+    position: absolute;
+    bottom: 0;
+    padding: $ic-300;
+    margin-bottom: 0;
+    background-color: rgba($primary-color, .7);
+    width: 100%;
+  }
+}

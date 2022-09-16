@@ -1,0 +1,11 @@
+@include breakpoint(md) {
+   .find-tires {
+      .icon-card:nth-child(2) {
+         transform: translateY(50%);
+      }
+  
+      .icon-card:nth-last-child(2) {
+         transform: translateY(55%);
+      }
+  }
+}

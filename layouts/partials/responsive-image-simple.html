@@ -1,0 +1,12 @@
+{{ $image := (.Page.Resources.GetMatch (index .image)) }}
+{{ $alt := (.Page.Resources.GetMatch (index .alt)) }}
+
+<picture>
+    <source srcset="https://matthews-tire.imgix.net{{ .image }}?fm=avif&q=85&width=400&height=350" type="image/avif">
+
+    <source srcset="https://matthews-tire.imgix.net{{ .image }}?fm=webp&q=85&width=400&height=350" type="image/webp">
+
+    <source srcset="https://matthews-tire.imgix.net{{ .image }}?fm=jpg&q=85&width=400&height=350" type="image/jpg">
+
+    <img src="{{ .image }}" alt="{{ .alt }}" width="400" height="350">   
+</picture>

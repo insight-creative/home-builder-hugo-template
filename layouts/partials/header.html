@@ -1,0 +1,49 @@
+{{ "<!-- Header -->" | safeHTML }}
+<a class="screen-reader-skip-to-content" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="screen-reader-skip-to-content" href="#footer" tabindex="0">Skip to footer content</a>
+<header class="site-header border-bottom-gray">
+  <div class="site-header__wrapper wrapper-lg flex flex-justify-between flex-center">
+    <div class="site-header__logo">
+      <span class="visually-hidden">Home</span>
+      <a class="brand-logo" href="{{ site.BaseURL }}">
+        {{ if .Site.Data.site_settings.logo }}
+          <img src="{{ .Site.Data.site_settings.logo | absURL }}" alt="{{ .Site.Data.site_settings.business_name }} logo" class="img-responsive dim" width="275" height="125">
+        {{ else }}
+          <h1>{{ site.Title }}</h1>
+        {{ end }}
+      </a>
+    </div>
+    <nav class="site-header__nav flex-center" aria-label="primary navigation">
+      <div class="site-header__menus flex flex-justify-between flex-column">
+        <div class="site-header__primary">
+          <ul class="nav-list">
+            {{ range .Site.Menus.main }}
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="{{ .URL }}" aria-label="{{ .Name }}">
+                    {{ .Name }}
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="site-header__mobile-nav">
+      <div class="site-header__mobile-nav-inner">
+        <ul class="site-header__mobile-nav-menu">
+          {{ range .Site.Menus.main }}
+            <li class="nav-list__item">
+              <a href="{{ .URL }}" class="nav-list__link fw-700" aria-label="{{ .Name }}" title="{{ .Name }}">{{ .Name }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+    <button class="site-header__hamburger hamburger hamburger--slider fw-700" type="button" aria-label="open mobile menu" aria-expanded="false">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+      Menu
+    </button>
+  </div>
+</header>

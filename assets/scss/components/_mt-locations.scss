@@ -1,0 +1,214 @@
+.mt-locations-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    background-color: $white;
+    box-shadow: 0 10px 20px rgba($primary-color, .15);
+    padding-top: $mobile-header;
+    opacity: 0;
+    pointer-events: none;
+    transition: $transition;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    width: 100%;
+
+    @include breakpoint(md) {
+        padding-top: $desktop-header;
+    }
+
+    &__header {
+        border-top: 2px solid $accent-color;
+        padding: $ic--200 0;
+        position: relative;
+
+        h2 {
+            font-size: clamp($ic-100, 4vw, $ic-300);
+        }
+    }
+
+    &__close {
+        display: grid;
+        place-items: center;
+        position: absolute;
+        right: $ic-100;
+        top: 9px;
+        background: none;
+        border: none;
+
+        @include breakpoint(md) {
+            top: 14px;
+        }
+
+        svg {
+            fill: $white;
+            height: $ic-200;
+            width: $ic-200;
+        }
+    }
+
+    .flow > * + * {
+        margin-top: $ic-100;
+    }
+
+    .location-card__notes {
+        display: none;
+    }
+}
+
+.mt-locations-modal,
+.mt-locations {
+    .directions {
+        display: none;
+
+        @include breakpoint(md) {
+            display: block;
+        }
+    }
+
+    .schedule {
+        display: block;
+
+        svg {
+            width: $ic-100;
+            height: auto;
+            position: relative;
+            top: 3px;
+            right: 8px;
+        }
+
+        @include breakpoint(md) {
+            display: none;
+        }
+    }
+
+    .call {
+        margin-top: $ic-100;
+
+        @include breakpoint(md) {
+            margin-top: 0;
+            margin-left: $ic--200;
+        }
+    }
+}
+
+.location-card {
+    font-size: .9rem; 
+
+    .cover-image {
+        height: 125px;
+        overflow: hidden;
+
+        img {
+            transition: $transition;
+        }
+    }
+
+    &__location-url {
+        text-decoration: none;
+
+        h2 {
+            transition: color $transition;
+        }
+
+        &:hover, 
+        &:focus {
+            h2 {
+                color: $secondary-color;
+            }
+
+            svg {
+                transform: translateX($ic--100);
+                fill: $secondary-color;
+            }
+        }
+
+        svg {
+            height: 16px; 
+            width: auto;
+            fill: $primary-color;
+            margin-left: $ic-400;
+            transition: transform $transition;
+        }
+    }
+
+    &__contact-info {
+        svg {
+            height: 14px;
+            width: auto;
+            fill: $primary-color;
+            margin-right: $ic-100;
+        }
+
+        span:nth-of-type(2) {
+            svg {
+                height: 12px;
+            }
+        }
+
+        span + span {
+            margin-top: 4px;
+        }
+    }
+
+    .buttons {
+        margin-bottom: $ic-300;
+    }
+
+    .btn {
+        font-size: $ic--100;
+        padding: $ic--200 $ic-100;
+        line-height: 1;
+    }
+
+    &:hover, 
+    &:focus {
+        .cover-image img {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.has-open-modal {
+    position: fixed;
+}
+
+.has-open-modal {
+    .site-wrap {
+        overflow: scroll;
+        height: 100vh;
+    }
+}
+
+.show-locations {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.locations .mt-locations {
+    position: relative;
+    opacity: 1;
+    padding-top: 0;
+    box-shadow: none;
+    height: 100%;
+    pointer-events: all;
+}
+
+.locations .site-main .mt-locations .location-card {
+    position: relative;
+    padding-bottom: 9rem;
+
+    @include breakpoint(md) {
+        padding-bottom: $ic-800;
+    }
+
+    &__notes {
+        margin-top: $ic-200;
+    }
+
+    .buttons {
+        position: absolute;
+        bottom: 0;
+    }
+}

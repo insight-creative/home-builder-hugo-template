@@ -1,0 +1,45 @@
+.facebook-icon {
+  top: -3px;
+}
+
+.icon {
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.icon-lg {
+  height: $ic-800;
+  width: $ic-800;
+
+  svg {
+    width: $ic-600;
+    height: auto;
+  }
+}
+
+.icon-md {
+  height: $ic-600;
+  width: $ic-600;
+
+  svg {
+    width: $ic-300;
+    height: auto;
+  }
+}
+
+.icon-primary {
+  box-shadow: 0 5px 15px rgba($accent-color, .5);
+
+  svg {
+    fill: $primary-color;
+  }
+}
+
+.icon-white {
+  box-shadow: 0 5px 15px rgba($primary-color, .5);
+
+  svg {
+    fill: $white;
+  }
+}

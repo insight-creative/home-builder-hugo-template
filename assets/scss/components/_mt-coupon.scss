@@ -1,0 +1,57 @@
+.mt-coupon {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($primary-color, .9);
+    outline: 2px dashed #fff;
+    outline-offset: -12px;
+    outline-width: 4px;
+  }
+
+  &__content {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: $ic-200;
+    overflow: hidden;
+
+    &:hover, &:focus {
+      .mt-coupon__print {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &__disclaimer {
+    font-size: $ic--100;
+  }
+
+  &__print {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $accent-color;
+    border: none;
+    color: $primary-color;
+    padding: $ic--100 $ic-100;
+    transform: translateX(100%);
+    transition: $transition;
+
+    svg {
+      position: relative;
+      top: 2px;
+      fill: $primary-color;
+      height: $ic-100;
+      width: $ic-100;
+    }
+  }
+}

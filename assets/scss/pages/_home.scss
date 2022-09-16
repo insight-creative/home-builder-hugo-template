@@ -1,0 +1,57 @@
+.home-intro {
+  position: relative;
+  background-image: url("/uploads/matthews-tire-appleton-west-location-hero-low.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; 
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($white, .9);
+    z-index: 1;
+  }
+
+  .intro-content {
+    position: relative; 
+    z-index: 2;
+  }
+}
+
+.home {
+  .breadcrumbs {
+    display: none;
+  }
+}
+
+.home-popular-services {
+  position: relative;
+}
+
+.mt-yellow-swoosh-bg {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-image: url("/uploads/yellow-generic-swoosh-background.svg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.home-blog-feed {
+  p {
+    max-width: 550px;
+    margin: $ic-200 auto;
+  }
+}
+
+.popular-tire-brands {
+  img {
+    max-width: clamp(100px, 10vw, 150px);
+    height: 100%;
+  }
+}

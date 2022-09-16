@@ -1,0 +1,60 @@
+<footer id="footer" class="footer">
+  <div class="footer__body block-sm">
+    <div class="wrapper-lg">
+      <div class="footer__columns flex flex-wrap fade-staggered">
+        <div class="footer__col flow">
+          
+        </div>
+        <div class="footer__col footer__services fade-staggered">
+          <div class="p-relative flex flex-center flex-justify-between">
+            <h2 class="h6 no-margin">Services</h3>
+            <button class="toggle-mobile-dropdown" aria-label="open footer dropdown menu"></button>
+          </div>
+          <div class="footer__menu-container">
+            <ul class="footer__menu">
+              {{ range .Site.Menus.main }}
+              <li><a href="{{ .URL }}" class="transform-x-8">{{ .Name }}</a></li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+        <div class="footer__col fade-staggered">
+          <div class="p-relative flex flex-center flex-justify-between">
+            <h2 class="h6 no-margin">Company</h3>
+            <button class="toggle-mobile-dropdown" aria-label="open footer dropdown menu"></button>
+          </div>
+          <div class="footer__menu-container">
+            <ul class="footer__menu">
+              {{ range .Site.Menus.company }}
+              <li><a href="{{ .URL }}" class="transform-x-8">{{ .Name }}</a></li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+        <div class="footer__col fade-staggered">
+          <div class="p-relative flex flex-center flex-justify-between">
+            <h2 class="h6 no-margin">Quick Links</h3>
+            <button class="toggle-mobile-dropdown" aria-label="open footer dropdown menu"></button>
+          </div>
+          <div class="footer__menu-container">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom wrapper-lg">
+    <div class="footer__bottom-wrapper border-top-gray flex flex-column flex-row-m flex-justify-between flex-center">
+      <div class="copyright flex flex-column flex-row-m">
+        <p class="copyright__date">© {{ dateFormat "2006" now }} {{ .Site.Data.site_settings.business_name }}. All Rights Reserved.</p>
+        <ul class="flex">
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/sitemap/">Sitemap</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+        <div class="credits"><a href="https://insightcreative.com" target="_blank">Website by Insight Creative, Inc.</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+{{ partial "scripts" . }}

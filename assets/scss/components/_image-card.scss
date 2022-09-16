@@ -1,0 +1,9 @@
+.image-card {
+    .cover-image {
+        height: 250px;
+    }
+
+    &__body {
+        padding: $ic-200;
+    }
+}

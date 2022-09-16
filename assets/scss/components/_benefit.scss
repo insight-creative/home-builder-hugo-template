@@ -1,0 +1,12 @@
+.benefit {
+    img {
+        height: $ic-700;
+        width: auto;
+    }
+}
+
+.benefit:last-of-type {
+    img {
+        padding: .25rem;
+    }
+}

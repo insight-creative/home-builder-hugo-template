@@ -1,0 +1,18 @@
+.cover {
+    height: 100%;
+    min-height: 100%;
+  
+    &__overlay {
+      background-color: rgba($primary-color, .9);
+    }
+}
+
+.testimonial {
+    &__stars {
+        svg {
+            height: $ic--100;
+            width: auto;
+            fill: $accent-color;
+        }
+    }
+}

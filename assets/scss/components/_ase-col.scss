@@ -1,0 +1,35 @@
+.ase-col {
+    padding: $ic-900 $ic-300;
+    position: relative;
+
+    &__body {
+        position: relative;
+        top: -150px;
+        margin-bottom: -150px;
+        z-index: 2;
+    }
+
+    .cover-image {
+        height: 175px;
+
+        @include breakpoint(md) {
+            height: 300px;
+        }
+    }
+
+    .ase-badge {
+        position: absolute;
+        overflow: hidden;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .ase-certified-icon {
+        position: absolute; 
+        bottom: -65px;
+        right: -35px;
+    }
+}

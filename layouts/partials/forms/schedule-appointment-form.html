@@ -1,0 +1,124 @@
+{{ partial "scripts/conditional-forms" . }}
+<form method="post" name="Schedule Appointment Form" action="/thank-you/">
+    <div class="visually-hidden">
+        <label for="_subject">New appointment request from the matthewstire.com website</label>
+        <input aria-label="subject" name="_subject" value="New appointment request from the matthewstire.com website" />
+    </div>
+    <div class="contact-form__form-group">
+        <h3 class="h5 text-primary border-bottom-gray mb-4 pb-2"><span class="contact-form__number">1</span> Select Your Store</h3>
+        <label for="location" class="visually-hidden">Select Your Store *</label>
+        <select name="location" id="location" class="contact-form__form-control" required onchange="changeApptFormName(event)">
+            <option value="">Please choose an option</option>
+            <option value="contact-appleton-east">Appleton East</option>
+            <option value="contact-appleton-west">Appleton West</option>
+            <option value="contact-commercial">Commercial</option>
+            <option value="contact-fond-du-lac">Fond du Lac</option>
+            <option value="contact-green-bay">Green Bay</option>
+            <option value="contact-menasha">Menasha</option>
+            <option value="contact-waupaca">Waupaca</option>
+        </select>
+    </div>
+    <div class="contact-form__form-group">
+        <h3 class="h5 text-primary border-bottom-gray mt-1 mb-4 pb-2"><span class="contact-form__number">2</span> Select Your Service</h3>
+        <label for="service" class="visually-hidden">Select Your Service *</label>
+        <select name="service" id="service" class="contact-form__form-control" required>
+            <option value="">Please choose an option</option>
+            <option value="Air Conditioning and Heating">Air Conditioning and Heating</option>
+            <option value="Brakes">Brakes</option>
+            <option value="Drivetrain">Drivetrain</option>
+            <option value="Electrical">Electrical</option>
+            <option value="Engine">Engine</option>
+            <option value="Engine Cooling System">Engine Cooling System</option>
+            <option value="Exhaust">Exhaust</option>
+            <option value="Oil Change Services">Oil Change Services</option>
+            <option value="Suspension">Suspension</option>
+            <option value="Tire Repair">Tire Repair</option>
+            <option value="Wheel Repair">Wheel Repair</option>
+            <option value="Windshield">Windshield</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+    <div class="contact-form__form-row">
+        <h3 class="h5 text-primary border-bottom-gray mt-1 mb-4 pb-2"><span class="contact-form__number">3</span> Contact Information</h3>
+        <div class="contact-form__row-wrapper">
+            <div class="contact-form__form-group">
+                <label for="first_name">First Name *</label>
+                <input name="first_name" id="first_name" type="text" class="contact-form__form-control" required>
+            </div>
+            <div class="contact-form__form-group pl-2-m">
+                <label for="last_name">Last Name *</label>
+                <input name="last_name" id="last_name" type="text" class="contact-form__form-control" required>
+            </div>
+        </div>
+    </div>
+    <div class="contact-form__form-row">
+        <div class="contact-form__row-wrapper">
+            <div class="contact-form__form-group">
+                <label for="email">Email *</label>
+                <input name="_replyto" id="email" type="email" class="contact-form__form-control" required>
+            </div>
+            <div class="contact-form__form-group pl-2-m">
+                <label for="phone">Phone *</label>
+                <input name="phone" id="phone" type="tel" class="contact-form__form-control" required>
+            </div>
+        </div>
+    </div>  
+    <div class="contact-form__form-group">
+        <label for="contact_preference">How Would You Prefer to be Contacted? *</label>
+        <select name="contact_preference" id="contact_preference" class="contact-form__form-control" required>
+            <option value="">Please choose an option</option>
+            <option value="Phone">Phone</option>
+            <option value="Email">Email</option>
+        </select>
+    </div>
+    <div class="contact-form__form-row">
+        <h3 class="h5 text-primary border-bottom-gray mt-1 mb-4 pb-2"><span class="contact-form__number">4</span> Vehicle Information</h3>
+        <div class="contact-form__row-wrapper">
+            <div class="contact-form__form-group">
+                <label for="make">Select Make *</label>
+                <select name="make" id="make" class="contact-form__form-control" required>
+                    <option value="">Please choose an option</option>
+                    <option value="Acura">Acura</option>
+                    <option value="Audi">Audi</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Buick">Buick</option>
+                    <option value="Cadillac">Cadillac</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Chrysler">Chrysler</option>
+                    <option value="Dodge">Dodge</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Infiniti">Infiniti</option>
+                    <option value="Jeep">Jeep</option>
+                    <option value="Kia">Kia</option>
+                    <option value="Lexus">Lexus</option>
+                    <option value="Lincoln">Lincoln</option>
+                    <option value="Mazda">Mazda</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Subaru">Subaru</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="contact-form__form-group pl-2-m">
+                <label for="year">Select Year *</label>
+                <input name="year" id="year" class="contact-form__form-control" required type="number" min="1975" max="2099" step="1"/>
+            </div>
+            <div class="contact-form__form-group pl-2-m">
+                <label for="model">Model *</label>
+                <input name="model" id="model" type="text" class="contact-form__form-control" required>
+            </div>
+        </div>
+    </div>
+    <div class="contact-form__form-group">
+        <h3 class="h5 text-primary border-bottom-gray mt-1 mb-4 pb-2"><span class="contact-form__number">5</span> Vehicle Symptoms</h3>
+        <label for="message">Message *</label>
+        <textarea name="message" id="message" class="contact-form__form-control" rows="4" required></textarea>
+    </div>
+    <input type="hidden" name="inbox_key" value="contact_inbox" class="contact-form__inbox-key">
+    <input type="text" name="_gotcha" class="visually-hidden" aria-label="gotcha">
+    <div class="h-captcha" data-sitekey="76e2ee50-8ea6-4ae3-ae8d-d4f222e5683b"></div>
+    <br>
+    <input type="submit" id="send_request" name="send_request" class="contact-form__btn btn btn-primary" value="Send Request">
+</form>

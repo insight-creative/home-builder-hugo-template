@@ -1,0 +1,12 @@
+{{ $image := (.Page.Resources.GetMatch (index .image)) }}
+{{ $alt := (.Page.Resources.GetMatch (index .alt)) }}
+
+<picture>
+    <source sizes="(min-width: 993px) 100vw, 50vw" srcset="https://matthews-tire.imgix.net{{ .image }}?fm=avif&q=75&width=325&height=250 400w, https://matthews-tire.imgix.net{{ .image }}?fm=avif&q=75&width=600&height=450 600w, https://matthews-tire.imgix.net{{ .image }}?fm=avif&q=75&width=800&height=525 800w" type="image/avif">
+
+    <source sizes="(min-width: 993px) 100vw, 50vw" srcset="https://matthews-tire.imgix.net{{ .image }}?fm=webp&q=75&width=325&height=250 400w, https://matthews-tire.imgix.net{{ .image }}?fm=webp&q=75&width=600&height=450 600w, https://matthews-tire.imgix.net{{ .image }}?fm=webp&q=75&width=800&height=525 800w" type="image/webp">
+
+    <source sizes="(min-width: 993px) 100vw, 50vw" srcset="https://matthews-tire.imgix.net{{ .image }}?fm=jpg&q=75&width=325&height=250 400w, https://matthews-tire.imgix.net{{ .image }}?fm=jpg&q=75&width=600&height=450 600w, https://matthews-tire.imgix.net{{ .image }}?fm=jpg&q=75&width=800&height=525 800w" type="image/jpg">
+
+    <img src="{{ .image }}" alt="{{ .alt }}" width="600" height="450">   
+</picture>

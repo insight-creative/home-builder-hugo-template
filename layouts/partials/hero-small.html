@@ -1,0 +1,8 @@
+{{ $heroClass := lower .Page.Title }}
+<div class="hero hero--{{ anchorize $heroClass }} hero--small bg-blue-swoosh flex flex-center">
+  <div class="block w-100">
+    <div class="wrapper-lg hero__content">
+      <h1 class="text-white text-shadow no-margin">{{ .Title }}</h1>
+    </div>
+  </div>
+</div>

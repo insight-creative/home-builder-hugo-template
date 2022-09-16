@@ -1,0 +1,66 @@
+.tasite-bootstrap-styles.tasite-bootstrap-styles,
+.tasite-bootstrap-styles.tasite-bootstrap-styles h2 {
+    font-family: $primary-font !important;
+}
+
+.tasite-bootstrap-styles.tasite-bootstrap-styles .search-widget {
+    border: none !important;
+    background-color: $light-gray !important;
+}
+
+.tasite-bootstrap-styles.tasite-bootstrap-styles h2 {
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color: $primary-color !important;
+}
+
+.tasite-bootstrap-styles.tasite-bootstrap-styles .btn-group,
+.tasite-bootstrap-styles.tasite-bootstrap-styles .btn-group.active,
+.tasite-bootstrap-styles.tasite-bootstrap-styles #btnReset {
+    font-weight: 700 !important;
+    transition: $transition;
+}
+
+.tasite-bootstrap-styles.tasite-bootstrap-styles .btn-group,
+.tasite-bootstrap-styles.tasite-bootstrap-styles .search-footer-item {
+    background-color: $light-gray !important;
+    color: $black !important;
+    text-transform: capitalize;
+
+    &:hover, 
+    &:focus {
+        background-color: $accent-color !important; 
+        color: $primary-color !important;
+    }
+}
+
+.tasite-bootstrap-styles.tasite-bootstrap-styles .btn-group.active {
+    background-color: $accent-color !important; 
+    color: $primary-color !important;
+}
+
+.tasite-bootstrap-styles .ta-flex-row-center {
+    flex-direction: column !important;
+
+    @include breakpoint(md) {
+        flex-direction: row !important;
+    }
+}
+
+#byTireSize .col-xs-6 {
+    width: 100% !important;
+}
+
+.tasite-bootstrap-styles.tasite-bootstrap-styles #btnReset,
+.tasite-bootstrap-styles.tasite-bootstrap-styles .btn.blue {
+    background-color: $primary-color !important; 
+    color: $white !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.tasite-bootstrap-styles.tasite-bootstrap-styles .btn[disabled] {
+    background-color: $light-gray !important; 
+    color: $gray !important;
+    border: 1px solid $gray !important;
+}

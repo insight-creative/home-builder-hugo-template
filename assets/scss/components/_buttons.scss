@@ -1,0 +1,95 @@
+.btn {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  font-size: $ic-100;
+  font-weight: 700;
+  padding: $ic-100 $ic-400;
+  text-decoration: none;
+  transition: $transition;
+  background-size: 400% 100%;
+  border-radius: $radius;
+  text-align: center;
+  border: none;
+
+  svg {
+    height: $ic-100;
+    width: auto;
+    position: relative;
+    top: 1px;
+    margin-right: 8px;
+  }
+
+  &:hover,
+  &:focus {
+    background-position: 100% 0;
+    transform: translateY(-5px);
+  }
+}
+
+.btn-primary {
+  color: $white;
+  background-image: $primary-gradient;
+
+  svg {
+    fill: $white;
+  }
+
+  &:hover,
+  &:focus {
+    color: $white;
+    box-shadow: 6px 6px 6px rgba($primary-color, .25);
+  }
+}
+
+.btn-secondary {
+  color: $primary-color;
+  background-image: $secondary-gradient;
+
+  svg {
+    fill: $primary-color;
+    height: $ic-100;
+    width: auto;
+    position: relative;
+    top: 1px;
+    margin-right: 8px;
+    transition: fill $transition;
+  }
+
+  &:hover,
+  &:focus {
+    color: $primary-color;
+    box-shadow: 6px 6px 6px rgba($accent-color, .25);
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.tasite-bootstrap-styles a, button, .btn, input, .btn-group {
+  transition: $transition !important;
+}
+
+.btn-filter {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: $ic-100 0;
+  transition: 0.3s ease;
+
+  svg {
+    fill: $primary-color;
+    width: $ic-400;
+    height: $ic-400;
+    margin-right: $ic-400;
+    position: relative;
+    top: -1px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $primary-color;
+  }
+}

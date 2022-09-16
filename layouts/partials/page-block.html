@@ -1,0 +1,16 @@
+<section aria-labelledby="{{ .heading | urlize | lower }}-heading" class="about-page-block block">
+    <div class="wrapper-lg flex flex-column-reverse {{ if .text_column_right }}flex-row-m{{ end }}{{ if .text_column_left }}flex-row-reverse-m{{ end }} flex-center-m">
+      <div class="text-block w-100 w-50-m flow mt-3 mt-0-m">
+          <h2 class="text-primary">{{ .heading }}</h2>
+          <p>{{ .body | markdownify }}</p>
+          {{ if .button }}
+          <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+          {{ end }}
+      </div>
+      <div class="image-block w-100 w-50-m {{ if .text_column_right }}ml-3-m{{ else }}mr-3-m{{ end }}">
+          <div class="cover-image">
+            {{ partial "responsive-image" (dict "Page" . "image" .image_url "alt" .image_alt ) }}
+          </div>
+      </div>
+    </div>
+</section>

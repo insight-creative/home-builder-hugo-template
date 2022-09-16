@@ -1,0 +1,203 @@
+.home-hero,
+.hero,
+.cover {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba($primary-color, 0.8);
+    mix-blend-mode: multiply;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 3;
+    height: 100%;
+  }
+}
+
+.hero {
+  height: 60vh;
+
+  @include breakpoint(sm) {
+    min-height: 500px;
+  }
+
+  @include breakpoint(md) {
+
+    &__content {
+      padding-bottom: 80px;
+    }
+
+    &__content p {
+      max-width: 900px;
+    }
+  }
+
+  &__mt-swoosh {
+    display: none;
+
+    @include breakpoint(sm) {
+      display: block;
+      position: absolute;
+      bottom: -9px;
+      right: -1px;
+      z-index: 1;
+
+      svg {
+        max-width: 100%;
+        width: 100vw;
+      }
+    }
+  }
+}
+
+.hero:not(.parent-page-locations .hero):not(.home-hero):not(.parent-page-resources .hero) {
+  img {
+    opacity: .5;
+  }
+}
+
+.parent-page-services {
+  .hero {
+    height: 80vh;
+
+    @include breakpoint(md) {
+      height: 70vh;
+    }
+  }
+
+  .hero__content {
+    padding-bottom: 0;
+  }
+}
+
+.home-hero {
+  height: 85vh;
+
+  @include breakpoint(md) {
+    height: 70vh;
+  }
+  
+  &__content {
+    h1 {
+      max-width: 20ch;
+    }
+
+    p {
+      max-width: 975px;
+      font-size: clamp($ic-100, 3vw, $ic-300);
+    }
+
+    h1,
+    p {
+      margin: $ic-300 auto;
+    }
+  }
+}
+
+.services-hero,
+.parent-page-home .hero {
+  .icon-lg {
+    display: none;
+  }
+}
+
+.hero__ase-badge {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.3);
+  padding: .5rem $ic-100;
+  max-width: 500px;
+
+  .hero__ase-badge-icon {
+    svg {
+      height: $ic-700;
+      width: $ic-700;
+    }
+  }
+
+  a {
+    margin: 0 $ic-100;
+
+    svg {
+      fill: $white;
+    }
+
+    &:hover, 
+    &:focus {
+      svg {
+        fill: $secondary-color;
+      }
+    }
+  }
+}
+
+.hero--small {
+  height: 45vh;
+  // height: 100%;
+  // min-height: unset;
+}
+
+.hero--blog {
+  overflow: visible;
+
+  h1 {
+    font-size: clamp($ic-300, 4vw, $ic-500);
+  }
+
+  .back {
+    color: $white;
+    transition: $transition;
+
+    svg {
+      height: $ic-100;
+      width: $ic-100;
+      fill: $white;
+      position: relative;
+      top: 1px;
+      transition: $transition;
+    }
+
+    &:hover, 
+    &:focus {
+      color: $accent-color;
+
+      svg {
+        fill: $accent-color;
+        transform: translateX(-6px);
+      }
+    }
+  }
+
+  .categories-list span:last-of-type {
+    display: none;
+  }
+
+  .reading-time {
+    color: $white; 
+    
+    svg {
+      height: $ic-100;
+      width: $ic-100;
+      fill: $white;
+      margin-right: $ic--200;
+    }
+  }
+}

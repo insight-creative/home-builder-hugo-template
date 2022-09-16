@@ -1,0 +1,146 @@
+.pre-footer .associations {
+  display: grid;
+  gap: $ic-400;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include breakpoint(sm) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include breakpoint(md) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  img {
+    max-height: 70px;
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
+.footer {
+  color: $white;
+  font-size: $ic-100;
+
+  &__columns {
+    gap: $ic-300;
+  }
+
+  &__col {
+    flex: 1 1 100%;
+
+    @include breakpoint(md) {
+     flex: 1;
+    }
+  }
+
+  &__col:first-of-type {
+    flex: 1 1 100%;
+
+    @include breakpoint(md) {
+      flex: 2;
+     }
+  }
+
+  &__col:nth-of-type(2) {
+
+    @include breakpoint(md) {
+      flex: 2;
+     }
+  }
+
+  .footer__col + .footer__col {
+    @include breakpoint(md) {
+      margin-left: $ic-300;
+    }
+  }
+
+  &__services ul {
+    @include breakpoint(md) {
+      columns: 2;
+    }
+  }
+
+  &__menu-container {
+    height: 0;
+    overflow: hidden;
+    transition: height $transition;
+
+    @include breakpoint(md) {
+      height: auto;
+    }
+  }
+
+  &__body,
+  &__bottom {
+    ul {
+      list-style: none;
+      padding: $ic-300 0;
+      margin: 0;
+
+      li + li {
+        margin-top: .5rem;
+      }
+
+      a {
+        display: block;
+        color: $white;
+        text-decoration: none; 
+        transition: color $transition, transform $transition; 
+
+        &:hover, 
+        &:focus {
+          color: $accent-color;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    ul {
+      @include breakpoint(md) {
+        padding: 0;
+      }
+
+     li {
+      @include breakpoint(md) {
+        margin-left: .5rem;
+      }
+     }
+
+      li + li {
+        margin-top: 0;
+        margin-left: .5rem;
+
+        @include breakpoint(md) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    font-size: $ic--100;
+    padding: $ic-100 0;
+    width: 100%;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .credits {
+    @include breakpoint(md) {
+      margin-left: auto; 
+    }
+
+    a {
+      color: $white;
+      text-decoration: none; 
+    }
+  }
+}
+
+.footer-dropdown-is-open .footer__menu {
+  display: block;
+}

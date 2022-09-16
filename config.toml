@@ -1,0 +1,60 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Custom Home Builder"
+enableRobotsTXT = true
+disableAliases = true
+# post pagination
+paginate = "9"
+summaryLength = 20
+googleAnalytics = " " # Your ID# search 
+
+#################### default parameters ################################
+
+[params]
+  # Google Analitycs
+  googleAnalytics = " " # Your ID# search 
+  minifyBundles = true
+
+# add redirects/headers
+  [outputs]
+  home = ["HTML", "RSS", "REDIRECTS", "HEADERS"]
+
+# remove .{ext} from text/netlify
+[mediaTypes."text/netlify"]
+  suffixes = [""]
+  delimiter = ""
+
+# add output format for netlify _redirects
+[outputFormats.REDIRECTS]
+  mediatype = "text/netlify"
+  baseName = "_redirects"
+  isPlainText = true
+  notAlternative = true
+
+# add output format for netlify _headers
+[outputFormats.HEADERS]
+  mediatype = "text/netlify"
+  baseName = "_headers"
+  isPlainText = true
+  notAlternative = true
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[markup.goldmark.renderer]
+  unsafe= true
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+
+[[related.indices]]
+  name = "categories"
+  weight = 100
+
+[[related.indices]]
+  name = "tags"
+  weight = 100

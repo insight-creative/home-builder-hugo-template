@@ -1,0 +1,46 @@
+.parent-page-resources,
+.parent-page-resources .site-wrap {
+  overflow-x: initial;
+}
+
+.parent-page-resources .breadcrumbs {
+  display: none;
+
+  @include breakpoint(md) {
+    display: block;
+  }
+}
+
+.post-featured-image {
+  position: relative;
+
+  .cover-image {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+
+    @include breakpoint(md) {
+      height: 500px;
+    }
+  }
+}
+
+.post-content {
+
+  &__inner {
+    margin-top: 175px; 
+
+    @include breakpoint(md) {
+      margin-top: 0;
+    }
+
+    h1,
+    h2, 
+    h3, 
+    h4, 
+    h5, 
+    h6 {
+      color: $primary-color;
+    }
+  }
+}

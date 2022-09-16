@@ -1,0 +1,21 @@
+logo: /uploads/logo.svg
+business_name: Custom Home Builder
+phone:
+fax:
+email: ""
+address:
+  city: ""
+  state: ""
+  street: ""
+  zip: ""
+social_media:
+  - title: Facebook
+    link:
+  - title: Instagram
+    link:
+  - title: YouTube
+    link:
+  - title: Twitter
+    link:
+  - title: Email
+    link:

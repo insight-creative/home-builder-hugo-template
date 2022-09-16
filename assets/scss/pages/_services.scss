@@ -1,0 +1,37 @@
+.services-grid {
+    display: grid;
+    gap: $ic-400;
+  
+    @include breakpoint(sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    @include breakpoint(md) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    @include breakpoint(xl) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.conditions {
+  position: relative; 
+
+  .pseudo-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1000px;
+    width: 100%; 
+    z-index: -1;
+
+    @include breakpoint(md) {
+      height: 600px;
+    }
+  }
+}
+
+.air-conditioning-and-heating .hero h1 {
+  max-width: 26ch;
+}
