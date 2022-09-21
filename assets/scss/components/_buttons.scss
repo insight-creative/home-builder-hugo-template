@@ -3,12 +3,10 @@
   z-index: 1;
   display: inline-block;
   font-size: $ic-100;
-  font-weight: 700;
-  padding: $ic-100 $ic-400;
+  font-weight: 500;
+  padding: $ic--100 $ic-400;
   text-decoration: none;
   transition: $transition;
-  background-size: 400% 100%;
-  border-radius: $radius;
   text-align: center;
   border: none;
 
@@ -22,44 +20,27 @@
 
   &:hover,
   &:focus {
-    background-position: 100% 0;
     transform: translateY(-5px);
   }
 }
 
 .btn-primary {
-  color: $white;
-  background-image: $primary-gradient;
-
-  svg {
-    fill: $white;
-  }
+  color: $egg-shell;
+  background-color: $primary-color;
 
   &:hover,
   &:focus {
     color: $white;
-    box-shadow: 6px 6px 6px rgba($primary-color, .25);
   }
 }
 
 .btn-secondary {
   color: $primary-color;
-  background-image: $secondary-gradient;
-
-  svg {
-    fill: $primary-color;
-    height: $ic-100;
-    width: auto;
-    position: relative;
-    top: 1px;
-    margin-right: 8px;
-    transition: fill $transition;
-  }
+  background-color: $accent-color;
 
   &:hover,
   &:focus {
     color: $primary-color;
-    box-shadow: 6px 6px 6px rgba($accent-color, .25);
   }
 }
 

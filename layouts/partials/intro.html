@@ -1,15 +1,11 @@
+{{ if .Params.intro.enabled }}
+{{ with .Params.intro }}
 <section class="intro block">
-    <div class="wrapper-lg flow fade-up">
-        {{ with .Params.intro }}
-            {{ if .heading }}
-                <h2 class="text-primary">{{ .heading | markdownify }}</h2>
-            {{ end }}
-            {{ if .body }}
-                {{ .body | safeHTML }}
-            {{ end }}
-            {{ if .button }}
-                <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
-            {{ end }}
-        {{ end }}
+    <div class="bg-primary wrapper-lg flow text-center">
+        <h1 class="intro h2 text-eggshell">{{ .heading }}</h1>
+        <div class="intro divider"></div>
+        <p class="intro text-white">{{ .body }}</p>
     </div>
 </section>
+{{ end }}
+{{ end }}

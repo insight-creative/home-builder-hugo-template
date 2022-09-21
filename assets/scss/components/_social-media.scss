@@ -13,8 +13,13 @@
 
   &__icon {
     position: relative;
-    padding: $ic--200;
+    // padding: $ic--200;
+    padding: .5rem;
     margin: 0 5px;
+    background-color: $primary-color;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 1.3rem;
 
     svg {
       width: $ic-300;
@@ -28,9 +33,5 @@
         opacity: 1;
       }
     }
-  }
-
-  &__list-item:first-of-type a {
-    padding-left: 0;
   }
 }

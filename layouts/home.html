@@ -1,9 +1,6 @@
 {{ define "main" }}
 {{ partial "breadcrumbs" . }}
-<div class="block">
-    <div class="wrapper">
-        {{ .Title }}
-        {{ .Content }}
-    </div>
-</div>
+{{ partial "hero" . }}
+{{ partial "intro" . }}
+
 {{ end }}

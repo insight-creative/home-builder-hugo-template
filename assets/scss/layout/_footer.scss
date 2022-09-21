@@ -19,7 +19,7 @@
 }
 
 .footer {
-  color: $white;
+  color: $primary-color;
   font-size: $ic-100;
 
   &__columns {
@@ -32,21 +32,6 @@
     @include breakpoint(md) {
      flex: 1;
     }
-  }
-
-  &__col:first-of-type {
-    flex: 1 1 100%;
-
-    @include breakpoint(md) {
-      flex: 2;
-     }
-  }
-
-  &__col:nth-of-type(2) {
-
-    @include breakpoint(md) {
-      flex: 2;
-     }
   }
 
   .footer__col + .footer__col {
@@ -78,13 +63,9 @@
       padding: $ic-300 0;
       margin: 0;
 
-      li + li {
-        margin-top: .5rem;
-      }
-
       a {
         display: block;
-        color: $white;
+        color: $primary-color;
         text-decoration: none; 
         transition: color $transition, transform $transition; 
 
@@ -135,7 +116,7 @@
     }
 
     a {
-      color: $white;
+      color: $primary-color;
       text-decoration: none; 
     }
   }

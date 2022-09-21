@@ -21,7 +21,7 @@ h4,
 h5,
 h6 {
   font-family: $primary-font;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.2;
   margin-bottom: 0.65em;
 }
@@ -66,19 +66,20 @@ p {
 }
 
 article {
-  > ul,
-  > ol {
-    > li + li {
+
+  >ul,
+  >ol {
+    >li+li {
       margin-top: $ic-100;
     }
   }
 
   * {
-    + h2 {
+    +h2 {
       margin-top: 4rem;
     }
 
-    + h3 {
+    +h3 {
       margin-top: 2rem;
     }
   }
@@ -119,6 +120,10 @@ article {
 
 .text-secondary {
   color: $secondary-color;
+}
+
+.text-eggshell {
+  color: $egg-shell;
 }
 
 .fw-400 {

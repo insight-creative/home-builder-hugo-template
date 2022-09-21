@@ -1,4 +1,20 @@
+{{ if .Params.hero.enabled }}
+{{ with .Params.hero }}
 {{ $heroClass := lower .Page.Title }}
-<div class="hero hero--{{ anchorize $heroClass }} bg-blue-swoosh">
-  
+<div class="hero hero--{{ anchorize $heroClass }} bg-primary wrapper-lg">
+    <div class="flex flex-column flex-row-m">
+        <div class="w-100 w-30-m">
+            <div class="home-hero w-80 flow">
+                <h1 class="h2 text-eggshell">{{ .heading }}</h1>
+                <div class="divider"></div>
+                <p class="text-white">{{ .body }}</p>
+                <a href="{{ .button_url }}" class="btn btn-secondary">{{ .button_text }}</a>
+            </div>
+        </div>
+        <div class="w-100 w-70-m">
+            <img src="{{ .image_url }}">
+        </div>
+    </div>
 </div>
+{{ end }}
+{{ end }}

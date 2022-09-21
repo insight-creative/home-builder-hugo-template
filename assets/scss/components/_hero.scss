@@ -87,65 +87,13 @@
 }
 
 .home-hero {
-  height: 85vh;
-
-  @include breakpoint(md) {
-    height: 70vh;
-  }
-  
-  &__content {
-    h1 {
-      max-width: 20ch;
-    }
-
-    p {
-      max-width: 975px;
-      font-size: clamp($ic-100, 3vw, $ic-300);
-    }
-
-    h1,
-    p {
-      margin: $ic-300 auto;
-    }
-  }
+  margin: 10rem auto;
 }
 
 .services-hero,
 .parent-page-home .hero {
   .icon-lg {
     display: none;
-  }
-}
-
-.hero__ase-badge {
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0,0,0,.3);
-  padding: .5rem $ic-100;
-  max-width: 500px;
-
-  .hero__ase-badge-icon {
-    svg {
-      height: $ic-700;
-      width: $ic-700;
-    }
-  }
-
-  a {
-    margin: 0 $ic-100;
-
-    svg {
-      fill: $white;
-    }
-
-    &:hover, 
-    &:focus {
-      svg {
-        fill: $secondary-color;
-      }
-    }
   }
 }
 
@@ -175,7 +123,7 @@
       transition: $transition;
     }
 
-    &:hover, 
+    &:hover,
     &:focus {
       color: $accent-color;
 
@@ -191,8 +139,8 @@
   }
 
   .reading-time {
-    color: $white; 
-    
+    color: $white;
+
     svg {
       height: $ic-100;
       width: $ic-100;

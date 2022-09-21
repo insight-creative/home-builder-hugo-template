@@ -144,56 +144,6 @@
   &__mobile-nav-inner {
     height: 100vh;
     overflow: auto;
-  } 
-
-  &__cta {
-    display: none;
-
-    @include breakpoint(md) {
-      display: flex;
-      background-size: 300% 100%;
-      background-image: $primary-gradient;
-      transition: $transition;
-      color: $white;
-      text-decoration: none;
-      font-size: $ic-100;
-      padding: $ic-100; 
-      margin-left: $ic-200;
-
-      svg {
-        fill: $white;
-        width: 30px;
-        height: 100%;
-        margin-bottom: 1rem;
-      }
-
-      &:hover,
-      &:focus {
-        background-position: 100% 0;
-        color: $white;
-      }
-    }
-
-    @include breakpoint(lg) {
-      padding: $ic-100 $ic-300; 
-      margin-left: $ic-500;
-    }
-  }
-
-  &__cta--mobile {
-    background-image: $primary-gradient;
-    background-size: 300% 100%;
-    color: $white;
-    text-decoration: none;
-    font-size: $ic-100;
-    padding: $ic-100 $ic-300; 
-
-    svg {
-      fill: $white;
-      width: 30px;
-      height: 100%;
-      margin-bottom: 1rem;
-    }
   }
 }
 
@@ -201,6 +151,7 @@
   img {
     width: 100%;
     max-width: 170px;
+    padding: .5rem 0 .5rem 0;
 
     @include breakpoint(md) {
       max-width: 210px;
@@ -283,7 +234,7 @@
       color: $black;
       font-family: $secondary-font;
       font-size: clamp($ic--100, 1vw, 18px);
-      font-weight: 700;
+      font-weight: 500;
       transition: $transition;
       
       &:hover,

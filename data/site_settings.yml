@@ -1,21 +1,21 @@
-logo: /uploads/logo.svg
+logo: /uploads/logoipsum.svg
 business_name: Custom Home Builder
-phone:
+phone: 920-468-7459
 fax:
 email: ""
 address:
-  city: ""
-  state: ""
-  street: ""
-  zip: ""
+  city: "Green Bay"
+  state: "WI"
+  street: "1816 Sal St."
+  zip: "54302"
 social_media:
   - title: Facebook
-    link:
+    link: "#"
   - title: Instagram
-    link:
+    link: "#"
   - title: YouTube
-    link:
+    link: "#"
   - title: Twitter
-    link:
+    link: "#"
   - title: Email
-    link:
+    link: "#"
