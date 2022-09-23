@@ -53,14 +53,19 @@ recent_projects:
   card:
     - tile: /uploads/feature-project-1.jpg
       sub_heading: Featured Project 1
+      url: /projects/featured-project-1.md
     - tile: /uploads/feature-project-2.jpg
       sub_heading: Featured Project2
+      url: /projects/featured-project-2.md
     - tile: /uploads/feature-project-3.jpg
       sub_heading: Featured Project 3
+      url: /projects/featured-project-3.md
     - tile: /uploads/feature-project-4.jpg
       sub_heading: Featured Project 4
+      url: /projects/featured-project-4.md
     - tile: /uploads/feature-project-5.jpg
       sub_heading: Featured Project 5
+      url: /projects/featured-project-5.md
   button: true
   button_url: /projects
   button_text: View All Projects

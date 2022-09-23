@@ -61,7 +61,7 @@
                     {{ range .Params.recent_projects.card }}
                         <div class="featured">
                             <div class="cover-image">
-                                <a href="{{ .Permalink }}"><img src="{{ .tile }}">{{ .Title }}</a>
+                                <a href="{{ .url }}"><img src="{{ .tile }}">{{ .Title }}</a>
                             </div>
                             <div class="featured__body">
                                 <h3 class="text-eggshell pt-1">{{ .sub_heading }}</h3>
