@@ -174,179 +174,219 @@
   padding-left: $ic-1000;
 }
 
+.p-1 {
+  padding: $ic-100;
+}
+
+.p-2 {
+  padding: $ic-200;
+}
+
+.p-3 {
+  padding: $ic-300;
+}
+
+.p-4 {
+  padding: $ic-400;
+}
+
+.p-5 {
+  padding: $ic-500;
+}
+
+.p-6 {
+  padding: $ic-600;
+}
+
+.p-7 {
+  padding: $ic-700;
+}
+
+.p-8 {
+  padding: $ic-800;
+}
+
+.p-9 {
+  padding: $ic-900;
+}
+
+.p-10 {
+  padding: $ic-1000;
+}
+
 @include breakpoint(md) {
   .pt-0-m {
     padding-top: 0;
   }
-  
+
   .pt-1-m {
     padding-top: $ic-100;
   }
-  
+
   .pt-2-m {
     padding-top: $ic-200;
   }
-  
+
   .pt-3-m {
     padding-top: $ic-300;
   }
-  
+
   .pt-4-m {
     padding-top: $ic-400;
   }
-  
+
   .pt-5-m {
     padding-top: $ic-500;
   }
-  
+
   .pt-6-m {
     padding-top: $ic-600;
   }
-  
+
   .pt-7-m {
     padding-top: $ic-700;
   }
-  
+
   .pt-8-m {
     padding-top: $ic-800;
   }
-  
+
   .pt-9-m {
     padding-top: $ic-900;
   }
-  
+
   .pt-10-m {
     padding-top: $ic-1000;
   }
-  
+
   .pr-0-m {
     padding-right: 0;
   }
-  
+
   .pr-1-m {
     padding-right: $ic-100;
   }
-  
+
   .pr-2-m {
     padding-right: $ic-200;
   }
-  
+
   .pr-3-m {
     padding-right: $ic-300;
   }
-  
+
   .pr-4-m {
     padding-right: $ic-400;
   }
-  
+
   .pr-5-m {
     padding-right: $ic-500;
   }
-  
+
   .pr-6-m {
     padding-right: $ic-600;
   }
-  
+
   .pr-7-m {
     padding-right: $ic-700;
   }
-  
+
   .pr-8-m {
     padding-right: $ic-800;
   }
-  
+
   .pr-9-m {
     padding-right: $ic-900;
   }
-  
+
   .pr-10-m {
     padding-right: $ic-1000;
   }
-  
+
   .pb-0-m {
     padding-bottom: 0;
   }
-  
+
   .pb-1-m {
     padding-bottom: $ic-100;
   }
-  
+
   .pb-2-m {
     padding-bottom: $ic-200;
   }
-  
+
   .pb-3-m {
     padding-bottom: $ic-300;
   }
-  
+
   .pb-4-m {
     padding-bottom: $ic-400;
   }
-  
+
   .pb-5-m {
     padding-bottom: $ic-500;
   }
-  
+
   .pb-6-m {
     padding-bottom: $ic-600;
   }
-  
+
   .pb-7-m {
     padding-bottom: $ic-700;
   }
-  
+
   .pb-8-m {
     padding-bottom: $ic-800;
   }
-  
+
   .pb-9-m {
     padding-bottom: $ic-900;
   }
-  
+
   .pb-10-m {
     padding-bottom: $ic-1000;
   }
-  
+
   .pl-0-m {
     padding-left: 0;
   }
-  
+
   .pl-1-m {
     padding-left: $ic-100;
   }
-  
+
   .pl-2-m {
     padding-left: $ic-200;
   }
-  
+
   .pl-3-m {
     padding-left: $ic-300;
   }
-  
+
   .pl-4-m {
     padding-left: $ic-400;
   }
-  
+
   .pl-5-m {
     padding-left: $ic-500;
   }
-  
+
   .pl-6-m {
     padding-left: $ic-600;
   }
-  
+
   .pl-7-m {
     padding-left: $ic-700;
   }
-  
+
   .pl-8-m {
     padding-left: $ic-800;
   }
-  
+
   .pl-9-m {
     padding-left: $ic-900;
   }
-  
+
   .pl-10-m {
     padding-left: $ic-1000;
   }

@@ -2,7 +2,7 @@
   position: relative;
   background-image: url("/uploads/matthews-tire-appleton-west-location-hero-low.jpg");
   background-size: cover;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 
   &::after {
     content: "";
@@ -16,7 +16,7 @@
   }
 
   .intro-content {
-    position: relative; 
+    position: relative;
     z-index: 2;
   }
 }
@@ -54,4 +54,18 @@
     max-width: clamp(100px, 10vw, 150px);
     height: 100%;
   }
+}
+
+.divider-home {
+  background: $accent-color;
+  height: 3px;
+  width: $ic-800;
+  position: relative;
+  // margin-top: .25rem;
+  margin-top: -1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.contact-img {
+  left: 1.5rem;
 }

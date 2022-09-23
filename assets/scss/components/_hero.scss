@@ -30,6 +30,32 @@
   }
 }
 
+.hero-inner-box {
+
+  border: 20px solid $primary-color;
+  box-shadow: inset 0px 0px 0px 2px black;
+  box-sizing: border-box;
+
+}
+
+.pos-r {
+  position: relative;
+}
+
+.hero-img {
+  position: relative;
+  top: 5rem;
+  left: 1.5rem;
+}
+
+.inner-box-outline {
+
+}
+
+.op-1 {
+  opacity: 1 !important;
+}
+
 .hero {
   height: 60vh;
 

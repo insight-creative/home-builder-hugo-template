@@ -1,0 +1,13 @@
+.solutions-img {
+    max-width: 80%;
+}
+
+.box_outline {
+    box-shadow: -34px 32px white, -34px 32px 0px 2px black
+}
+
+.inner-box {
+    border: 20px solid $primary-color;
+    box-shadow: inset 0px 0px 0px 2px black;
+    box-sizing: border-box;
+}

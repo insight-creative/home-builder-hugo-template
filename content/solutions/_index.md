@@ -2,26 +2,18 @@
 title: Solutions
 menu:
   main:
-    weight: 2
-  company:
+    parent:
+  services:
 seo:
   page_title:
   meta_description:
   featured_image: /uploads/
   featured_image_alt:
-hero:
-  enabled: false
-  heading:
+solutions:
+  enabled: true
+  heading: Custom Home Building Solutions
   body: >-
-
-  image_url: /uploads/
+    Our team of custom home builders are focusing on creating lifestyles, not just new homes. We have a solid reputation for high-quality construction services. We design luxury spaces that accommodate your design wants and practical needs. Our custom home building process is based on a streamlined experience for our clients. We build new homes with safety, constant communication, and quality at top-of-mind.
+  image_url: /uploads/white_house.jpg
   image_alt:
-intro:
-  enabled: false
-  heading:
-  body: >-
-
-  button: true
-  button_url:
-  button_text:
 ---

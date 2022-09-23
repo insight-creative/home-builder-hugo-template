@@ -1,7 +1,7 @@
 {{ if .Params.hero.enabled }}
 {{ with .Params.hero }}
 {{ $heroClass := lower .Page.Title }}
-<div class="hero hero--{{ anchorize $heroClass }} bg-primary wrapper-lg">
+<div class="hero--{{ anchorize $heroClass }} bg-primary wrapper-lg pos-r inner-box-outline mb-3">
     <div class="flex flex-column flex-row-m">
         <div class="w-100 w-30-m">
             <div class="home-hero w-80 flow">
@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="w-100 w-70-m">
-            <img src="{{ .image_url }}">
+            <img src="{{ .image_url }}" class="hero-img">
         </div>
     </div>
 </div>
