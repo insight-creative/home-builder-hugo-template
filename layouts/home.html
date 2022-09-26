@@ -1,17 +1,16 @@
 {{ define "main" }}
-{{ partial "breadcrumbs" . }}
 {{ partial "hero" . }}
 {{ partial "intro" . }}
     {{ if .Params.solutions.enabled }}
             <div class="flex flex-column flex-row-m mt-5 mb-5 wrapper-lg">
-                <div class="w-50 w-50-m">
+                <div class="w-100 w-50-m">
                     <img src="{{ .Params.solutions.image_url }}" class="solutions-img box_outline">
                 </div>
-                <div class="w-50 w-50-m flow">
+                <div class="w-100 w-50-m flow mt-6 mt-0-m">
                     <h2 class="text-primary">{{ .Params.solutions.heading }}</h2>
                     <div class="divider"></div>
                     <p>{{ .Params.solutions.body }}</p>
-                    <ul class="no-list-style two-column-list">
+                    <ul class="no-list-style two-column-list no-padding">
                         {{ $pages := where .Site.RegularPages "Section" "solutions" }}
                         {{ range $pages }}
                             <li class="solutions-li">
