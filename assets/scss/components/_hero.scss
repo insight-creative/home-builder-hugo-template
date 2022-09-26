@@ -55,8 +55,7 @@
 .hero {
   height: 60vh;
 
-  @include breakpoint(sm) {
-  }
+  @include breakpoint(sm) {}
 
   @include breakpoint(md) {
 
@@ -80,7 +79,11 @@
   // }
 }
 
-@include breakpoint(md) {}
+@include breakpoint(md) {
+  .home-hero {
+    margin: 10rem auto;
+  }
+}
 
 @include breakpoint(lg) {
   // .home-hero {
