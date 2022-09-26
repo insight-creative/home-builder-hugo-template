@@ -62,10 +62,19 @@
   width: $ic-800;
   position: relative;
   // margin-top: .25rem;
-  margin-top: -1.5rem;
+  margin-top: -1rem;
   margin-bottom: 1.25rem;
 }
 
 .contact-img {
   left: 1.5rem;
 }
+
+svg {
+  vertical-align: middle;
+  margin-right: 1em;
+}
+
+@include breakpoint(sm) {}
+
+@include breakpoint(md) {}

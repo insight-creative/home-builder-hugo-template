@@ -48,10 +48,6 @@
   left: 1.5rem;
 }
 
-.inner-box-outline {
-
-}
-
 .op-1 {
   opacity: 1 !important;
 }
@@ -60,7 +56,6 @@
   height: 60vh;
 
   @include breakpoint(sm) {
-    min-height: 500px;
   }
 
   @include breakpoint(md) {
@@ -73,24 +68,39 @@
       max-width: 900px;
     }
   }
-
-  &__mt-swoosh {
-    display: none;
-
-    @include breakpoint(sm) {
-      display: block;
-      position: absolute;
-      bottom: -9px;
-      right: -1px;
-      z-index: 1;
-
-      svg {
-        max-width: 100%;
-        width: 100vw;
-      }
-    }
-  }
 }
+
+@include breakpoint(sm) {
+  // .wrapper-lg {
+  //   max-height: 65vh;
+  // }
+
+  // .home-hero {
+  //   margin: 10rem auto;
+  // }
+}
+
+@include breakpoint(md) {}
+
+@include breakpoint(lg) {
+  // .home-hero {
+  //   margin: 10rem auto;
+  // }
+}
+
+@include breakpoint(xl) {}
+
+// .wrapper-lg {
+//   @include breakpoint(md) {
+//     max-height: 60vh;
+//   }
+// }
+
+// @include breakpoint(lg) {
+//   .home-hero {
+//     margin: 10rem auto;
+//   }
+// }
 
 .hero:not(.parent-page-locations .hero):not(.home-hero):not(.parent-page-resources .hero) {
   img {
@@ -98,23 +108,19 @@
   }
 }
 
-.parent-page-services {
-  .hero {
-    height: 80vh;
+// .parent-page-services {
+//   .hero {
+//     height: 80vh;
 
-    @include breakpoint(md) {
-      height: 70vh;
-    }
-  }
+//     @include breakpoint(md) {
+//       height: 70vh;
+//     }
+//   }
 
-  .hero__content {
-    padding-bottom: 0;
-  }
-}
-
-.home-hero {
-  margin: 10rem auto;
-}
+//   .hero__content {
+//     padding-bottom: 0;
+//   }
+// }
 
 .services-hero,
 .parent-page-home .hero {
