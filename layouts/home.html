@@ -74,18 +74,21 @@
             </div>
     {{ end }}
     {{ if .Params.contact_us.enabled }}
-        <div class="hero bg-primary wrapper-lg mt-7 op-1">
-            <div class="flex flex-column flex-row-m">
-                <div class="home-hero w-30">
-                    <div class=" flow">
-                        <h1 class="h2 text-eggshell">{{ .Params.contact_us.heading }}</h1>
-                        <div class="divider"></div>
-                        <p class="text-white">{{ .Params.contact_us.body }}</p>
-                        <a href="{{ .Params.contact_us.button_url }}" class="btn btn-secondary">{{ .Params.contact_us.button_text }}</a>
+        <div class="page-block block">
+            <div class="wrapper-lg">
+                <div class="cta shadow-1 bg-primary fade-up">
+                    <div class="flex flex-column-reverse flex-row-m flex-center">
+                        <div class="cta__content text-block w-100 w-50-m text-white flow">
+                            <div class="cta__content-inner flow fs-100">
+                                <h2 class="text-eggshell no-margin">{{ .Params.contact_us.heading }}</h2>
+                                <p class="text-white">{{ .Params.contact_us.body }}</p>
+                                <a href="{{ .Params.contact_us.button_url }}" class="btn btn-secondary">{{ .Params.contact_us.button_text }}</a>
+                            </div>
+                        </div>
+                        <div class="cta__image image-block w-100 w-50-m">
+                            <img loading="lazy" src="{{ .Params.contact_us.image_url }}" width="500" height="500">
+                        </div>
                     </div>
-                </div>
-                <div class="w-100 w-70-m">
-                    <img src="{{ .Params.contact_us.image_url }}" class="op-1">
                 </div>
             </div>
         </div>
