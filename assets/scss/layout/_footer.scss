@@ -30,11 +30,11 @@
     flex: 1 1 100%;
 
     @include breakpoint(md) {
-     flex: 1;
+      flex: 1;
     }
   }
 
-  .footer__col + .footer__col {
+  .footer__col+.footer__col {
     @include breakpoint(md) {
       margin-left: $ic-300;
     }
@@ -43,16 +43,6 @@
   &__services ul {
     @include breakpoint(md) {
       columns: 2;
-    }
-  }
-
-  &__menu-container {
-    height: 0;
-    overflow: hidden;
-    transition: height $transition;
-
-    @include breakpoint(md) {
-      height: auto;
     }
   }
 
@@ -66,10 +56,10 @@
       a {
         display: block;
         color: $primary-color;
-        text-decoration: none; 
-        transition: color $transition, transform $transition; 
+        text-decoration: none;
+        transition: color $transition, transform $transition;
 
-        &:hover, 
+        &:hover,
         &:focus {
           color: $accent-color;
         }
@@ -83,13 +73,13 @@
         padding: 0;
       }
 
-     li {
-      @include breakpoint(md) {
-        margin-left: .5rem;
+      li {
+        @include breakpoint(md) {
+          margin-left: .5rem;
+        }
       }
-     }
 
-      li + li {
+      li+li {
         margin-top: 0;
         margin-left: .5rem;
 
@@ -112,12 +102,12 @@
 
   .credits {
     @include breakpoint(md) {
-      margin-left: auto; 
+      margin-left: auto;
     }
 
     a {
       color: $primary-color;
-      text-decoration: none; 
+      text-decoration: none;
     }
   }
 }

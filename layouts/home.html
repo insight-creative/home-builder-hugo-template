@@ -35,7 +35,7 @@
             </div>
     {{ end }}
     {{ if .Params.our_process.enabled }}
-            <div class="block bg-gray">
+            <div class="block bg-gray bg-angled">
                 <div class="wrapper-lg">
                     <h2 class="text-center">{{ .Params.our_process.heading }}</h2>
                     <div class="divider-home intro"></div>
@@ -78,14 +78,14 @@
             <div class="wrapper-lg">
                 <div class="cta shadow-1 bg-primary fade-up">
                     <div class="flex flex-column-reverse flex-row-m flex-center">
-                        <div class="cta__content text-block w-100 w-50-m text-white flow">
-                            <div class="cta__content-inner flow fs-100">
+                        <div class="cta__content text-block w-100 w-40-m text-white flow">
+                            <div class="cta__content-inner flow fs-200">
                                 <h2 class="text-eggshell no-margin">{{ .Params.contact_us.heading }}</h2>
                                 <p class="text-white">{{ .Params.contact_us.body }}</p>
                                 <a href="{{ .Params.contact_us.button_url }}" class="btn btn-secondary">{{ .Params.contact_us.button_text }}</a>
                             </div>
                         </div>
-                        <div class="cta__image image-block w-100 w-50-m">
+                        <div class="cta__image image-block w-100 w-60-m">
                             <img loading="lazy" src="{{ .Params.contact_us.image_url }}" width="500" height="500">
                         </div>
                     </div>

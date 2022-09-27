@@ -2,8 +2,8 @@
 title: Solutions
 menu:
   main:
-    parent:
-  services:
+    weight: 2
+  company:
 seo:
   page_title:
   meta_description:

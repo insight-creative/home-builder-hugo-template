@@ -1,65 +1,33 @@
 console.log("%c Crafted by Insight Creative, Inc. Designed and Developed by Justin Parsons", "background: #1d1d1d; color: white; padding: 5px 10px;")
 
-import { toggleMobileMenu, toggleMobileDropdowns, toggleFooterDropdowns, openLocationsList, toggleLocationsModal, filterPosts } from "./partials";
-
 const siteHeader = document.querySelector(".site-header")
-const hasSubMenu = document.querySelectorAll(".has-sub-menu")
-const expirationField = document.querySelectorAll(".mt-coupon__expiration-date")
+const mobileMenu = document.querySelector('.site-header__mobile-nav')
+const hamburger = document.querySelector('.hamburger')
 
-// Create a date and add 14 days to it (in milliseconds)
-const date = new Date(+new Date + 12096e5);
-// Convert the date to a string in the right format. Need to add one to month number because it"s showing the wrong number for some reason
-const expirationDate = date.getMonth()+1 + "/" + date.getDate() + "/" + date.getFullYear();
+hamburger.addEventListener('click', toggleMobileMenu)
 
-// Insert the formatted expiration date into the paragraphs
-expirationField.forEach((expiration) => {
-    expiration.innerHTML= "Expires " + expirationDate
-})
+mobileMenu.style.height = 0
 
-var testimonialsSwiper = new Swiper(".testimonials-swiper", {
-    grabCursor: true,
-    setWrapperSize: true, 
-    
-    breakpoints: {
-      // when window width is >= 320px
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 32
-      },
-      600: {
-        slidesPerView: 3,
-        spaceBetween: 32
-      },
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".testimonials-pagination",
-      clickable: true,
-      type: "bullets",
-    },
-    a11y: {
-      prevSlideMessage: "Previous slide",
-      nextSlideMessage: "Next slide",
-    },
-  });
+function toggleMobileMenu() {
+    const mobileMenuWrapper = document.querySelector('.site-header__mobile-nav-inner')
+    const mobileMenuWrapperHeight = mobileMenuWrapper.getBoundingClientRect().height
 
-hasSubMenu.forEach((link) => {
-    link.addEventListener("mouseover", () => {
-        link.classList.add("active")
-        const activeLink = document.querySelector(".active")
-        const activeSubMenu = activeLink.querySelector(".sub-menu")
-        const activeSubMenuContainer = activeSubMenu.querySelector(".sub-menu__inner").offsetHeight
-        activeSubMenu.style.height = activeSubMenuContainer + "px"
-    })
-    link.addEventListener("mouseout", () => {
-        link.classList.remove("active")
-        const subMenuToHide = link.querySelector(".sub-menu")
-        subMenuToHide.removeAttribute("style")
-    })
-})
+    mobileMenu.style.height = 0
+
+    if(mobileMenu.classList.contains('nav-open')) {
+        this.setAttribute('aria-expanded', 'false')
+        this.setAttribute('aria-label', 'open mobile menu')
+        mobileMenu.classList.remove('nav-open')
+        mobileMenu.style.height = 0
+        hamburger.classList.remove('is-active')
+    } else {
+        mobileMenu.classList.add('nav-open')
+        mobileMenu.style.height = mobileMenuWrapperHeight + 'px'
+        hamburger.classList.add('is-active')
+        this.setAttribute('aria-expanded','true')
+        this.setAttribute('aria-label', 'close mobile menu')
+    }
+}
 
 let scrollState = 0
 
