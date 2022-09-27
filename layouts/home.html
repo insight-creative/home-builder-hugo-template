@@ -35,7 +35,7 @@
             </div>
     {{ end }}
     {{ if .Params.our_process.enabled }}
-            <div class="block bg-gray bg-angled">
+            <div class="block bg-gray bg-angled mt-6">
                 <div class="wrapper-lg">
                     <h2 class="text-center">{{ .Params.our_process.heading }}</h2>
                     <div class="divider-home intro"></div>
@@ -81,6 +81,7 @@
                         <div class="cta__content text-block w-100 w-40-m text-white flow">
                             <div class="cta__content-inner flow fs-200">
                                 <h2 class="text-eggshell no-margin">{{ .Params.contact_us.heading }}</h2>
+                                <div class="divider"></div>
                                 <p class="text-white">{{ .Params.contact_us.body }}</p>
                                 <a href="{{ .Params.contact_us.button_url }}" class="btn btn-secondary">{{ .Params.contact_us.button_text }}</a>
                             </div>

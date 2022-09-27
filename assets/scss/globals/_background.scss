@@ -31,23 +31,38 @@
 
   &::before {
     position: absolute;
-    top: -200px;
+    top: calc(-4% - -1px);
     left: 0;
     content: '';
-    height: 200px;
+    height: 4%;
     width: 100%;
     background-color: $light-gray;
-    clip-path: polygon(0 86%, 0 100%, 100% 100%);
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
   }
 
   &::after {
     position: absolute;
-    top: 570px;
+    top: calc(100% - 1px);
     left: 0;
     content: '';
-    height: 200px;
+    height: 53px;
     width: 100%;
     background-color: $light-gray;
-    clip-path: polygon(0 80%, 100% 99%, 100% 80%);
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+  }
+
+  @include breakpoint(sm) {
+    &::after {
+    }
+  }
+
+  @include breakpoint(md) {
+    &::after {
+    }
+  }
+
+  @include breakpoint(xl) {
+    &::after {
+    }
   }
 }
