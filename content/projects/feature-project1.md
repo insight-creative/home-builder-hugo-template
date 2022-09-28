@@ -3,7 +3,7 @@ title: Feature Project 1
 seo:
   page_title:
   meta_description:
-  featured_image: /uploads/
+  featured_image: /uploads/feature-project-1.jpg
   featured_image_alt:
 recent_projects:
   enabled: true
@@ -12,4 +12,5 @@ recent_projects:
     
   image_url: /uploads/
   image_alt:
+featured: true
 ---

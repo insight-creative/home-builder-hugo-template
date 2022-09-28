@@ -1,1 +1,11 @@
+contact_us:
+  enabled: true
+  heading: Ready to build your new dream home? So are we!
+  body: Contact us to schedule your free consultation with our team.
+  image_url: /uploads/fancy_brick_house.jpg
+  image_alt:
+  button: true
+  button_url: /contact-us
+  button_text: Lets Talk
+
 footer_short_description: Our team provides an unmatched home building experience in Northeast Wisconsin. Discover the ease of building your new home from scratch with confidence!

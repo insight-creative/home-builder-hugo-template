@@ -53,51 +53,27 @@
                 </div>
         {{ end }}
     {{ end }}
-    {{ if .Params.recent_projects.enabled }}
-        {{ with .Params.recent_projects }}
-                <div class="wrapper-lg">
-                    <h2 class="text-center mt-5">{{ .heading }}</h2>
-                    <div class="divider-home intro"></div>
-                    <p class="intro text-center">{{ .body }}</p>
-                    <div class="featured-projects mt-5">
-                        {{ range .card }}
-                            <div class="featured">
-                                <div class="cover-image">
-                                    <a href="{{ .url }}"><img src="{{ .tile }}">{{ .Title }}</a>
-                                </div>
-                                <div class="featured__body">
-                                    <h3 class="text-eggshell pt-1">{{ .sub_heading }}</h3>
-                                </div>
+        {{ if .Params.recent_projects.enabled }}
+            <div class="wrapper-lg">
+                <h2 class="text-center mt-5">{{ .Params.recent_projects.heading }}</h2>
+                <div class="divider-home intro"></div>
+                <p class="intro text-center">{{ .Params.recent_projects.body }}</p>
+                <div class="featured-projects mt-5">
+                    {{ range where (where .Site.RegularPages "Section" "projects" ) "Params.featured" "=" true }}
+                        <div class="featured">
+                            <div class="cover-image">
+                                <a href="{{ .Permalink }}"><img src="{{ .Params.seo.featured_image }}"></a>
                             </div>
-                        {{ end }}
-                    </div>
-                    <div class="text-center">
-                        <a href="{{ .Params.recent_projects.button_url }}" class="btn btn-primary mt-5 mb-5">{{ .button_text }}</a>
-                    </div>
-                </div>
-        {{ end }}
-    {{ end }}
-    {{ if .Params.contact_us.enabled }}
-        {{ with .Params.contact_us }}
-            <div class="page-block block">
-                <div class="wrapper-lg">
-                    <div class="cta shadow-1 bg-primary fade-up">
-                        <div class="flex flex-column-reverse flex-row-m flex-center">
-                            <div class="cta__content text-block w-100 w-40-m text-white flow">
-                                <div class="cta__content-inner flow fs-200">
-                                    <h2 class="text-eggshell no-margin">{{ .heading }}</h2>
-                                    <div class="divider"></div>
-                                    <p class="text-white">{{ .body }}</p>
-                                    <a href="{{ .button_url }}" class="btn btn-secondary">{{ .button_text }}</a>
-                                </div>
-                            </div>
-                            <div class="cta__image image-block w-100 w-60-m">
-                                {{ partial "responsive-image" . }}
+                            <div class="featured__body">
+                                <h3 class="text-eggshell pt-1">{{ .Title }}</h3>
                             </div>
                         </div>
-                    </div>
+                    {{ end }}
+                </div>
+                <div class="text-center">
+                    <a href="{{ .Params.recent_projects.button_url }}" class="btn btn-primary mt-5 mb-5">{{ .Params.recent_projects.button_text }}</a>
                 </div>
             </div>
         {{ end }}
-    {{ end }}
+{{ partial "site-cta" . }}
 {{ end }}

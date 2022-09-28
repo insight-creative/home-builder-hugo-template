@@ -1,0 +1,23 @@
+{{ if .Site.Data.global_partials.contact_us.enabled }}
+{{ with .Site.Data.global_partials.contact_us }}
+    <div class="page-block block">
+        <div class="wrapper-lg">
+            <div class="cta shadow-1 bg-primary fade-up">
+                <div class="flex flex-column-reverse flex-row-m flex-center">
+                    <div class="cta__content text-block w-100 w-40-m text-white flow">
+                        <div class="cta__content-inner flow fs-200">
+                            <h2 class="text-eggshell no-margin">{{ .heading }}</h2>
+                            <div class="divider"></div>
+                            <p class="text-white">{{ .body }}</p>
+                            <a href="{{ .button_url }}" class="btn btn-secondary">{{ .button_text }}</a>
+                        </div>
+                    </div>
+                    <div class="cta__image image-block w-100 w-60-m">
+                        {{ partial "responsive-image" . }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{ end }}
+{{ end }}

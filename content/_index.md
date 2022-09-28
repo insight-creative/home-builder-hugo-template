@@ -69,13 +69,4 @@ recent_projects:
   button: true
   button_url: /projects
   button_text: View All Projects
-contact_us:
-  enabled: true
-  heading: Ready to build your new dream home? So are we!
-  body: Contact us to schedule your free consultation with our team.
-  image_url: /uploads/fancy_brick_house.jpg
-  image_alt:
-  button: true
-  button_url: /contact-us
-  button_text: Lets Talk
 ---
