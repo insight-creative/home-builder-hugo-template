@@ -1,19 +1,20 @@
 {{ if .Params.hero.enabled }}
+{{ with .Params.hero }}
 {{ $heroClass := lower .Page.Title }}
-<div class="{{ anchorize $heroClass }}-hero hero">
-  {{ partial "home/hero-image" . }}
-  <div class="home-hero__overlay"></div>
-  <div class="home-hero__content flex flex-center flex-justify-center">
-    <div class="wrapper-lg">
-      <div class="text-center flow">
-        <h1 class="text-white text-shadow">{{ .Params.hero.heading }}</h1>
-        <p class="text-white text-shadow fw-500">{{ .Params.hero.body }}</p>
-        <div class="hero-buttons flex flex-column flex-row-s flex-justify-center">
-          <a href="/tires/" class="btn btn-secondary">Find Your Tires</a>
-          <a href="/promotions/" class="btn btn-secondary mt-3 mt-0-m ml-3-m">Current Promotions</a>
+<div class="hero--{{ anchorize $heroClass }} bg-primary wrapper-lg pos-r inner-box-outline mb-3">
+    <div class="flex flex-column flex-row-m inner-box outter-box">
+        <div class="w-100 w-30-m mt-4">
+            <div class="home-hero w-80 flow">
+                <h1 class="h2 text-eggshell">{{ .heading }}</h1>
+                <div class="divider"></div>
+                <p class="text-white">{{ .body }}</p>
+                <a href="{{ .button_url }}" class="btn btn-secondary">{{ .button_text }}</a>
+            </div>
         </div>
-      </div>
+        <div class="w-100 w-70-m">
+            {{ partial "hero-image" . }}
+        </div>
     </div>
-  </div>
 </div>
+{{ end }}
 {{ end }}

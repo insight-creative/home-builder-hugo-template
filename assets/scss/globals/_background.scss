@@ -50,19 +50,4 @@
     background-color: $light-gray;
     clip-path: polygon(100% 0, 0 0, 100% 100%);
   }
-
-  @include breakpoint(sm) {
-    &::after {
-    }
-  }
-
-  @include breakpoint(md) {
-    &::after {
-    }
-  }
-
-  @include breakpoint(xl) {
-    &::after {
-    }
-  }
 }
