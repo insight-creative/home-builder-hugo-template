@@ -4,7 +4,7 @@
     {{ if .Params.solutions.enabled }}
             <div class="flex flex-column flex-row-m mt-5 mb-5 wrapper-lg">
                 <div class="w-100 w-50-m">
-                    <img src="{{ .Params.solutions.image_url }}" class="solutions-img box_outline ml-4 ml-0-xl">
+                    {{ partial "solutions-responsive-image" (dict "Page" . "image_url" .Params.solutions.image_url) }}
                 </div>
                 <div class="w-100 w-50-m flow mt-6 mt-0-m">
                     <h2 class="text-primary">{{ .Params.solutions.heading }}</h2>
@@ -35,63 +35,69 @@
             </div>
     {{ end }}
     {{ if .Params.our_process.enabled }}
-            <div class="block bg-gray bg-angled mt-6">
-                <div class="wrapper-lg">
-                    <h2 class="text-center">{{ .Params.our_process.heading }}</h2>
-                    <div class="divider-home intro"></div>
-                    <div class="grid-4 mt-4">
-                        {{ range .Params.our_process.card }}
-                        <div class="card bg-primary text-white text-center flow inner-box">
-                            <img src="{{ .icon }}" class="card__img">
-                            <h3 class="text-eggshell">{{ .sub_heading }}</h3>
-                            <p class="card__p">{{ .body }}</p>
+        {{ with .Params.our_process }}
+                <div class="block bg-gray bg-angled mt-6">
+                    <div class="wrapper-lg">
+                        <h2 class="text-center">{{ .heading }}</h2>
+                        <div class="divider-home intro"></div>
+                        <div class="grid-4 mt-4">
+                            {{ range .card }}
+                            <div class="card bg-primary text-white text-center flow inner-box">
+                                <img src="{{ .icon }}" class="card__img">
+                                <h3 class="text-eggshell">{{ .sub_heading }}</h3>
+                                <p class="card__p">{{ .body }}</p>
+                            </div>
+                            {{ end }}
                         </div>
-                        {{ end }}
                     </div>
                 </div>
-            </div>
+        {{ end }}
     {{ end }}
     {{ if .Params.recent_projects.enabled }}
-            <div class="wrapper-lg">
-                <h2 class="text-center mt-5">{{ .Params.recent_projects.heading }}</h2>
-                <div class="divider-home intro"></div>
-                <p class="intro text-center">{{ .Params.recent_projects.body }}</p>
-                <div class="featured-projects mt-5">
-                    {{ range .Params.recent_projects.card }}
-                        <div class="featured">
-                            <div class="cover-image">
-                                <a href="{{ .url }}"><img src="{{ .tile }}">{{ .Title }}</a>
+        {{ with .Params.recent_projects }}
+                <div class="wrapper-lg">
+                    <h2 class="text-center mt-5">{{ .heading }}</h2>
+                    <div class="divider-home intro"></div>
+                    <p class="intro text-center">{{ .body }}</p>
+                    <div class="featured-projects mt-5">
+                        {{ range .card }}
+                            <div class="featured">
+                                <div class="cover-image">
+                                    <a href="{{ .url }}"><img src="{{ .tile }}">{{ .Title }}</a>
+                                </div>
+                                <div class="featured__body">
+                                    <h3 class="text-eggshell pt-1">{{ .sub_heading }}</h3>
+                                </div>
                             </div>
-                            <div class="featured__body">
-                                <h3 class="text-eggshell pt-1">{{ .sub_heading }}</h3>
-                            </div>
-                        </div>
-                    {{ end }}
+                        {{ end }}
+                    </div>
+                    <div class="text-center">
+                        <a href="{{ .Params.recent_projects.button_url }}" class="btn btn-primary mt-5 mb-5">{{ .button_text }}</a>
+                    </div>
                 </div>
-                <div class="text-center">
-                    <a href="{{ .Params.recent_projects.button_url }}" class="btn btn-primary mt-5 mb-5">{{ .Params.recent_projects.button_text }}</a>
-                </div>
-            </div>
+        {{ end }}
     {{ end }}
     {{ if .Params.contact_us.enabled }}
-        <div class="page-block block">
-            <div class="wrapper-lg">
-                <div class="cta shadow-1 bg-primary fade-up">
-                    <div class="flex flex-column-reverse flex-row-m flex-center">
-                        <div class="cta__content text-block w-100 w-40-m text-white flow">
-                            <div class="cta__content-inner flow fs-200">
-                                <h2 class="text-eggshell no-margin">{{ .Params.contact_us.heading }}</h2>
-                                <div class="divider"></div>
-                                <p class="text-white">{{ .Params.contact_us.body }}</p>
-                                <a href="{{ .Params.contact_us.button_url }}" class="btn btn-secondary">{{ .Params.contact_us.button_text }}</a>
+        {{ with .Params.contact_us }}
+            <div class="page-block block">
+                <div class="wrapper-lg">
+                    <div class="cta shadow-1 bg-primary fade-up">
+                        <div class="flex flex-column-reverse flex-row-m flex-center">
+                            <div class="cta__content text-block w-100 w-40-m text-white flow">
+                                <div class="cta__content-inner flow fs-200">
+                                    <h2 class="text-eggshell no-margin">{{ .heading }}</h2>
+                                    <div class="divider"></div>
+                                    <p class="text-white">{{ .body }}</p>
+                                    <a href="{{ .button_url }}" class="btn btn-secondary">{{ .button_text }}</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="cta__image image-block w-100 w-60-m">
-                            <img loading="lazy" src="{{ .Params.contact_us.image_url }}" width="500" height="500">
+                            <div class="cta__image image-block w-100 w-60-m">
+                                {{ partial "responsive-image" . }}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        {{ end }}
     {{ end }}
 {{ end }}
