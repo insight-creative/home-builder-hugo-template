@@ -1,3 +1,16 @@
 {{ define "main" }}
-
+<div class="block">
+    <div class="wrapper">
+            <div>
+                <img src="{{ .Params.seo.featured_image }}" alt="">
+                # {{ .Params.plan_details.id }}<br>
+                Sq. Ft. {{ .Params.plan_details.sqft }}<br>
+                Bed {{ .Params.plan_details.bedrooms }}<br>
+                Bath {{ .Params.plan_details.bathrooms }}<br>
+                Floors {{ .Params.plan_details.floors }}<br>
+                Garage {{ .Params.plan_details.garage }}<br>
+                {{ .Title }}
+            </div>
+    </div>
+</div>
 {{ end }}
