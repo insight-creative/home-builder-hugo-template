@@ -18,7 +18,7 @@ hero:
   button: true
   button_url: /projects
   button_text: See Our Plans
-  image_url: /uploads/
+  image_url: /uploads/fancy_brick_house.jpg
   image_alt:
 intro:
   enabled: false
