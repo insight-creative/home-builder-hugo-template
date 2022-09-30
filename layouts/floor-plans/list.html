@@ -37,4 +37,30 @@
         {{ end }}
     </div>
 </div>
+{{ if .Params.contact_us.enabled }}
+  {{ with .Params.contact_us }}
+
+    <div class="wrapper-lg mb-5">
+      <div class="flex flex-column-reverse flex-row-m">
+        <div class="w-100 w-40-m">
+          {{ partial "responsive-image" . }}
+        </div>
+        <div class="w-100 w-60-m pt-2 pl-2">
+          <h2>{{ .heading }}</h2>
+          <div class="divider-home"></div>
+          <p>{{ .body }}</p>
+          <h5 class="mt-3">{{ .sub_heading }}</h5>
+          <ol class="floor-plan-list">
+            {{ range .sub_body }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ol>
+          <div>
+            <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{ end }}
+{{ end }}
 {{ end }}

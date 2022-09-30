@@ -29,9 +29,26 @@
 }
 
 .floor-plan-details--id {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
-.floor-plan-details--sq {
+.floor-plan-list {
+  list-style: none;
+  margin-left: -40px;
 
+  li {
+    counter-increment: custom;
+
+    &::before {
+      content: counter(custom) " ";
+      background: $primary-color;
+      color: #fff;
+      width: 30px;
+      height: 30px;
+      padding: 3px;
+      text-align: center;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+    }
+  }
 }
