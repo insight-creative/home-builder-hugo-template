@@ -1,20 +1,39 @@
 {{ define "main" }}
 {{ partial "hero" . }}
 
-<div class="block">
-    <div class="wrapper">
-        <!-- From your list pages you can range through all your pages that live within that section -->
+<div class="block block--floor-plan">
+    <div class="wrapper-lg wrapper--floor-plan">
         {{ range .Pages }}
-            <a href="{{ .Permalink }}" class="plan-card">
-                <img src="{{ .Params.seo.featured_image }}" alt="">
-                # {{ .Params.plan_details.id }}<br>
-                Sq. Ft. {{ .Params.plan_details.sqft }}<br>
-                Bed {{ .Params.plan_details.bedrooms }}<br>
-                Bath {{ .Params.plan_details.bathrooms }}<br>
-                Floors {{ .Params.plan_details.floors }}<br>
-                Garage {{ .Params.plan_details.garage }}<br>
-                {{ .Title }}
-            </a>
+            <div class="floor-plan-image w-100">
+                <a href="{{ .Permalink }}" class="plan-card">
+                    <img src="{{ .Params.seo.featured_image }}" alt="">
+                    <div class="floor-plan-details--1">
+                        <div class="floor-plan-details--sq">
+                            Sq. Ft. {{ .Params.plan_details.sqft }}<br>
+                        </div>
+                        <div class="floor-plan-details--bedrooms">
+                            Bed {{ .Params.plan_details.bedrooms }}<br>
+                        </div>
+                        <div class="floor-plan-details--bathrooms">
+                            Bath {{ .Params.plan_details.bathrooms }}<br>
+                        </div>
+                        <div class="floor-plan-details--floors">
+                            Floors {{ .Params.plan_details.floors }}<br>
+                        </div>
+                        <div class="floor-plan-details--garage">
+                            Garage {{ .Params.plan_details.garage }}<br>
+                        </div>
+                    </div>
+                    <div class="floor-plan-details--2">
+                        <div class="floor-plan-details--id">
+                            #{{ .Params.plan_details.id }}<br>
+                        </div>
+                        <div class="floor-plan-details--title">
+                            {{ .Title }}
+                        </div>
+                    </div>
+                </a>
+            </div>
         {{ end }}
     </div>
 </div>
