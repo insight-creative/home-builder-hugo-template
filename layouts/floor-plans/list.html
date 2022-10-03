@@ -2,65 +2,64 @@
 {{ partial "hero" . }}
 
 <div class="block block--floor-plan">
-    <div class="wrapper-lg wrapper--floor-plan">
-        {{ range .Pages }}
-            <div class="floor-plan-image w-100">
-                <a href="{{ .Permalink }}" class="plan-card">
-                    <img src="{{ .Params.seo.featured_image }}" alt="">
-                    <div class="floor-plan-details--1">
-                        <div class="floor-plan-details--sq">
-                            Sq. Ft. {{ .Params.plan_details.sqft }}<br>
-                        </div>
-                        <div class="floor-plan-details--bedrooms">
-                            Bed {{ .Params.plan_details.bedrooms }}<br>
-                        </div>
-                        <div class="floor-plan-details--bathrooms">
-                            Bath {{ .Params.plan_details.bathrooms }}<br>
-                        </div>
-                        <div class="floor-plan-details--floors">
-                            Floors {{ .Params.plan_details.floors }}<br>
-                        </div>
-                        <div class="floor-plan-details--garage">
-                            Garage {{ .Params.plan_details.garage }}<br>
-                        </div>
-                    </div>
-                    <div class="floor-plan-details--2">
-                        <div class="floor-plan-details--id">
-                            #{{ .Params.plan_details.id }}<br>
-                        </div>
-                        <div class="floor-plan-details--title">
-                            {{ .Title }}
-                        </div>
-                    </div>
-                </a>
+  <div class="wrapper-lg wrapper--floor-plan">
+    {{ range .Pages }}
+    <div class="floor-plan-image w-100 flex shadow-4">
+      <a href="{{ .Permalink }}" class="plan-card">
+        <img src="{{ .Params.seo.featured_image }}" />
+        <div class="floor-plan-info-wrapper">
+          <div class="floor-plan-details--1 flex flex-row">
+            <div class="floor-plan-details--sq">
+              Sq. Ft.<br /> {{ .Params.plan_details.sqft }}<br />
             </div>
-        {{ end }}
-    </div>
-</div>
-{{ if .Params.contact_us.enabled }}
-  {{ with .Params.contact_us }}
-
-    <div class="wrapper-lg mb-5">
-      <div class="flex flex-column-reverse flex-row-m">
-        <div class="w-100 w-40-m">
-          {{ partial "responsive-image" . }}
-        </div>
-        <div class="w-100 w-60-m pt-2 pl-2">
-          <h2>{{ .heading }}</h2>
-          <div class="divider-home"></div>
-          <p>{{ .body }}</p>
-          <h5 class="mt-3">{{ .sub_heading }}</h5>
-          <ol class="floor-plan-list">
-            {{ range .sub_body }}
-            <li>{{ . }}</li>
-            {{ end }}
-          </ol>
-          <div>
-            <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+            <div class="floor-plan-details--bedrooms">
+              Bed<br />  {{ .Params.plan_details.bedrooms }}<br />
+            </div>
+            <div class="floor-plan-details--bathrooms">
+              Bath<br />  {{ .Params.plan_details.bathrooms }}<br />
+            </div>
+            <div class="floor-plan-details--floors">
+              Floors<br />  {{ .Params.plan_details.floors }}<br />
+            </div>
+            <div class="floor-plan-details--garage">
+              Garage<br />  {{ .Params.plan_details.garage }}<br />
+            </div>
+          </div>
+          <div class="floor-plan-details--2 flex flex-row">
+            <div class="floor-plan-details--id mr-1 ml-1">
+              #{{ .Params.plan_details.id }}<br />
+            </div>
+            <div class="floor-plan-details--title">{{ .Title }}</div>
+            <div class="view-floor-plan mr-1">
+              <p>View Floor Plan{{ partialCached "svg-icons/double-chevron-right.svg" . }}</p>
+            </div>
           </div>
         </div>
+      </a>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ if .Params.contact_us.enabled }} {{ with .Params.contact_us }}
+<div class="wrapper-lg mb-5">
+  <div class="flex flex-column-reverse flex-row-m">
+    <div class="w-100 w-40-m">{{ partial "responsive-image" . }}</div>
+    <div class="w-100 w-60-m pt-2 pl-2">
+      <h2>{{ .heading }}</h2>
+      <div class="divider-home"></div>
+      <p>{{ .body }}</p>
+      <h5 class="mt-3">{{ .sub_heading }}</h5>
+      <ol class="floor-plan-list">
+        {{ range .sub_body }}
+        <li>{{ . }}</li>
+        {{ end }}
+      </ol>
+      <div>
+        <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
       </div>
     </div>
-  {{ end }}
+  </div>
+</div>
+{{ end }}
 {{ end }}
 {{ end }}

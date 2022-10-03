@@ -13,23 +13,54 @@
 }
 
 .floor-plan-details--1 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   height: 30px;
   justify-content: space-evenly;
 }
 
 .floor-plan-details--2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 25px;
   font-size: 1rem;
 }
 
-.floor-plan-details--id {
-  margin-right: 1rem;
+.floor-plan-info-wrapper {
+  border-left: 2px solid #e9e9e9;
+  border-bottom: 2px solid #e9e9e9;
+  border-right: 2px solid #e9e9e9;
+  height: 10vh;
+}
+
+.floor-plan-details--1 {
+  border-bottom: 2px solid #e9e9e9;
+  height: 60%;
+}
+
+.floor-plan-details--2 {
+  height: 40%;
+  align-items: center;
+}
+
+.floor-plan-details--sq {
+  border-right: 2px solid #e9e9e9;
+}
+
+.floor-plan-details--bedrooms {
+  border-right: 2px solid #e9e9e9;
+}
+
+.floor-plan-details--bathrooms {
+  border-right: 2px solid #e9e9e9;
+}
+
+.floor-plan-details--floors {
+  border-right: 2px solid #e9e9e9;
+}
+
+.view-floor-plan {
+  margin-left: auto;
+
+  svg {
+    height: 15px;
+    width: 15px;
+  }
 }
 
 .floor-plan-list {

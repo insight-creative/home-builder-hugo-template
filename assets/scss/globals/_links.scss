@@ -17,15 +17,11 @@ a,
     a, .close-btn, .careers-card, .mt-locations
     a, .brand-card, .search-footer-item, .share-buttons__link, .hero--blog
     a, .category-list
-    a, .post-navigation__link, .pagination__numbers, .solutions-li
-    a, .floor-plan-image a, .floor-plan-details--1 a),
+    a, .post-navigation__link, .pagination__numbers, .solutions-li a, .plan-card
+    a),
 .categories {
   color: $primary-color;
   text-decoration: none;
-  background-image: linear-gradient($accent-color, $accent-color),
-    linear-gradient(270deg, $primary-color 0%, $primary-color 100%);
-  background-size: 100% 2px, 0 2px;
-  background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size $transition, background-position $transition,
     color $transition;
