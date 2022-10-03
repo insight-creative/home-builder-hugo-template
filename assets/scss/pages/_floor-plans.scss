@@ -1,7 +1,10 @@
 .wrapper--floor-plan {
   display: grid;
   gap: 15px;
-  grid-template-columns: repeat(3, 1fr);
+  
+  @include breakpoint(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .block--floor-plan {
@@ -17,15 +20,11 @@
   justify-content: space-evenly;
 }
 
-.floor-plan-details--2 {
-  font-size: 1rem;
-}
-
 .floor-plan-info-wrapper {
   border-left: 2px solid #e9e9e9;
   border-bottom: 2px solid #e9e9e9;
   border-right: 2px solid #e9e9e9;
-  height: 10vh;
+  height: 15vh;
 }
 
 .floor-plan-details--1 {
@@ -36,7 +35,8 @@
 .floor-plan-details--2 {
   height: 40%;
   align-items: center;
-}
+  font-size: 1rem;
+} 
 
 .floor-plan-details--sq {
   border-right: 2px solid #e9e9e9;

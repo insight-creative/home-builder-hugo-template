@@ -8,7 +8,7 @@
       <a href="{{ .Permalink }}" class="plan-card">
         <img src="{{ .Params.seo.featured_image }}" />
         <div class="floor-plan-info-wrapper">
-          <div class="floor-plan-details--1 flex flex-row">
+          <div class="floor-plan-details--1 flex">
             <div class="floor-plan-details--sq">
               Sq. Ft.<br /> {{ .Params.plan_details.sqft }}<br />
             </div>
@@ -25,7 +25,7 @@
               Garage<br />  {{ .Params.plan_details.garage }}<br />
             </div>
           </div>
-          <div class="floor-plan-details--2 flex flex-row">
+          <div class="floor-plan-details--2 flex">
             <div class="floor-plan-details--id mr-1 ml-1">
               #{{ .Params.plan_details.id }}<br />
             </div>
