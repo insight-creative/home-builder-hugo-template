@@ -1,16 +1,37 @@
 {{ define "main" }}
 <div class="block">
     <div class="wrapper">
-            <div>
+        <div class="flex">
+            <div class="wrapper-floor-plan-slider">
+                <div class="wrapper-floor-plan-title">
+                    {{ .Title }}
+                </div>
+                <div class="wrapper-floor-plan-id">
+                    #{{ .Params.plan_details.id }}
+                </div>
                 <img src="{{ .Params.seo.featured_image }}" alt="">
-                # {{ .Params.plan_details.id }}<br>
-                Sq. Ft. {{ .Params.plan_details.sqft }}<br>
-                Bed {{ .Params.plan_details.bedrooms }}<br>
-                Bath {{ .Params.plan_details.bathrooms }}<br>
-                Floors {{ .Params.plan_details.floors }}<br>
-                Garage {{ .Params.plan_details.garage }}<br>
-                {{ .Title }}
             </div>
+            <div class="wrapper-floor-plan-info">
+                <div class="single-at-a-glance">
+                    <p>At a glance</p>
+                </div>
+                <div class="single-sqft">
+                    {{ .Params.plan_details.sqft }} Sq. Ft.<br>
+                </div>
+                <div class="single-bedrooms">
+                    {{ .Params.plan_details.bedrooms }} Bed<br>
+                </div>
+                <div class="single-bathrooms">
+                    {{ .Params.plan_details.bathrooms }} Bath<br>
+                </div>
+                <div class="single-floors">
+                    {{ .Params.plan_details.floors }} Floors<br>
+                </div>
+                <div class="single-garage">
+                    {{ .Params.plan_details.garage }} Garage<br>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 {{ end }}
