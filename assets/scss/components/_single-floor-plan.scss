@@ -1,0 +1,32 @@
+.wrapper-floor-plan-info {
+  width: 25rem;
+  height: 20rem;
+  display: inline-grid;
+  background-color: #f6f6f6;
+}
+
+.single-at-a-glance {
+  display: flex;
+  align-items: center;
+  background-color: $primary-color;
+}
+
+.wrapper-floor-plan-slider {
+  display: grid;
+}
+
+.wrapper-floor-plan-title {
+  grid-column: 1;
+}
+
+.wrapper-floor-plan-id {
+  grid-column: 1;
+}
+
+.wrapper-floor-plan-info {
+  grid-column: 2;
+}
+
+.container-slider-image {
+  grid-column: 1;
+}

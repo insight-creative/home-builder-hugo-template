@@ -1,34 +1,36 @@
 {{ define "main" }}
 <div class="block">
-    <div class="wrapper">
+    <div class="wrapper-lg">
         <div class="flex">
-            <div class="wrapper-floor-plan-slider">
-                <div class="wrapper-floor-plan-title">
+            <div class="wrapper-floor-plan-slider flex">
+                <div class="wrapper-floor-plan-title text-primary h2">
                     {{ .Title }}
                 </div>
-                <div class="wrapper-floor-plan-id">
+                <div class="wrapper-floor-plan-id text-primary h5">
                     #{{ .Params.plan_details.id }}
                 </div>
-                <img src="{{ .Params.seo.featured_image }}" alt="">
-            </div>
-            <div class="wrapper-floor-plan-info">
-                <div class="single-at-a-glance">
-                    <p>At a glance</p>
+                <div class="container-slider-image mr-5">
+                    <img src="{{ .Params.seo.featured_image }}" alt="">
                 </div>
-                <div class="single-sqft">
-                    {{ .Params.plan_details.sqft }} Sq. Ft.<br>
-                </div>
-                <div class="single-bedrooms">
-                    {{ .Params.plan_details.bedrooms }} Bed<br>
-                </div>
-                <div class="single-bathrooms">
-                    {{ .Params.plan_details.bathrooms }} Bath<br>
-                </div>
-                <div class="single-floors">
-                    {{ .Params.plan_details.floors }} Floors<br>
-                </div>
-                <div class="single-garage">
-                    {{ .Params.plan_details.garage }} Garage<br>
+                <div class="wrapper-floor-plan-info shadow-4 ml-5">
+                    <div class="single-at-a-glance text-eggshell">
+                        <p class="ml-3">At a glance</p>
+                    </div>
+                    <div class="single-sqft border-bottom-black ml-3 w-90 flex flex-center">
+                        {{ .Params.plan_details.sqft }} Sq. Ft.<br>
+                    </div>
+                    <div class="single-bedrooms border-bottom-black  ml-3 w-90 flex flex-center">
+                        {{ .Params.plan_details.bedrooms }} Bed<br>
+                    </div>
+                    <div class="single-bathrooms border-bottom-black ml-3 w-90 flex flex-center">
+                        {{ .Params.plan_details.bathrooms }} Bath<br>
+                    </div>
+                    <div class="single-floors border-bottom-black ml-3 w-90 flex flex-center">
+                        {{ .Params.plan_details.floors }} Floors<br>
+                    </div>
+                    <div class="single-garage ml-3 w-90 flex flex-center">
+                        {{ .Params.plan_details.garage }} Garage<br>
+                    </div>
                 </div>
             </div>
         </div>
