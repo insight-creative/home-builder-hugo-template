@@ -5,6 +5,10 @@
   @include breakpoint(md) {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  @include breakpoint(sm) {
+    justify-content: center;
+  }
 }
 
 .block--floor-plan {
