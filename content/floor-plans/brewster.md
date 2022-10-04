@@ -12,4 +12,11 @@ plan_details:
   bathrooms: 2
   floors: 2
   garage: 1 Car
+  images:
+    - image: /upload/brewster-1.jpg
+    - image: /upload/brewster-2.jpg
+    - image: /upload/brewster-3.jpg
+    - image: /upload/brewster-4.jpg
+    - image: /upload/brewster-5.jpg
+    - image: /upload/brewster-6.jpg
 ---

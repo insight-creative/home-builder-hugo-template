@@ -12,4 +12,9 @@ plan_details:
   bathrooms: 2
   floors: 2
   garage: 2 Car
+  images:
+    - images: /upload/liana-1.jpg
+    - images: /upload/liana-2.jpg
+    - images: /upload/liana-3.jpg
+    - images: /upload/liana-4.jpg
 ---

@@ -12,4 +12,11 @@ plan_details:
   bathrooms: 3
   floors: 1
   garage: 3 Car
+  images:
+    - image: /upload/bree-1.jpg
+    - image: /upload/bree-2.jpg
+    - image: /upload/bree-3.jpg
+    - image: /upload/bree-4.jpg
+    - image: /upload/bree-5.jpg
+    - image: /upload/bree-6.jpg
 ---

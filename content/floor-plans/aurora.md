@@ -12,4 +12,9 @@ plan_details:
   bathrooms: 4
   floors: 2
   garage: 3 Car
+  images:
+    - image: /upload/aurora-1.jpg
+    - image: /upload/aurora-2.jpg
+    - image: /upload/aurora-3.jpg
+    - image: /upload/aurora-4.jpg
 ---

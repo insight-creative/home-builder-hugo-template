@@ -12,4 +12,9 @@ plan_details:
   bathrooms: 2
   floors: 1
   garage: 2 Car
+  images:
+    - image: /upload/kendrick-1.jpg
+    - image: /upload/kendrick-2.jpg
+    - image: /upload/kendrick-3.jpg
+    - image: /upload/kendrick-4.jpg
 ---
