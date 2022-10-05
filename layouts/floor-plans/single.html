@@ -14,7 +14,11 @@
                 <div class="swiper-wrapper">
                     {{ with .Params.plan_details }}
                     {{ range .images }}
-                    <div class="swiper-slide"><img loading="lazy" src="{{ .image_url }}" width="700" height="450" alt="{{ .image_alt }}"></div>
+                    <div class="swiper-slide">
+                        <a data-fslightbox="gallery" href="{{ .image_url }}">
+                            <img loading="lazy" src="{{ .image_url }}" width="700" height="450" alt="{{ .image_alt }}">
+                        </a>
+                    </div>
                     {{ end }}
                     {{ end }}
                 </div>
@@ -23,7 +27,7 @@
                 <div class="swiper-button-next">{{ partialCached "svg-icons/double-chevron-right.svg" . }}</div>
                 <div class="swiper-scrollbar"></div>
             </div>
-            <div class="w-30">
+            <div class="w-">
                 <div class="wrapper-floor-plan-info shadow-4 ml-5">
                     <div class="single-at-a-glance text-eggshell">
                         <p class="ml-3">At a glance</p>

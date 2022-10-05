@@ -1,3 +1,5 @@
+require('fslightbox');
+
 console.log("%c Crafted by Insight Creative, Inc. Designed and Developed by Justin Parsons", "background: #1d1d1d; color: white; padding: 5px 10px;")
 
 const siteHeader = document.querySelector(".site-header")
@@ -60,16 +62,10 @@ window.addEventListener("scroll", function() {
 })
 
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  // direction: 'vertical',
   loop: true,
-
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
