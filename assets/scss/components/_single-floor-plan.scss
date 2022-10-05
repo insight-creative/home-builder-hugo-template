@@ -5,28 +5,25 @@
   background-color: #f6f6f6;
 }
 
+.heading-container {
+  position: absolute;
+  top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .single-at-a-glance {
   display: flex;
   align-items: center;
   background-color: $primary-color;
 }
 
-.wrapper-floor-plan-slider {
-  display: grid;
-}
-
 .wrapper-floor-plan-title {
-  grid-column: 1;
 }
 
 .wrapper-floor-plan-id {
-  grid-column: 1;
 }
 
 .wrapper-floor-plan-info {
-  grid-column: 2;
-}
-
-.container-slider-image {
-  grid-column: 1;
 }

@@ -1,6 +1,10 @@
 .swiper {
     margin-inline: auto;
-    padding: $ic-300 0 !important;
+    // padding: $ic-300 0 !important;
+}
+
+.swiper-wrapper {
+    height: 700px !important;
 }
 
 .swiper-button-container {
@@ -53,16 +57,12 @@
     display: none;
 }
 
-.testimonials-swiper {
-    .swiper-slide {
-        height: auto;
-        padding: $ic-600 $ic-300;
-        border-bottom: 4px solid $accent-color;
-    }
+.swiper-slide {
+    overflow: hidden;
 
-    .icon {
-        position: absolute;
-        top: -24px;
+    img {
+        object-fit: cover;
+        height: 100%;
     }
 }
 
