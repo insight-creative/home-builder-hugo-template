@@ -1,16 +1,20 @@
 .wrapper-floor-plan-info {
-  width: 25rem;
-  height: 20rem;
-  display: inline-grid;
+  // width: 25rem;
+  // height: 20rem;
+  // display: inline-grid;
   background-color: #f6f6f6;
+}
+
+.swiper-container {
 }
 
 .heading-container {
   position: absolute;
-  top: 1rem;
-  display: flex;
+  top: -4rem;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
 
 .single-at-a-glance {

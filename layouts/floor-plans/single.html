@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="block">
     <div class="wrapper-lg">
-        <div class="flex w-100">
+        <div class="flex p-relative flex-column flex-row-m flex-center">
             <div class="heading-container">
                 <div class="wrapper-floor-plan-title text-primary h2">
                     {{ .Title }}
@@ -10,41 +10,43 @@
                     #{{ .Params.plan_details.id }}
                 </div>
             </div>
-            <div class="swiper w-100">
-                <div class="swiper-wrapper">
-                    {{ with .Params.plan_details }}
-                    {{ range .images }}
-                    <div class="swiper-slide">
-                        <a data-fslightbox="gallery" href="{{ .image_url }}">
-                            <img loading="lazy" src="{{ .image_url }}" width="700" height="450" alt="{{ .image_alt }}">
-                        </a>
+            <div class="swiper-container w-70 w-70-m">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        {{ with .Params.plan_details }}
+                        {{ range .images }}
+                        <div class="swiper-slide">
+                            <a data-fslightbox="gallery" href="{{ .image_url }}">
+                                <img loading="lazy" src="{{ .image_url }}" width="700" height="450" alt="{{ .image_alt }}">
+                            </a>
+                        </div>
+                        {{ end }}
+                        {{ end }}
                     </div>
-                    {{ end }}
-                    {{ end }}
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev">{{ partialCached "svg-icons/double-chevron-left.svg" . }}</div>
+                    <div class="swiper-button-next">{{ partialCached "svg-icons/double-chevron-right.svg" . }}</div>
+                    <div class="swiper-scrollbar"></div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev">{{ partialCached "svg-icons/double-chevron-left.svg" . }}</div>
-                <div class="swiper-button-next">{{ partialCached "svg-icons/double-chevron-right.svg" . }}</div>
-                <div class="swiper-scrollbar"></div>
             </div>
-            <div class="w-">
+            <div class="w-30 w-30-m">
                 <div class="wrapper-floor-plan-info shadow-4 ml-5">
                     <div class="single-at-a-glance text-eggshell">
-                        <p class="ml-3">At a glance</p>
+                        <p class="">At a glance</p>
                     </div>
-                    <div class="single-sqft border-bottom-black ml-3 w-90 flex flex-center">
+                    <div class="single-sqft border-bottom-black">
                         {{ .Params.plan_details.sqft }} Sq. Ft.<br>
                     </div>
-                    <div class="single-bedrooms border-bottom-black  ml-3 w-90 flex flex-center">
+                    <div class="single-bedrooms border-bottom-black">
                         {{ .Params.plan_details.bedrooms }} Bed<br>
                     </div>
-                    <div class="single-bathrooms border-bottom-black ml-3 w-90 flex flex-center">
+                    <div class="single-bathrooms border-bottom-black">
                         {{ .Params.plan_details.bathrooms }} Bath<br>
                     </div>
-                    <div class="single-floors border-bottom-black ml-3 w-90 flex flex-center">
+                    <div class="single-floors border-bottom-black">
                         {{ .Params.plan_details.floors }} Floors<br>
                     </div>
-                    <div class="single-garage ml-3 w-90 flex flex-center">
+                    <div class="single-garage">
                         {{ .Params.plan_details.garage }} Garage<br>
                     </div>
                 </div>
