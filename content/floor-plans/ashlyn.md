@@ -13,8 +13,8 @@ plan_details:
   floors: 2
   garage: 2 Car
   images:
-    - image: /uploads/ashlyn-1.jpg
-    - image: /uploads/ashlyn-2.jpg
-    - image: /uploads/ashlyn-3.jpg
-    - image: /uploads/ashlyn-4.jpg
+    - image_url: /uploads/ashlyn-1.jpg
+    - image_url: /uploads/ashlyn-2.jpg
+    - image_url: /uploads/ashlyn-3.jpg
+    - image_url: /uploads/ashlyn-4.jpg
 ---
