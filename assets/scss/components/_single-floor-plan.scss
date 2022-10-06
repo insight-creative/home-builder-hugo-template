@@ -1,11 +1,20 @@
 .wrapper-floor-plan-info {
-  // width: 25rem;
-  // height: 20rem;
-  // display: inline-grid;
   background-color: #f6f6f6;
+
+  div:not(:first-child) {
+    margin: 0 1rem;
+    padding: 0.5rem 0.5rem;
+  }
+
+  svg {
+    height: 30px;
+    width: 30px;
+    fill: $accent-color;
+  }
 }
 
-.swiper-container {
+.single-at-a-glance {
+  padding: 0.75rem;
 }
 
 .heading-container {
@@ -23,11 +32,22 @@
   background-color: $primary-color;
 }
 
-.wrapper-floor-plan-title {
+.gap-5 {
+  gap: 5rem;
 }
 
-.wrapper-floor-plan-id {
+.floor_plan_wrapper {
+  align-items: center;
+
+  @include breakpoint(md) {
+    align-items: stretch;
+  }
 }
 
-.wrapper-floor-plan-info {
+.heading-container {
+  top: -2rem;
+
+  @include breakpoint(sm) {
+    top: -4rem
+  }
 }

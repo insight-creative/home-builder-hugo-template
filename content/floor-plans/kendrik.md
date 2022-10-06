@@ -13,8 +13,8 @@ plan_details:
   floors: 1
   garage: 2 Car
   images:
-    - image: /upload/kendrick-1.jpg
-    - image: /upload/kendrick-2.jpg
-    - image: /upload/kendrick-3.jpg
-    - image: /upload/kendrick-4.jpg
+    - image_url: /uploads/kendrick-1.jpg
+    - image_url: /uploads/kendrick-2.jpg
+    - image_url: /uploads/kendrick-3.jpg
+    - image_url: /uploads/kendrick-4.jpg
 ---

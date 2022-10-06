@@ -13,10 +13,10 @@ plan_details:
   floors: 2
   garage: 1 Car
   images:
-    - image: /upload/brewster-1.jpg
-    - image: /upload/brewster-2.jpg
-    - image: /upload/brewster-3.jpg
-    - image: /upload/brewster-4.jpg
-    - image: /upload/brewster-5.jpg
-    - image: /upload/brewster-6.jpg
+    - image_url: /uploads/brewster-1.jpg
+    - image_url: /uploads/brewster-2.jpg
+    - image_url: /uploads/brewster-3.jpg
+    - image_url: /uploads/brewster-4.jpg
+    - image_url: /uploads/brewster-5.jpg
+    - image_url: /uploads/brewster-6.jpg
 ---

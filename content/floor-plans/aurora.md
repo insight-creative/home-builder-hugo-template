@@ -13,8 +13,8 @@ plan_details:
   floors: 2
   garage: 3 Car
   images:
-    - image: /upload/aurora-1.jpg
-    - image: /upload/aurora-2.jpg
-    - image: /upload/aurora-3.jpg
-    - image: /upload/aurora-4.jpg
+    - image_url: /uploads/aurora-1.jpg
+    - image_url: /uploads/aurora-2.jpg
+    - image_url: /uploads/aurora-3.jpg
+    - image_url: /uploads/aurora-4.jpg
 ---

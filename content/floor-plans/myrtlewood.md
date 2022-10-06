@@ -13,7 +13,7 @@ plan_details:
   floors: 1
   garage: 2 Car
   images:
-    - images: /uploadsmyrtlewood-1.jpg
-    - images: /uploadsmyrtlewood-2.jpg
-    - images: /uploadsmyrtlewood-3.jpg
+    - images_url: /uploads/myrtlewood-1.jpg
+    - images_url: /uploads/myrtlewood-2.jpg
+    - images_url: /uploads/myrtlewood-3.jpg
 ---

@@ -35,14 +35,14 @@
 .swiper-button-next {
     width: $ic-600 !important;
     height: $ic-600 !important;
-    background-color: $accent-color;
+    background-color: $primary-color;
 }
 
 .swiper-button-prev svg,
 .swiper-button-next svg {
     width: $ic-300;
     height: $ic-300;
-    fill: $primary-color;
+    fill: $egg-shell;
 }
 
 .swiper-button-next {

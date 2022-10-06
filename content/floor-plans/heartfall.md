@@ -13,9 +13,9 @@ plan_details:
   floors: 1
   garage: 2 Car
   images:
-    - image: /upload/heartfall-1.jpg
-    - image: /upload/heartfall-2.jpg
-    - image: /upload/heartfall-3.jpg
-    - image: /upload/heartfall-4.jpg
-    - image: /upload/heartfall-5.jpg
+    - image_url: /uploads/heartfall-1.jpg
+    - image_url: /uploads/heartfall-2.jpg
+    - image_url: /uploads/heartfall-3.jpg
+    - image_url: /uploads/heartfall-4.jpg
+    - image_url: /uploads/heartfall-5.jpg
 ---
