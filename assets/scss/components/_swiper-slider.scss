@@ -36,6 +36,7 @@
     width: $ic-600 !important;
     height: $ic-600 !important;
     background-color: $primary-color;
+    transform: rotate(45deg);
 }
 
 .swiper-button-prev svg,
@@ -43,6 +44,7 @@
     width: $ic-300;
     height: $ic-300;
     fill: $egg-shell;
+    transform: rotate(-45deg);
 }
 
 .swiper-button-next {

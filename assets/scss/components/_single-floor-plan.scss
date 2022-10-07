@@ -1,20 +1,27 @@
 .wrapper-floor-plan-info {
   background-color: #f6f6f6;
+  box-shadow: 8px 8px 48px rgba($primary-color, 0.25);
+
+  div {
+    padding: 0.5rem 1rem;
+  }
 
   div:not(:first-child) {
     margin: 0 1rem;
-    padding: 0.5rem 0.5rem;
   }
 
   svg {
     height: 30px;
     width: 30px;
     fill: $accent-color;
+    margin-right: 1rem;
   }
 }
 
 .single-at-a-glance {
-  padding: 0.75rem;
+  h3 {
+    margin-bottom: 0;
+  }
 }
 
 .heading-container {
@@ -36,6 +43,10 @@
   gap: 5rem;
 }
 
+.gap-2 {
+  gap: 2rem;
+}
+
 .floor_plan_wrapper {
   align-items: center;
 
@@ -48,6 +59,6 @@
   top: -2rem;
 
   @include breakpoint(sm) {
-    top: -4rem
+    top: -4rem;
   }
 }
