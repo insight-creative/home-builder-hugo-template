@@ -1,7 +1,7 @@
 .wrapper--floor-plan {
   display: grid;
   gap: 15px;
-  
+
   @include breakpoint(md) {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -13,10 +13,6 @@
 
 .block--floor-plan {
   margin: 0;
-}
-
-.floor-plan-image {
-  display: flex;
 }
 
 .floor-plan-details--1 {
@@ -40,7 +36,7 @@
   height: 40%;
   align-items: center;
   font-size: 1rem;
-} 
+}
 
 .floor-plan-details--sq {
   border-right: 2px solid #e9e9e9;

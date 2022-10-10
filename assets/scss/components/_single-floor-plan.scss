@@ -16,10 +16,6 @@
     fill: $accent-color;
     margin-right: 1rem;
   }
-
-  // @include breakpoint(md) {
-  //   margin-left: 1rem;
-  // }
 }
 
 .single-at-a-glance {
@@ -52,6 +48,9 @@
 }
 
 .floor_plan_wrapper {
+  width: 90%;
+  margin: auto;
+
   @include breakpoint(l) {
     width: 100%;
   }

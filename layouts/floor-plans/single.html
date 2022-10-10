@@ -1,13 +1,13 @@
 {{ define "main" }}
 <div class="block">
     <div class="wrapper-lg">
-        <div class="floor_plan_wrapper flex p-relative flex-column flex-row-l gap-2">
+        <div class="floor_plan_wrapper flex p-relative flex-column flex-row-l gap-2 w-90">
             <div class="heading-container">
                 <div class="wrapper-floor-plan-title text-primary">
                     <h2>{{ .Title }}</h2>
                 </div>  
                 <div class="wrapper-floor-plan-id text-primary h5">
-                    #{{ .Params.plan_details.id }}
+                    <p>#{{ .Params.plan_details.id }}></p>
                 </div>
             </div>
             <div class="swiper-container w-100-s w-70-l">

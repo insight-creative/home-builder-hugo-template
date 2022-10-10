@@ -39,18 +39,17 @@
     picture {
       img {
         position: relative;
-        top: 9rem;
+        top: 2rem;
         left: 6rem;
-      }
-    }
-  }
-}
 
-.hero__image {
-  picture {
-    img {
-      top: 0;
-      left: 0;
+        @include breakpoint(sm) {
+          top: 2rem;
+        }
+
+        @include breakpoint(md) {
+          top: 7rem;
+        }
+      }
     }
   }
 }
@@ -73,15 +72,6 @@
     text-align: center;
   }
 }
-
-// .hero__oval-inner-arrow {
-//   margin: auto;
-//   width: 40px;
-//   height: 60px;
-//   border-radius: 45%;
-//   background: #B1976B;
-//   text-align: center;
-// }
 
 .op-1 {
   opacity: 1 !important;
