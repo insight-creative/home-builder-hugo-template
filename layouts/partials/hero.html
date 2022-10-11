@@ -1,17 +1,19 @@
 {{ $heroClass := lower .Page.Title }}
 {{ if .Params.hero.enabled }}
 {{ with .Params.hero }}
-<div class="hero hero--{{ anchorize $heroClass }} bg-primary wrapper-lg">
-    <div class="flex flex-column flex-row-m flex-center">
-        {{ partial "hero-image" . }}
-        <div class="hero__body w-100 flow">
-            <h1 class="hero__title text-eggshell">{{ .heading }}</h1>
-            <div class="divider"></div>
-            <p class="text-white">{{ .body }}</p>
-            <div class="text-center">
-                <a href="{{ .button_url }}" class="btn btn-secondary">{{ .button_text }}</a>
+<div class="wrapper-lg">
+    <div class="hero hero--{{ anchorize $heroClass }} bg-primary">
+        <div class="flex flex-column flex-row-m flex-center">
+            {{ partial "hero-image" . }}
+            <div class="hero__body w-100 flow">
+                <h1 class="hero__title text-eggshell">{{ .heading }}</h1>
+                <div class="divider"></div>
+                <p class="text-white">{{ .body }}</p>
+                <div class="text-center">
+                    <a href="{{ .button_url }}" class="btn btn-secondary">{{ .button_text }}</a>
+                </div>
+                <div class="hero__oval-inner-arrow"></div>
             </div>
-            <div class="hero__oval-inner-arrow"></div>
         </div>
     </div>
 </div>

@@ -55,6 +55,12 @@
                 </div>
             </div>
         </div>
+            <div class="plan-description">
+                {{ with .Params.plan_description}}
+                <h2>{{ .sub_heading }}</h2>
+                <p>{{ .sub_body }}</p>
+                {{ end }}
+            </div>
     </div>
 </div>
 {{ end }}
