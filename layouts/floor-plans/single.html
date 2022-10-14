@@ -1,66 +1,157 @@
 {{ define "main" }}
 <div class="block">
-    <div class="wrapper-lg">
-        <div class="floor_plan_wrapper flex p-relative flex-column flex-row-l gap-2 w-90">
-            <div class="heading-container">
-                <div class="wrapper-floor-plan-title text-primary">
-                    <h2>{{ .Title }}</h2>
-                </div>  
-                <div class="wrapper-floor-plan-id text-primary h5">
-                    <p>#{{ .Params.plan_details.id }}></p>
-                </div>
-            </div>
-            <div class="swiper-container w-100-s w-70-l">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        {{ with .Params.plan_details }}
-                        {{ range .images }}
-                        <div class="swiper-slide">
-                            <a data-fslightbox="gallery" href="{{ .image_url }}">
-                                <img loading="lazy" src="{{ .image_url }}" width="700" height="450" alt="{{ .image_alt }}">
-                            </a>
-                        </div>
-                        {{ end }}
-                        {{ end }}
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-scrollbar"></div>
-                </div>
-                <div class="swiper-button-prev">{{ partialCached "svg-icons/chevron-left.svg" . }}</div>
-                <div class="swiper-button-next">{{ partialCached "svg-icons/chevron-right.svg" . }}</div>
-            </div>
-            <div class="w-70-m w-100-s m-auto flex flex-column gap-2 intro">
-                <div class="wrapper-floor-plan-info">
-                    <div class="single-at-a-glance text-eggshell">
-                        <h3 class="">At a glance</h3>
-                    </div>
-                    <div class="single-sqft border-bottom-black">
-                        {{ partialCached "svg-icons/ruler.svg" . }}{{ .Params.plan_details.sqft }} Sq. Ft.<br>
-                    </div>
-                    <div class="single-bedrooms border-bottom-black">
-                        {{ partialCached "svg-icons/bed.svg" . }}{{ .Params.plan_details.bedrooms }} Bed<br>
-                    </div>
-                    <div class="single-bathrooms border-bottom-black">
-                        {{ partialCached "svg-icons/shower.svg" . }}{{ .Params.plan_details.bathrooms }} Bath<br>
-                    </div>
-                    <div class="single-floors border-bottom-black">
-                        {{ partialCached "svg-icons/layers.svg" . }}{{ .Params.plan_details.floors }} Floors<br>
-                    </div>
-                    <div class="single-garage">
-                        {{ partialCached "svg-icons/house.svg" . }}{{ .Params.plan_details.garage }} Garage<br>
-                    </div>
-                </div>
-                <div class="container-form">
-                    {{ partialCached "forms/contact-form" . }}
-                </div>
-            </div>
+  <div class="wrapper-lg pos-r">
+    <div class="floor_plan_wrapper flex p-relative flex-column flex-row-l gap-2">
+      
+      <div class="flex-container">
+        <div class="heading-container">
+          <div class="wrapper-floor-plan-title text-primary">
+            <h2>{{ .Title }}</h2>
+          </div>
+          <div class="wrapper-floor-plan-id text-primary h5">
+            <p>#{{ .Params.plan_details.id }}</p>
+          </div>
         </div>
-            <div class="plan-description">
-                {{ with .Params.plan_description}}
-                <h2>{{ .sub_heading }}</h2>
-                <p>{{ .sub_body }}</p>
-                {{ end }}
+        <div class="swiper-container w-100">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              {{ with .Params.plan_details }}
+              {{ range .images }}
+              <div class="swiper-slide">
+                <a data-fslightbox="gallery" href="{{ .image_url }}">
+                  <img
+                    loading="lazy"
+                    src="{{ .image_url }}"
+                    width="700"
+                    height="450"
+                    alt="{{ .image_alt }}"
+                  />
+                </a>
+              </div>
+              {{ end }}
+              {{ end }}
             </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <div class="swiper-button-prev">
+            {{ partialCached "svg-icons/chevron-left.svg" . }}
+          </div>
+          <div class="swiper-button-next">
+            {{ partialCached "svg-icons/chevron-right.svg" . }}
+          </div>
+        </div>
+        <div class="plan-description flow">
+          {{ with .Params.plan_details }}
+          <h2>Plan Description</h2>
+          <div class="divider"></div>
+          <p>{{ .description }}</p>
+          {{ end }} 
+          {{ with .Params.plan_details }}
+          <div class="plan-details">
+            <h3 class="plan-details-heading text-eggshell">Plan Details</h3>
+            <div class="plan-details-wrapper-body">
+              <div class="plan-details-body-1">
+                <div class="living-sqft plan-details-details">
+                  Living Sq. Ft.<br />{{ .sqft }}
+                </div>
+                <div class="1st-floor-sqft plan-details-details">
+                  1st Floor Sq. Ft.<br />{{ .first_floor_sqft }}
+                </div>
+                <div class="2nd-floor-sqft plan-details-details">
+                  2nd Floor Sq. Ft.<br />{{ .second_floor_sqft }}
+                </div>
+                <div class="lower-floor-sqft plan-details-details">
+                  Lower Floor Sq. Ft.<br />{{ .lower_floor_sqft }}
+                </div>
+                <div class="bonus-sqft plan-details-details">
+                  Bonus Sq. Ft.<br />{{ .bonus_sqft }}
+                </div>
+                <div class="garage-sqft plan-details-details">
+                  Garage Sq. Ft.<br />{{ .garage_sqft }}
+                </div>
+                <div class="bedrooms plan-details-details">
+                  Bedrooms<br />{{ .bedrooms }}
+                </div>
+                <div class="full-baths plan-details-details">
+                  Full Baths<br />{{ .bathrooms }}
+                </div>
+                <div class="half-baths plan-details-details">
+                  Half Baths<br />{{ .half_bath }}
+                </div>
+                <div class="floors plan-details-details">
+                  Floors<br />{{ .floors }}
+                </div>
+                <div class="primary-style plan-details-details">
+                  Primary Style<br />{{ .primary_style }}
+                </div>
+                <div class="secondary-styles plan-details-details">
+                  Secondary Styles<br />{{ .secondary_style }}
+                </div>
+              </div>
+              {{ end }}
+              <div class="plan-details-body-2">
+                <div class="primary-style-details">
+                  Collections<br />
+                  {{ if .Params.Collections }}
+                  {{ range $index, $elements := .Params.Collections }}
+                  <a href="{{ `collections/` | relLangURL }}{{ . | urlize | lower }}/" class="categories">{{ if ne $index 0 }}{{ end }} {{ . | title }},</a>
+                  <span class="text-white">,</span>
+                  {{ end }}
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper-at-a-glance w-100 m-auto flex flex-column gap-2">
+        <div class="wrapper-floor-plan-info">
+          <div class="single-at-a-glance text-eggshell">
+            <h3 class="">At a glance</h3>
+          </div>
+          <div class="single-sqft border-bottom-black">
+            {{ partialCached "svg-icons/ruler.svg" . }}{{
+            .Params.plan_details.sqft }} Sq. Ft.<br />
+          </div>
+          <div class="single-bedrooms border-bottom-black">
+            {{ partialCached "svg-icons/bed.svg" . }}{{
+            .Params.plan_details.bedrooms }} Bed<br />
+          </div>
+          <div class="single-bathrooms border-bottom-black">
+            {{ partialCached "svg-icons/shower.svg" . }}{{
+            .Params.plan_details.bathrooms }} Bath<br />
+          </div>
+          <div class="single-floors border-bottom-black">
+            {{ partialCached "svg-icons/layers.svg" . }}{{
+            .Params.plan_details.floors }} Floors<br />
+          </div>
+          <div class="single-garage">
+            {{ partialCached "svg-icons/house.svg" . }}{{
+            .Params.plan_details.garage }} Garage<br />
+          </div>
+        </div>
+        <div class="container-form">
+          {{ partialCached "forms/contact-form" . }}
+        </div>
+      </div>
     </div>
 </div>
+</div>
+{{ $related := .Site.RegularPages.RelatedIndices . "collections" | first 3 }}
+{{ with $related }}
+<div class="bg-gray bg-angled">
+  <div class="wrapper-lg related-posts text-center flow ">
+    <h3 class="fade-up">Related articles</h3>
+    <div class="divider intro"></div>
+    <div class="post-wrapper fade-up">
+      {{ range . }}
+      {{ partial "floor-plan-card" . }}
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+{{ end }}
+{{ partial "site-cta" . }}
 {{ end }}

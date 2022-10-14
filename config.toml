@@ -46,6 +46,11 @@ googleAnalytics = " " # Your ID# search
 [markup.goldmark.renderer]
   unsafe= true
 
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  collection = 'collections'
+
 [related]
   includeNewer = true
   threshold = 80
@@ -57,4 +62,8 @@ googleAnalytics = " " # Your ID# search
 
 [[related.indices]]
   name = "tags"
+  weight = 100
+
+[[related.indices]]
+  name = "collections"
   weight = 100

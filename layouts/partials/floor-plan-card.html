@@ -1,0 +1,33 @@
+<div class="floor-plan-image w-100 shadow-4">
+  <a href="{{ .Permalink }}" class="plan-card">
+    <img src="{{ .Params.seo.featured_image }}" />
+    <div class="floor-plan-info-wrapper">
+      <div class="floor-plan-details--1 flex">
+        <div class="floor-plan-detail">
+          Sq. Ft.<br /> {{ .Params.plan_details.sqft }}<br />
+        </div>
+        <div class="floor-plan-detail">
+          Bed<br />  {{ .Params.plan_details.bedrooms }}<br />
+        </div>
+        <div class="floor-plan-detail">
+          Bath<br />  {{ .Params.plan_details.bathrooms }}<br />
+        </div>
+        <div class="floor-plan-detail">
+          Floors<br />  {{ .Params.plan_details.floors }}<br />
+        </div>
+        <div class="floor-plan-detail">
+          Garage<br />  {{ .Params.plan_details.garage }}<br />
+        </div>
+      </div>
+      <div class="floor-plan-details--2 flex">
+        <div class="floor-plan-details--id mr-1 ml-1">
+          #{{ .Params.plan_details.id }}<br />
+        </div>
+        <div class="floor-plan-details--title">{{ .Title }}</div>
+        <div class="view-floor-plan mr-1">
+          <p>View Floor Plan{{ partialCached "svg-icons/double-chevron-right.svg" . }}</p>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
