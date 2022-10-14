@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+{{ with .Params.hero }}
+<div class="wrapper-lg">
+  <div class="hero bg-primary">
+      <div class="flex flex-column flex-row-m flex-center">
+          {{ partial "hero-image" . }}
+          <div class="hero__body w-100 flow flex flex-column">
+            <div class="hero-container-upper">
+              <h1 class="hero__title text-eggshell">{{ .heading }}</h1>
+              <div class="divider"></div>
+              <p class="hero__solutions text-white">{{ .body }}</p>
+              <div class="hero__oval-inner-arrow"></div>
+            </div>
+
+
+
+              <div class="hero-container-bottom">
+                <h2 class="text-eggshell">{{ .sub_body }}</h2>
+                <div class="text-center">
+                  <a href="{{ .button_url }}" class="btn btn-secondary">{{ .button_text }}</a>
+              </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+{{ end }}
+{{ end }}
