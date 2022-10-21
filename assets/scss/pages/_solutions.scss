@@ -1,5 +1,32 @@
 .hero-container-bottom {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
+  position: relative;
+  background-color: #182434;
+  text-align: center;
+  padding: 1rem 0;
+  margin-bottom: 5rem;
+
+  h2 {
+    padding-top: 1rem;
+  }
+}
+
+.wrapper-hero-button {
+  position: absolute;
+  left: 39%;
+  top: 78%;
+
+  @include breakpoint(md) {
+    left: 42%;
+  }
+}
+
+.custom-solutions-content,
+.interior-solutions-content,
+.outdoor-solutions-content,
+.licensed-solutions-content {
+  margin-top: 3rem;
+
+  @include breakpoint(md) {
+    margin-top: 0;
+  }
 }

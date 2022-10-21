@@ -2,32 +2,89 @@
 
 {{ with .Params.hero }}
 <div class="wrapper-lg">
-  <div class="hero bg-primary">
+  <div class="hero bg-primary inner-box box_outline">
       <div class="flex flex-column flex-row-m flex-center">
           {{ partial "hero-image" . }}
-          <div class="hero__body w-100 flow flex flex-column">
+          <div class="hero__body w-100 flex flex-column">
             <div class="hero-container-upper">
               <h1 class="hero__title text-eggshell">{{ .heading }}</h1>
               <div class="divider"></div>
               <p class="hero__solutions text-white">{{ .body }}</p>
               <div class="hero__oval-inner-arrow"></div>
             </div>
-
-
-
-              <div class="hero-container-bottom">
-                <h2 class="text-eggshell">{{ .sub_body }}</h2>
-                <div class="text-center">
-                  <a href="{{ .button_url }}" class="btn btn-secondary">{{ .button_text }}</a>
-              </div>
-              </div>
           </div>
       </div>
   </div>
 </div>
-
-
-
-
+<div class="wrapper-lg">
+  <div class="hero-container-bottom">
+    <h2 class="text-eggshell">{{ .sub_body }}</h2>
+    <div class="wrapper-hero-button text-center">
+      <a href="{{ .button_url }}" class="btn btn-secondary">{{ .button_text }}</a>
+    </div>
+  </div>
+</div>
 {{ end }}
+{{ if .Params.custom.enabled }}
+{{ with .Params.custom }}
+<div class="flex-center wrapper-lg flex flex-column flex-row-m w-100 mt-5 mb-5">
+  <div class="custom-solutions-image w-100 w-50-m">
+    <img src="{{ .image_url }}" class="solutions-img box_outline ml-4">
+  </div>
+  <div class="custom-solutions-content w-100 w-50-m flow">
+    <h2>{{ .heading }}</h2>
+    <div class="divider"></div>
+    <p class="w-90">{{ .body }}</p>
+    <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+  </div>
+</div>
+{{ end }}
+{{ end }}
+{{ if .Params.interior.enabled}}
+{{ with .Params.interior}}
+<div class="flex-center wrapper-lg flex flex-column flex-row-reverse-m w-100 mt-5 mb-5">
+  <div class="interior-solutions-image w-100 w-50-m">
+    <img src="{{ .image_url }}" class="solutions-img box_outline ml-4">
+  </div>
+  <div class="interior-solutions-content w-100 w-50-m flow">
+    <h2>{{ .heading }}</h2>
+    <div class="divider"></div>
+    <p class="w-90">{{ .body }}</p>
+    <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+  </div>
+</div>
+{{ end }}
+{{ end }}
+{{ if .Params.outdoor.enabled}}
+{{ with .Params.outdoor }}
+<div class="flex-center wrapper-lg flex flex-row-m flex-column w-100 mt-5 mb-5">
+  <div class="outdoor-solutions-image w-100 w-50-m">
+    <img src="{{ .image_url }}" class="solutions-img box_outline ml-4">
+  </div>
+  <div class="outdoor-solutions-content w-100 w-50-m flow">
+    <h2>{{ .heading }}</h2>
+    <div class="divider"></div>
+    <p class="w-90">{{ .body }}</p>
+    <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+  </div>
+</div>
+{{ end }}
+{{ end }}
+{{ if .Params.licensed.enabled}}
+{{ with .Params.licensed }}
+<div class="flex-center wrapper-lg flex flex-row-reverse-m flex-column flex-row-m w-100 mt-5 mb-5">
+  <div class="licensed-solutions-image w-100 w-50-m">
+    <img src="{{ .image_url }}" class="solutions-img box_outline ml-4">
+  </div>
+  <div class="licensed-solutions-content w-100 w-50-m flow">
+    <h2>{{ .heading }}</h2>
+    <div class="divider"></div>
+    <p class="w-90">{{ .body }}</p>
+    <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+  </div>
+</div>
+{{ end }}
+{{ end }}
+
+
 {{ end }}
