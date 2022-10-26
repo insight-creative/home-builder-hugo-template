@@ -35,10 +35,14 @@
     <h2>{{ .heading }}</h2>
     <div class="divider"></div>
     <p class="w-90">{{ .body }}</p>
-    <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+{{ end }}
+    {{ range .Pages }}
+    {{ if eq .Title "Custom Home Building" }}
+    <a href="{{ .Permalink }}" class="btn btn-primary">{{ .Title }}</a>
+    {{ end }}
+    {{ end }}
   </div>
 </div>
-{{ end }}
 {{ end }}
 {{ if .Params.interior.enabled}}
 {{ with .Params.interior}}
@@ -50,10 +54,14 @@
     <h2>{{ .heading }}</h2>
     <div class="divider"></div>
     <p class="w-90">{{ .body }}</p>
-    <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+    {{ end }}
+    {{ range .Pages }}
+    {{ if eq .Title "Interior Design" }}
+    <a href="{{ .Permalink }}" class="btn btn-primary">{{ .Title }}</a>
+    {{ end }}
+    {{ end }}
   </div>
 </div>
-{{ end }}
 {{ end }}
 {{ if .Params.outdoor.enabled}}
 {{ with .Params.outdoor }}
@@ -65,10 +73,14 @@
     <h2>{{ .heading }}</h2>
     <div class="divider"></div>
     <p class="w-90">{{ .body }}</p>
-    <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+{{ end }}
+    {{ range .Pages }}
+    {{ if eq .Title "Outdoor Living" }}
+    <a href="{{ .Permalink }}" class="btn btn-primary">{{ .Title }}</a>
+    {{ end }}
+    {{ end }}
   </div>
 </div>
-{{ end }}
 {{ end }}
 {{ if .Params.licensed.enabled}}
 {{ with .Params.licensed }}
@@ -80,11 +92,13 @@
     <h2>{{ .heading }}</h2>
     <div class="divider"></div>
     <p class="w-90">{{ .body }}</p>
-    <a href="{{ .button_url }}" class="btn btn-primary">{{ .button_text }}</a>
+{{ end }}
+    {{ range .Pages }}
+    {{ if eq .Title "Licensed Realty" }}
+    <a href="{{ .Permalink }}" class="btn btn-primary">{{ .Title }}</a>
+    {{ end }}
+    {{ end }}
   </div>
 </div>
 {{ end }}
-{{ end }}
-
-
 {{ end }}

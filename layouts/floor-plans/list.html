@@ -8,7 +8,8 @@
     {{ end }}
   </div>
 </div>
-{{ if .Params.contact_us.enabled }} {{ with .Params.contact_us }}
+{{ if .Params.contact_us.enabled }} 
+{{ with .Params.contact_us }}
 <div class="wrapper-lg mb-5">
   <div class="flex flex-column-reverse flex-row-m">
     <div class="w-100 w-40-m">{{ partial "responsive-image" . }}</div>

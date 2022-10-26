@@ -1,0 +1,22 @@
+{{ define "main"}}
+
+{{ with .Params.hero }}
+<div class="wrapper-lg">
+  <div class="hero bg-primary inner-box box_outline">
+      <div class="flex flex-column flex-row-m flex-center">
+          {{ partial "hero-image" . }}
+          <div class="hero__body w-100 flex flex-column">
+            <div class="hero-container-upper">
+              <h1 class="hero__title text-eggshell">{{ .heading }}</h1>
+              <div class="divider"></div>
+              <p class="hero__solutions text-white">{{ .body }}</p>
+              <div class="hero__oval-inner-arrow"></div>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+{{ end }}
+
+{{ partial "site-cta" . }}
+{{ end }}
