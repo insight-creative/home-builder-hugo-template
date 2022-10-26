@@ -1,8 +1,6 @@
-{{ define "main"}}
-{{ partial "solutions-hero" . }}
 {{ with .Params.hero }}
 <div class="wrapper-lg">
-  <div class="hero bg-primary inner-box box_outline">
+  <div class="hero bg-primary">
       <div class="flex flex-column flex-row-m flex-center">
           {{ partial "hero-image" . }}
           <div class="hero__body w-100 flex flex-column">
@@ -16,7 +14,12 @@
       </div>
   </div>
 </div>
-{{ end }}
-
-{{ partial "site-cta" . }}
+<div class="wrapper-lg">
+  <div class="hero-container-bottom">
+    <h2 class="text-eggshell">{{ .sub_body }}</h2>
+    <div class="wrapper-hero-button text-center">
+      <a href="{{ .button_url }}" class="btn btn-secondary">{{ .button_text }}</a>
+    </div>
+  </div>
+</div>
 {{ end }}
