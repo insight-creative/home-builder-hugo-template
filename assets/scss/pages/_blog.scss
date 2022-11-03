@@ -1,46 +1,72 @@
-.parent-page-resources,
-.parent-page-resources .site-wrap {
-  overflow-x: initial;
+.blog-header-wrapper {
+  border: 2px solid black;
+  height: 20rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
 }
 
-.parent-page-resources .breadcrumbs {
-  display: none;
+.blog-card-wrapper {
+  border: 1px solid green;
+  margin: auto;
+  margin-top: 5rem;
+}
 
-  @include breakpoint(md) {
-    display: block;
+.card {
+  border: 1px solid blue;
+
+  a {
+    text-decoration: none;
   }
 }
 
-.post-featured-image {
-  position: relative;
-
-  .cover-image {
-    width: 100%;
-    height: 250px;
-    position: absolute;
-
-    @include breakpoint(md) {
-      height: 500px;
-    }
-  }
+.blog-card {
+  gap: 5px;
 }
 
-.post-content {
+// .parent-page-resources,
+// .parent-page-resources .site-wrap {
+//   overflow-x: initial;
+// }
 
-  &__inner {
-    margin-top: 175px; 
+// .parent-page-resources .breadcrumbs {
+//   display: none;
 
-    @include breakpoint(md) {
-      margin-top: 0;
-    }
+//   @include breakpoint(md) {
+//     display: block;
+//   }
+// }
 
-    h1,
-    h2, 
-    h3, 
-    h4, 
-    h5, 
-    h6 {
-      color: $primary-color;
-    }
-  }
-}
+// .post-featured-image {
+//   position: relative;
+
+//   .cover-image {
+//     width: 100%;
+//     height: 250px;
+//     position: absolute;
+
+//     @include breakpoint(md) {
+//       height: 500px;
+//     }
+//   }
+// }
+
+// .post-content {
+
+//   &__inner {
+//     margin-top: 175px;
+
+//     @include breakpoint(md) {
+//       margin-top: 0;
+//     }
+
+//     h1,
+//     h2,
+//     h3,
+//     h4,
+//     h5,
+//     h6 {
+//       color: $primary-color;
+//     }
+//   }
+// }

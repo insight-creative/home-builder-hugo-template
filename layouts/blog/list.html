@@ -1,0 +1,29 @@
+{{ define "main" }}
+{{ with .Params.hero}}
+<div class="wrapper-lg">
+  <div class="hero blog-header-wrapper flow flex flex-column">
+    <h1 class="text-primary">{{ .heading }}</h1>
+    <div class="divider"></div>
+    <p class="text-primary">{{ .body }}</p>
+  </div>
+</div>
+{{ end }}
+
+<div class="wrapper-lg blog-card-wrapper w-100 w-70-m">
+  {{ $pages := .Site.RegularPages }}
+  {{ $posts := where $pages "Type" "blog" }}
+  {{ $postCount := len $posts }}
+  <div class="blog-card grid-3">
+    {{ $paginator := .Paginate ( where .Data.Pages "Type" "blog" ) }}
+    {{ range $paginator.Pages }}
+    {{ .Render "blog-card" }}
+    {{ end }}
+  </div>
+  <div class="wrapper-lg">
+    {{ partial "blog/custom-pagination.html" . }}
+  </div>
+</div>
+
+
+{{ partial "site-cta" . }}
+{{ end }}

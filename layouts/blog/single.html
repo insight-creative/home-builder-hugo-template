@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<section>
+  <div>
+    <div>
+      {{ .Content  }}
+      {{ $author := index .Site.Data.authors (.Params.author | default "default") }}
+      <div>
+        {{ partial "blog/share-buttons" . }}
+      </div>
+    </div>
+    {{ partial "blog/post-navigation" . }}
+  </div>
+  {{ partial "blog/related-posts" . }}
+</section>
+
+
+{{ end }}
