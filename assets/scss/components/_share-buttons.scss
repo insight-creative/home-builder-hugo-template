@@ -29,7 +29,7 @@
     &:hover,
     &:focus {
       svg {
-        fill: $primary-color;
+        fill: $egg-shell;
       }
     }
   }
@@ -68,10 +68,4 @@ ul.share-buttons .sr-only {
   align-items: center;
   padding-top: 6px;
   padding-left: 2px;
-
-  &:hover {
-    background-color: white;
-    transition: 0.3s ease;
-    border: 1.5px solid $primary-color;
-  }
 }
