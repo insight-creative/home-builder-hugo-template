@@ -36,7 +36,7 @@
   width: 100%;
   list-style-type: none;
 
-  margin-left: auto;
+  margin: auto;
 
   svg {
     height: 35px;
@@ -76,4 +76,25 @@
 
 .blog-card__category-link {
   margin-left: 1rem;
+}
+
+.blog-card__social-media {
+  ul {
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    margin: auto;
+    justify-content: center;
+
+    li {
+      padding: 0;
+      // border-bottom: 1px solid black;
+      // padding: 1rem;
+      border-bottom: none;
+    }
+  }
+}
+
+.blog-card-follow-us {
+  width: 65%;
+  margin: auto;
 }

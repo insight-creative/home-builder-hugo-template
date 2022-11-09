@@ -23,6 +23,10 @@
     {{ partial "blog/custom-pagination.html" . }}
   </div> -->
   <div class="blog-card--categories__wrapper">
+    <p class="blog-card-follow-us shift-up text-center h3">Follow Us on Social</p>
+    <div class="blog-card__social-media">
+      {{ partial "social-media" . }}
+    </div>
     <ul class="blog-card--categories">
       {{ range .Site.Taxonomies.categories }}
         <li class="blog-card__category-list flex">
