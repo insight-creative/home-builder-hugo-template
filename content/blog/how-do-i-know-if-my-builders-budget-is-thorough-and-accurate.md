@@ -5,7 +5,7 @@ seo:
   meta_description: >-
 
   featured_image:  /uploads/lighted-windows-stone-house-evening.jpg
-  featured_image_alt:
+  featured_image_alt: 
 date: 2022-10-28
 author: Chue Vang
 categories:
@@ -14,7 +14,6 @@ categories:
   - Sustainability
   - Building Science
 ---
-
 
 How thorough your custom builder is when creating your home’s construction budget directly correlates to how detail-oriented and accurate they will be when managing your project. You must be able to trust that your custom builder will be the best possible steward of your resources, so if one is unable to demonstrate that they have put in the time, expertise, and careful diligence to build a budget that will end up as close to reality as possible, then be sure to move on to a different custom builder candidate.
 
