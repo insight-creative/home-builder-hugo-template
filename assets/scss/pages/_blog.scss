@@ -88,3 +88,32 @@
     }
   }
 }
+
+.blog__author-wrapper {
+  border: 2px solid black;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.blog__author-image {
+  height: 125px;
+  width: 125px;
+}
+
+.blog__author-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.blog__author-heading {
+  border: 2px solid green;
+}
+
+.blog__author-about {
+  border: 2px solid red;
+  margin-top: 1rem;
+}
+

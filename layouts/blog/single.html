@@ -14,14 +14,20 @@
         {{ partial "blog/share-buttons" . }}
       </div>
     </div>
-    <div>
+    <div class="blog__author-wrapper">
       {{ $author := index .Site.Data.authors (.Params.author | default "default") }}
       {{- if $author -}}
-        <div class="shift-up">
-          About the author: {{ $author.name }}
+        <div class="blog__author-image">
+          <!-- {{ $author.image }} -->
+          <img src="/uploads/profile-picture-placeholder.jpg" alt="">
         </div>
-        <div>
-          {{ $author.about }}
+        <div class="blog__author-content">
+          <div class="blog__author-heading shift-up">
+            About the author | {{ $author.name }}
+          </div>
+          <div class="blog__author-about">
+            {{ $author.about }}
+          </div>
         </div>
       {{ end }}
     </div>
@@ -29,6 +35,5 @@
   </div>
   {{ partial "blog/related-posts" . }}
 </section>
-
 
 {{ end }}
