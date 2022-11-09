@@ -66,20 +66,19 @@ p {
 }
 
 article {
-
-  >ul,
-  >ol {
-    >li+li {
+  > ul,
+  > ol {
+    > li + li {
       margin-top: $ic-100;
     }
   }
 
   * {
-    +h2 {
+    + h2 {
       margin-top: 4rem;
     }
 
-    +h3 {
+    + h3 {
       margin-top: 2rem;
     }
   }

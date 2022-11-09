@@ -36,6 +36,8 @@
   width: 100%;
   list-style-type: none;
 
+  margin-left: auto;
+
   svg {
     height: 35px;
     width: 35px;
@@ -49,6 +51,7 @@
 
   ul {
     padding: 0;
+    width: 90%;
 
     li {
       border-bottom: 1px solid black;

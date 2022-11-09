@@ -12,7 +12,7 @@
 <div class="wrapper-lg flex blog-card-wrapper w-100 w-70-m">
   {{ $pages := .Site.RegularPages }}
   {{ $posts := where $pages "Type" "blog" }}
-  {{ $postCount := len $posts }}
+  <!-- {{ $postCount := len $posts }} -->
   <div class="blog-card__card">
     {{ $paginator := .Paginate ( where .Data.Pages "Type" "blog" ) }}
     {{ range $paginator.Pages }}
@@ -39,7 +39,7 @@
             <div>
               {{ .Page.Title }}</a>
             </div>
-          ({{ .Count }})
+          <!-- ({{ .Count }}) -->
         </li>
       {{ end }}
     </ul>

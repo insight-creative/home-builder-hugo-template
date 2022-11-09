@@ -1,13 +1,27 @@
 {{ define "main" }}
-
+<!-- {{ partial "hero-dark" . }} -->
 <section>
   <div>
-    <div>
-      {{ .Content  }}
-      {{ $author := index .Site.Data.authors (.Params.author | default "default") }}
+    <div class="post-content wrapper">
+      <div class="flow">
+        <h1 class="text-center h2 intro">{{ .Title }}</h1>
+        <div class="intro divider"></div>
+        {{ .Content  }}
+      </div>
       <div>
         {{ partial "blog/share-buttons" . }}
       </div>
+    </div>
+    <div>
+      {{ $author := index .Site.Data.authors (.Params.author | default "default") }}
+      {{- if $author -}}
+        <div class="shift-up">
+          About the author: {{ $author.name }}
+        </div>
+        <div>
+          {{ $author.about }}
+        </div>
+      {{ end }}
     </div>
     {{ partial "blog/post-navigation" . }}
   </div>
