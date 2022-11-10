@@ -4,7 +4,7 @@ seo:
   page_title:
   meta_description: >-
 
-  featured_image:  /uploads/lighted-windows-stone-house-evening.jpg
+  featured_image:  /uploads/luxorious-lighted-house.jpg
   featured_image_alt: 
 date: 2022-10-28
 author: Chue Vang
