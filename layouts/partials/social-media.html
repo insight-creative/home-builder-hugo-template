@@ -3,7 +3,7 @@
     {{ if .link }}
       <li class="social__list-item">
         {{ if eq .title "Email" }}
-          <a href="mailto:{{ .Site.Data.site_settings.email }}" class="social__icon email-icon flex flex-center" target="_blank" rel="noopener noreferrer" title="Email {{ .Site.Data.site_settings.business_name }}">{{ partial "svg-icons/email.svg" . }}</a>
+          <a href="mailto:{{ .Site.Data.site_settings.email }}" class="social__icon email-icon flex flex-center dim" target="_blank" rel="noopener noreferrer" title="Email {{ .Site.Data.site_settings.business_name }}">{{ partial "svg-icons/email.svg" . }}</a>
         {{ else }}
           <a href="{{ .link }}" class="social__icon {{ .title | lower }}-icon flex flex-center dim" target="_blank" rel="noopener noreferrer">
             {{ if eq .title "Facebook" }}

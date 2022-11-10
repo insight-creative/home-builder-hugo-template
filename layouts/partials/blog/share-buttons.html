@@ -2,22 +2,22 @@
     <div class="share-buttons__header w-100 text-center text-primary h3 shift-up">Share This</div>
     <div class="intro divider"></div>
     <ul class="flex flex-row flex-center">
-        <li class="share-buttons__list-items">
+        <li class="share-buttons__list-items dim">
             <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" title="Share on Facebook" target="_blank" class="share-buttons__link">
                 {{ partial "svg-icons/facebook.svg" . }}
             </a>
         </li>
-        <li class="share-buttons__list-items">
+        <li class="share-buttons__list-items dim">
             <a href="https://twitter.com/intent/tweet?source={{ .Permalink }}" target="_blank" title="Tweet" class="share-buttons__link">
                 {{ partial "svg-icons/twitter.svg" . }}
             </a>
         </li>
-        <li class="share-buttons__list-items">
+        <li class="share-buttons__list-items dim">
             <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}" target="_blank" title="Share on LinkedIn" class="share-buttons__link">
                 {{ partial "svg-icons/linkedin.svg" . }}
             </a>
         </li>
-        <li class="share-buttons__list-items">
+        <li class="share-buttons__list-items dim">
             <a href="mailto:?subject=&body={{ .Permalink }}" target="_blank" title="Send email" class="share-buttons__link">
                 {{ partial "svg-icons/email.svg" . }}
             </a>
