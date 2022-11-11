@@ -19,9 +19,7 @@
     {{ .Render "blog-card" }}
     {{ end }}
   </div>
-  <!-- <div class="wrapper-lg">
-    {{ partial "blog/custom-pagination.html" . }}
-  </div> -->
+
   <div class="blog-card--categories__wrapper">
     <p class="blog-card-follow-us shift-up text-center h3">Follow Us on Social</p>
     <div class="blog-card__social-media">
@@ -48,6 +46,9 @@
       {{ end }}
     </ul>
   </div>
+</div>
+<div class="wrapper-lg">
+{{ partial "blog/custom-pagination.html" . }}
 </div>
 
 

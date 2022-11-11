@@ -4,7 +4,7 @@ title = "Custom Home Builder"
 enableRobotsTXT = true
 disableAliases = true
 # post pagination
-paginate = "9"
+paginate = "6"
 summaryLength = 20
 googleAnalytics = " " # Your ID# search 
 
