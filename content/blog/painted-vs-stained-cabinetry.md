@@ -9,8 +9,6 @@ seo:
 date: 2022-11-11
 author: Home Builder
 categories:
-  - Custom Homes
-  - Renovations
   - Design Idea
 ---
 
