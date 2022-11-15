@@ -7,7 +7,7 @@ seo:
   featured_image:  /uploads/kitchen-quartz-countertop.jpg
   featured_image_alt:
 date: 2022-11-11
-author: Home Builder
+author: Jane Doe
 categories:
   - Design Idea
 ---

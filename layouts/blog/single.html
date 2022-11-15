@@ -1,12 +1,14 @@
 {{ define "main" }}
 {{ partial "blog/blog-hero" .}}
+
 <section>
   <div>
     <div class="post-content wrapper">
       <div class="flow">
-        {{ partial "breadcrumbs" . }}
+        <!-- {{ partial "breadcrumbs" . }} -->
         <h1 class="text-center h2 intro">{{ .Title }}</h1>
         <div class="intro divider"></div>
+        {{ partial "breadcrumbs" . }}
         {{ .Content  }}
       </div>
       <div class="blog__share-buttons">
