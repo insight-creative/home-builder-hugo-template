@@ -10,6 +10,7 @@ date: 2022-11-11
 author: Jane Doe
 categories:
   - Design Idea
+  - Renovations
 ---
 
 Should I go with painted or stained cabinetry? This question is asked by EVERY SINGLE one of our homeowners as they’re building their custom home. That’s how we knew it would make a great blog post! There is a lot to consider when evaluating whether to go with painted or stained cabinetry, so we’re going to simplify it a bit by focusing on three main areas: Aesthetic, Cost, Durability/Maintenance.
