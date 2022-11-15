@@ -36,8 +36,16 @@ a,
 
 .categories {
   color: $white;
-  background-image: linear-gradient($accent-color, $accent-color),
-    linear-gradient(270deg, $secondary-color 0%, $secondary-color 100%);
+  // background-image: linear-gradient($accent-color, $accent-color),
+  //   linear-gradient(270deg, $secondary-color 0%, $secondary-color 100%);
+  border: 2px solid $white;
+  padding: 5px;
+
+  &:hover {
+    border-radius: 50px;
+    color: $white;
+    transition: .8s ease;
+  }
 }
 
 .decorated-link {
