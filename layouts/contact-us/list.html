@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ partial "hero" (dict "Page" . "image" .Params.hero.hero_image.image "alt" .Params.hero.hero_image.image_alt "heading" .Params.hero.heading "body" .Params.hero.body ) }}
+{{ partial "hero" . }}
 <div class="wrapper-lg">
   <div class="block">
     <div class="flex flex-column flex-row-m">
@@ -53,7 +53,7 @@
           </div>
         </div>
       </div>
-      <div class="w-100 w-40-m">
+      <div class="w-100 w-40-m ml-9">
         {{ partial "contact-info" . }}
       </div>
     </div>
