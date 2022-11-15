@@ -122,8 +122,14 @@
 
 .blog__title-wrapper {
   position: relative;
+  margin: 0 auto;
   top: 11rem;
-  left: 3rem;
+  // left: 3rem;
   width: 80%;
   z-index: 2;
+}
+
+.blog__title {
+  margin: auto;
+  text-align: center;
 }
