@@ -14,8 +14,11 @@ seo:
 hero:
   enabled: true
   heading: Contact Us
-  body: 
-  image_url: /uploads/kendrick-4.jpg
+  body:
+  button: false
+  button_url:
+  button_text: 
+  image_url: /uploads/modern-kitchen-design.jpg
   image_alt: 
 intro:
   heading: Every Relationship Starts with an Introduction

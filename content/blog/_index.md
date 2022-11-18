@@ -12,9 +12,9 @@ seo:
   featured_image: /uploads/white_house.jpg
   featured_image_alt: 
 hero:
+  enabled: true
   heading: Home Builder Blog
   body: Resources to Help Create the Home You Have Always Envisioned
-  hero_image:
-    image: /uploads/
-    image_alt: 
+  image: /uploads/
+  image_alt: 
 ---

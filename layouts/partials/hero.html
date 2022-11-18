@@ -10,7 +10,10 @@
                 <div class="divider"></div>
                 <p class="text-white">{{ .body }}</p>
                 <div class="text-center">
+                    {{ if .button }}
                     <a href="{{ .button_url }}" class="btn btn-secondary">{{ .button_text }}</a>
+                    {{ else }}
+                    {{ end }}
                 </div>
                 <div class="hero__oval-inner-arrow"></div>
             </div>

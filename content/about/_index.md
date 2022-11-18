@@ -7,26 +7,24 @@ menu:
 seo:
   page_title: Home Builder Demo
   meta_description: 
-  featured_image: /uploads/modern-home-design.jpg
+  featured_image: 
   featured_image_alt:
 hero:
-  heading: >-
-    Luxury Home Builders
-  hero_image:
-    image: 
-    image_alt: 
-  button:
-    enabled: 
-    button_url: /our-team/
-    button_text: Meet our team
+  enabled: true
+  heading: Luxury Home Builders
+  body:
+  image_url: /uploads/modern-home-design.jpg
+  image_alt: 
+  button: false
+  button_url: 
+  button_text: 
 luxury_service: 
   enabled: true
   heading: Your full-service luxury homebuilding firm
   body: >-
     Over the last three decades, we’ve built a strong reputation in Houston for our timeless design, exceptional craftsmanship, and our relentless attention to detail. We’re honored to have built some of the city’s most celebrated and award-winning homes in collaboration with the finest minds in architecture. Exceptional quality and expertise are a given on every Sims project, but there’s more to it than that.
 
-    The construction of your dream home can also be a profoundly emotional undertaking. The investment runs deep on every level. You need a builder who understands
-    and respects that, too.
+    The construction of your dream home can also be a profoundly emotional undertaking. The investment runs deep on every level. You need a builder who understands and respects that, too.
 what_we_do:
   heading: What We Do
   architectural_design:
