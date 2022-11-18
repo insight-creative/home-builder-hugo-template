@@ -44,5 +44,5 @@ contact_us:
   image_alt:
   button: true
   button_text: Contact Us
-  button_url: /contact
+  button_url: /contact-us
 ---

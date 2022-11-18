@@ -1,9 +1,51 @@
 {{ define "main" }}
-{{ partial "breadcrumbs" . }}
-<div class="block">
-    <div class="wrapper">
-        {{ .Title }}
-        {{ .Content }}
+
+{{ with .Params.hero}}
+<section>
+  <div class="wrapper-lg">
+    <div class="hero about-header-wrapper flow flex flex-column">
+      <h1 class="text-primary">{{ .heading }}</h1>
+{{ end }}
+      <div class="about__cover-image">
+        <img src="{{ .Params.seo.featured_image }}" alt="">
+      </div>
     </div>
-</div>
+  </div>
+</section>
+{{ with .Params.luxury_service }}
+
+<section>
+  <div class="wrapper-lg flex w-100 w-70-m about-content flex-column">
+    <div class="about-content-heading">
+      <h2>{{ .heading }}</h2>
+    </div>
+    <div class="about-content-body">
+      <p>{{ .body }}</p>
+    </div>
+  </div>
+  {{ end }}
+</section>
+
+<section>
+  <div>
+    
+  </div>
+</section>
+
+<section aria-label="Law Firm of Conway, Olejniczak & Jerry, S.C." class="wrapper-lg">
+  <div class="block">
+    <div class="flex flex-column flex-row-m">
+      <div class="w-100 w-70-m">
+        <div class="flow">
+          
+        </div>
+      </div>
+      <!-- <aside class="w-100 w-30-m">
+        {{ partial "sidebar-cta" . }}
+      </aside> -->
+    </div>
+  </div>
+</section>
+{{ partialCached "community" . }}
+{{ partial "site-cta" . }}
 {{ end }}

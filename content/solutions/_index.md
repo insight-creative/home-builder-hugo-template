@@ -17,7 +17,7 @@ hero:
 
   sub_body: Are You Ready to Build Your Dream Home?
   button: true
-  button_url: /projects
+  button_url: /contact-us
   button_text: Let's Talk
   image_url: /uploads/fancy_brick_house.jpg
   image_alt:

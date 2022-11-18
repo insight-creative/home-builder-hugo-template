@@ -1,9 +1,5 @@
 ---
 title: Projects
-menu:
-  main:
-    weight: 3
-  company:
 seo:
   page_title:
   meta_description:

@@ -1,9 +1,5 @@
 ---
 title: Resources
-menu:
-  main:
-    weight: 4
-  company:
 seo:
   page_title:
   meta_description:

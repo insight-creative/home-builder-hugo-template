@@ -6,17 +6,17 @@ menu:
   footer:
     weight: 5
 seo:
-  page_title: Every Relationship Starts with an Introduction
+  page_title: Contact Us
   meta_description: >-
-    Call our expert team at (920) 437-0476 to initiate a possible representation and begin the conflict-of-interest analysis process.
-  featured_image: /uploads/law-firm-of-conway-olejniczak-front-exterior.jpg
-  featured_image_alt: Front exterior of the law firm of the Conway Olejniczak, and Jerry S.C. office
+
+  featured_image: /uploads/modern-kitchen-design.jpg
+  featured_image_alt: 
 hero:
+  enabled: true
   heading: Contact Us
-  body:
-  hero_image:
-    image: /uploads/law-firm-of-conway-olejniczak-front-exterior.jpg
-    image_alt: Front exterior of the law firm of the Conway Olejniczak, and Jerry S.C. office
+  body: 
+  image_url: /uploads/kendrick-4.jpg
+  image_alt: 
 intro:
   heading: Every Relationship Starts with an Introduction
   body: >-
