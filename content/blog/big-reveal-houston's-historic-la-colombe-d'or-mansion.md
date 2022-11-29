@@ -4,14 +4,12 @@ seo:
   page_title:
   meta_description: >-
 
-  featured_image:  /uploads/kitchen-quartz-countertop.jpg
+  featured_image:  /uploads/2 Quartz 2.jpg
   featured_image_alt:
 date: 2022-10-28
 author: Home Builder
 categories:
   - Custom Homes
-  - Renovations
-  - Design Idea
 ---
 
 What a joy and honor it was to renovate one of Houston’s most treasured landmarks, the La Colombe d’Or Mansion. Built in 1923 and originally named the Fondren Mansion, this family home turned boutique hotel has been a fixture of Montrose Boulevard for nearly a century. Breathing new life into this historic building took surgical precision, extraordinary collaboration, and a whole lot of hard work and dedication. And we loved every second of it!

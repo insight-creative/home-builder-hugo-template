@@ -1,52 +1,55 @@
 {{ define "main" }}
 {{ with .Params.hero }}
-<div class="wrapper-lg">
-  <div class="hero blog-header-wrapper flow flex flex-column">
-    <h1 class="text-primary">{{ .heading }}</h1>
-    <div class="divider"></div>
-    <p class="text-primary">{{ .body }}</p>
-  </div>
-</div>
-{{ end }}
-
-<div class="wrapper-lg flex blog-card-wrapper w-100 w-70-m">
-  {{ $pages := .Site.RegularPages }}
-  {{ $posts := where $pages "Type" "blog" }}
-  <!-- {{ $postCount := len $posts }} -->
-  <div class="blog-card__card">
-    {{ $paginator := .Paginate ( where .Data.Pages "Type" "blog" ) }}
-    {{ range $paginator.Pages }}
-    {{ .Render "blog-card" }}
-    {{ end }}
-  </div>
-
-  <div class="blog-card--categories__wrapper">
-    <p class="blog-card-follow-us shift-up text-center h3">Follow Us on Social</p>
-    <div class="blog-card__social-media">
-      {{ partial "social-media" . }}
+<main data-pagefind-body>
+  <div class="wrapper-lg">
+    <div class="hero blog-header-wrapper flow flex flex-column">
+      <h1 class="text-primary">{{ .heading }}</h1>
+      <div class="divider"></div>
+      <p class="text-primary">{{ .body }}</p>
     </div>
-    <ul class="blog-card--categories">
-      {{ range .Site.Taxonomies.categories }}
-        <li class="blog-card__category-list flex">
-          <a href="{{ .Page.Permalink }}" class="blog-card__category-link">
-            <div>
-              {{ if eq .Page.Title "Custom Homes"}}{{ partialCached "svg-icons/custom-home.svg" . }}
-              {{ else if eq .Page.Title "Design Idea" }}{{ partialCached "svg-icons/design-idea.svg" . }}
-              {{ else if eq .Page.Title "Renovations" }}{{ partialCached "svg-icons/renovations.svg" . }}
-              {{ else if eq .Page.Title "Guides & Checklists" }}{{ partialCached "svg-icons/check-list.svg" . }}
-              {{ else if eq .Page.Title "Sustainability" }}{{ partialCached "svg-icons/sustainability.svg" . }}
-              {{ else if eq .Page.Title "Building Science" }}{{ partialCached "svg-icons/building-science.svg" . }}
-              {{ end }}
-            </div>
-            <div>
-              {{ .Page.Title }}</a>
-            </div>
-          <!-- ({{ .Count }}) -->
-        </li>
-      {{ end }}
-    </ul>
   </div>
-</div>
+  {{ end }}
+  {{ partial "search-modal" . }}
+  <button class="search__open" aria-label="open search">{{ partialCached "svg-icons/search.svg" . }}</button>
+  <div class="wrapper-lg flex blog-card-wrapper w-100 w-70-m">
+    {{ $pages := .Site.RegularPages }}
+    {{ $posts := where $pages "Type" "blog" }}
+    <!-- {{ $postCount := len $posts }} -->
+    <div class="blog-card__card">
+      {{ $paginator := .Paginate ( where .Data.Pages "Type" "blog" ) }}
+      {{ range $paginator.Pages }}
+      {{ .Render "blog-card" }}
+      {{ end }}
+    </div>
+
+    <div class="blog-card--categories__wrapper">
+      <p class="blog-card-follow-us shift-up text-center h3">Follow Us on Social</p>
+      <div class="blog-card__social-media">
+        {{ partial "social-media" . }}
+      </div>
+      <ul class="blog-card--categories">
+        {{ range .Site.Taxonomies.categories }}
+          <li class="blog-card__category-list flex">
+            <a href="{{ .Page.Permalink }}" class="blog-card__category-link">
+              <div>
+                {{ if eq .Page.Title "Custom Homes"}}{{ partialCached "svg-icons/custom-home.svg" . }}
+                {{ else if eq .Page.Title "Design Idea" }}{{ partialCached "svg-icons/design-idea.svg" . }}
+                {{ else if eq .Page.Title "Renovations" }}{{ partialCached "svg-icons/renovations.svg" . }}
+                {{ else if eq .Page.Title "Guides & Checklists" }}{{ partialCached "svg-icons/check-list.svg" . }}
+                {{ else if eq .Page.Title "Sustainability" }}{{ partialCached "svg-icons/sustainability.svg" . }}
+                {{ else if eq .Page.Title "Building Science" }}{{ partialCached "svg-icons/building-science.svg" . }}
+                {{ end }}
+              </div>
+              <div>
+                {{ .Page.Title }}</a>
+              </div>
+            <!-- ({{ .Count }}) -->
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</main>
 <div class="wrapper-lg">
 {{ partial "blog/custom-pagination.html" . }}
 </div>

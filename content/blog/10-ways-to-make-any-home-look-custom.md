@@ -10,8 +10,6 @@ date: 2022-10-28
 author: Home Builder
 categories:
   - Custom Homes
-  - Renovations
-  - Design Idea
 ---
 
 For most of us, the past year has ushered in a strong desire to update and optimize our living spaces. If you’re hoping to embark on a home renovation in the near future, here are 10 ways to make your home look and feel a bit more “custom.”

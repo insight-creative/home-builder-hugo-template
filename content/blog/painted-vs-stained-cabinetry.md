@@ -4,12 +4,11 @@ seo:
   page_title:
   meta_description: >-
 
-  featured_image:  /uploads/kitchen-quartz-countertop.jpg
+  featured_image:  /uploads/living-room-modern-design.jpg
   featured_image_alt:
 date: 2022-11-11
 author: Jane Doe
 categories:
-  - Design Idea
   - Renovations
 ---
 

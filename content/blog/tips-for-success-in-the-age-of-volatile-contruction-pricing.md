@@ -4,14 +4,12 @@ seo:
   page_title:
   meta_description: >-
 
-  featured_image:  /uploads/kitchen-quartz-countertop.jpg
+  featured_image:  /uploads/spa-wellness-care-design.jpg
   featured_image_alt:
 date: 2022-10-28
 author: Home Builder
 categories:
-  - Custom Homes
-  - Renovations
-  - Design Idea
+  - Building Science
 ---
 
 You’ve probably heard in the news that prices in construction, as in many other industries, are seeing unprecedented inflation and volatility. Recent data from the US Census Bureau showed that construction costs rose by 17.5% year-over-year from 2020 to 2021 – the largest spike in this metric in more than 50 years. Moreover, 2021’s costs were 23.5% higher than 2019’s pre-pandemic costs, showing just how significant the last two years have been in their impact on demand and all layers of material supply chains.

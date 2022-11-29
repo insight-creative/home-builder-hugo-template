@@ -4,14 +4,12 @@ seo:
   page_title:
   meta_description: >-
 
-  featured_image:  /uploads/kitchen-quartz-countertop.jpg
+  featured_image:  /uploads/king-bedroom-renovation.jpg
   featured_image_alt:
 date: 2022-10-28
 author: Home Builder
 categories:
-  - Custom Homes
-  - Renovations
-  - Design Idea
+  - Sustainability
 ---
 
 So, what IS the difference between QUARTZITE and QUARTZ? Don’t feel bad if you’re not sure… the truth is, even some industry experts and design-savvy clients get confused between the two materials! Because we get this question so often when our homeowners begin exploring different material options for their countertops, we thought we’d just write a quick blog article explaining the differences... because there are many!

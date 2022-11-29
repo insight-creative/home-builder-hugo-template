@@ -4,14 +4,12 @@ seo:
   page_title:
   meta_description: >-
 
-  featured_image:  /uploads/kitchen-quartz-countertop.jpg
+  featured_image:  /uploads/home-theater-setup.jpg
   featured_image_alt:
 date: 2022-10-28
 author: Home Builder
 categories:
-  - Custom Homes
   - Renovations
-  - Design Idea
 ---
 
 Now that you’ve gotten through the architectural design process for your custom home, it’s time to dive straight into the pre-construction phase!

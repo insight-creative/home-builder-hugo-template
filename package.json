@@ -17,6 +17,7 @@
   "dependencies": {
     "fslightbox": "^3.3.1",
     "gsap": "^3.6.0",
+    "pagefind": "^0.10.0",
     "postcss-cli": "^8.3.1",
     "redux": "^4.1.0"
   },

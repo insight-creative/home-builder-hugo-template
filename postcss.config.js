@@ -22,6 +22,7 @@ module.exports = {
         'parent-page-resources',
         'parent-page-about',
         'parent-page-lets-talk',
+        'search-open',
       ],
     }),
   ],

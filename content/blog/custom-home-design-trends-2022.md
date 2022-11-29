@@ -4,14 +4,12 @@ seo:
   page_title:
   meta_description: >-
 
-  featured_image:  /uploads/kitchen-quartz-countertop.jpg
+  featured_image:  /uploads/2 Quartz 4.jpg
   featured_image_alt:
 date: 2022-10-28
 author: Home Builder
 categories:
-  - Custom Homes
   - Renovations
-  - Design Idea
 ---
 
 As we settle into a new post-pandemic normal-of-sorts, we’ve certainly gained perspective and wisdom as it relates to our homes. Our homeowners have a deepened understanding of what they want from the spaces in which they wish to live. This intentionality, uniqueness, and creativity is the through line in all of the trends we’re seeing for 2022. From layering bold, saturated colors with unique patterns and textures, to incorporating quiet, mindful spaces and organic shapes and materials, all of these trends encourage self-reflection and celebrate self-expression.

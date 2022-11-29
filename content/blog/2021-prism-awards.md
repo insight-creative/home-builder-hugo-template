@@ -4,13 +4,11 @@ seo:
   page_title:
   meta_description: >-
 
-  featured_image:  /uploads/kitchen-quartz-countertop.jpg
+  featured_image:  /uploads/1 Quartzite 2.jpg
   featured_image_alt:
 date: 2022-10-28
 author: Home Builder
 categories:
-  - Custom Homes
-  - Renovations
   - Design Idea
 ---
 

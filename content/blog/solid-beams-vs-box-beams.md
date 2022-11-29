@@ -4,14 +4,12 @@ seo:
   page_title:
   meta_description: >-
 
-  featured_image:  /uploads/kitchen-quartz-countertop.jpg
+  featured_image:  /uploads/living-room-open-concept.jpg
   featured_image_alt:
 date: 2022-10-28
 author: Home Builder
 categories:
-  - Custom Homes
-  - Renovations
-  - Design Idea
+  - Building Science
 ---
 
 If you plan to build a custom home in the future, there is a good chance you’ll be faced with the decision whether to incorporate solid beams or box beams (aka wrapped beams) into some feature spaces throughout your home. Below are a few points you’ll want to consider when making this decision

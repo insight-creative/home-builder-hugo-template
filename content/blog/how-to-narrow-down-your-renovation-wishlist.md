@@ -4,14 +4,12 @@ seo:
   page_title:
   meta_description: >-
 
-  featured_image:  /uploads/kitchen-quartz-countertop.jpg
+  featured_image:  /uploads/winding-staircase-modern-design.jpg
   featured_image_alt:
 date: 2022-10-28
 author: Home Builder
 categories:
-  - Custom Homes
-  - Renovations
-  - Design Idea
+  - Building Science
 ---
 
 There are few things more exciting in life than making your house truly YOUR HOME. Today’s post is for everyone who’s been dreaming about renovating their house and may even have a miles long list of ideas and wishes. In order to take the next step in your home renovation journey, you’ll need to narrow your wish list down to a well-honed list of realistic must-haves and action items.

@@ -4,14 +4,12 @@ seo:
   page_title:
   meta_description: >-
 
-  featured_image:  /uploads/kitchen-quartz-countertop.jpg
+  featured_image:  /uploads/elegant-kitchen-redesign.jpg
   featured_image_alt:
 date: 2022-10-28
 author: Home Builder
 categories:
   - Custom Homes
-  - Renovations
-  - Design Idea
 ---
 
 It’s springtime! In Houston, there is no mistaking the arrival of Spring… just ask anyone with pollen allergies. Today’s post will share some helpful home maintenance tips that are perfect to tackle during the Spring season.

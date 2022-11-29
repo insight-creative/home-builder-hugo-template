@@ -9,9 +9,7 @@ seo:
 date: 2022-10-28
 author: Home Builder
 categories:
-  - Custom Homes
-  - Renovations
-  - Design Idea
+  - Sustainability
 ---
 
 What an exciting project this recently completed renovation was! First, a little background: Several years ago, we built a custom home for a pair of homeowners who were an absolute joy to work with. They had been settled into their new home for quite some time but hadn’t yet decided what to do with their old home. Then, they called us up and asked us to completely redesign and renovate it for them. And what a transformation it was!!! Everything, from the exterior skin of the home to each inch of interior was updated. A guest suite was even added to the first level of the home.

@@ -4,14 +4,12 @@ seo:
   page_title:
   meta_description: >-
 
-  featured_image:  /uploads/kitchen-quartz-countertop.jpg
+  featured_image:  /uploads/1 Quartzite 4.jpg
   featured_image_alt:
 date: 2022-10-28
 author: Home Builder
 categories:
-  - Custom Homes
   - Renovations
-  - Design Idea
 ---
 
 Over the past 15 years, more and more of our homeowners have sought ways big and small to update their design aesthetic as well as creatively and cohesively integrate traditional, transitional, and modern elements into their custom homes. One design selection that makes a big impact throughout the interior of the home is whether to go with CASED windows or KERFED (aka trimless) windows.
