@@ -71,3 +71,25 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const searchButton = document.querySelector('.search__open');
+const closeButton = document.querySelector('.search__close');
+
+function openSearchModal() {
+  const searchModal = document.querySelector('.search-modal');
+  
+  searchModal.classList.add('search-open');
+  document.documentElement.style.overflow = "hidden";
+  document.body.style.overflow = "hidden";
+}
+
+function closeSearchModal() {
+  const searchModal = document.querySelector('.search-modal');
+
+  searchModal.classList.remove('search-open');
+  document.documentElement.style.overflow = "auto";
+  document.body.style.overflow = "auto";
+}
+
+searchButton.addEventListener('click', openSearchModal);
+closeButton.addEventListener('click', closeSearchModal);

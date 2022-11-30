@@ -92,11 +92,10 @@
           {{ end }}
               <div class="plan-details-body-2">
                 <div class="primary-style-details">
-                  Collections<br />
+                  Primary Style<br />
                   {{ if .Params.Collections }}
                   {{ range $index, $elements := .Params.Collections }}
-                  <a href="{{ `collections/` | relLangURL }}{{ . | urlize | lower }}/" class="categories">{{ if ne $index 0 }}{{ end }} {{ . | title }},</a>
-                  <span class="text-white">,</span>
+                  <a href="{{ `collections/` | relLangURL }}{{ . | urlize | lower }}/" class="categories">{{ if ne $index 0 }}{{ end }} {{ . | title }}</a>
                   {{ end }}
                   {{ end }}
                 </div>
@@ -140,7 +139,7 @@
 </div>
 {{ $related := .Site.RegularPages.RelatedIndices . "collections" | first 3 }}
 {{ with $related }}
-<div class="bg-gray bg-angled">
+<div class="bg-gray bg-angled block">
   <div class="wrapper-lg related-posts text-center flow ">
     <h3 class="fade-up">Related articles</h3>
     <div class="divider intro"></div>

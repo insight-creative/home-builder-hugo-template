@@ -38,6 +38,14 @@ a,
   color: $white;
   // background-image: linear-gradient($accent-color, $accent-color),
   //   linear-gradient(270deg, $secondary-color 0%, $secondary-color 100%);
+}
+
+.categories-list {
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
   border: 2px solid $white;
   padding: 5px;
 
