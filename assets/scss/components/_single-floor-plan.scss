@@ -21,10 +21,6 @@
 .flex-container {
   width: 100%;
 
-  @include breakpoint(md) {
-    // width: 100%;
-  }
-
   @include breakpoint(lg) {
     width: 60%;
   }
@@ -77,12 +73,16 @@
 
 .plan-details-body-1 {
   color: $primary-color;
-  display: flex;
-  flex-wrap: wrap;
+
+  @include breakpoint(sm) {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .plan-details-body-2 {
-  border-left: 2px solid #e9e9e9;
+  border: 1px solid #e9e9e9;
 }
 
 .plan-details-heading {
@@ -92,19 +92,10 @@
 }
 
 .plan-details-details {
-  display: grid;
-  flex: 1;
-  place-items: center;
   text-align: center;
-  border-right: 2px solid #e9e9e9;
-  border-bottom: 2px solid #e9e9e9;
 
-  &:first-child {
-    border-left: 2px solid #e9e9e9;
-  }
-
-  &:last-child {
-    border-right: 0;
+  &:nth-child(n) {
+    border: 1px solid #e9e9e9;
   }
 }
 
