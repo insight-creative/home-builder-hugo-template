@@ -13,7 +13,7 @@ hero:
   image_url: /uploads/fancy_brick_house.jpg
   image_alt:
   button: true
-  button_url: /projects
+  button_url: /floor-plans
   button_text: See Our Work
 intro:
   enabled: true
