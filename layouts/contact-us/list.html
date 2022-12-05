@@ -12,43 +12,7 @@
             <p><small>Fields marked with an * are required</small></p>
             {{ end }}
             <div class="contact-form__wrapper">
-              <form name="contact" method="post" action="/thank-you/">
-                <div class="visually-hidden">
-                  <label for="_subject">New form submission from the lcojlaw.com contact form</label>
-                  <input aria-label="subject" name="_subject" value="New form submission from the lcojlaw.com contact form" />
-                </div>
-                <div class="contact-form__form-group flex-m">
-                    <label for="first_name">First Name*</label>
-                    <input id="first_name" name="first_name" type="text" class="contact-form__form-control" required>
-                </div>
-                <div class="contact-form__form-group flex-m">
-                    <label for="last_name">Last Name*</label>
-                    <input id="last_name" name="last_name" type="text" class="contact-form__form-control" required>
-                </div>
-                <div class="contact-form__form-group flex-m">
-                    <label for="company">Company</label>
-                    <input id="company" name="company" type="text" class="contact-form__form-control">
-                </div>
-                <div class="contact-form__form-group flex-m">
-                    <label for="email">Email*</label>
-                    <input id="email" name="email" type="email" class="contact-form__form-control" required>
-                </div>
-                <div class="contact-form__form-group flex-m">
-                    <label for="phone">Phone*</label>
-                    <input id="phone" name="phone" type="tel" class="contact-form__form-control" required>
-                </div>
-                <div class="contact-form__form-group flex-m">
-                    <label for="message">Message*</label>
-                    <textarea id="message" name="message" class="contact-form__form-control" rows="4" required></textarea>
-                </div>
-                <div class="contact-form__form-group">
-                  <input type="hidden" name="inbox_key" value="lcoj-form-inbox">
-                  <input type="text" name="_gotcha" style="display: none;">
-                  <div class="h-captcha" data-sitekey="aaa2bfed-3e83-444e-bb4f-cf3d4924f728"></div>
-                  <br>
-                  <button type="submit" class="contact-form__btn btn btn-primary">Send Message</button>
-                </div>
-              </form>
+              {{ partial "forms/contact-form" . }}
             </div>
           </div>
         </div>
