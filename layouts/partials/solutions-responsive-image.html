@@ -7,5 +7,5 @@
 
     <source sizes="(min-width: 993px) 100vw, 50vw" srcset="https://home-builder.imgix.net{{ .image_url }}?fm=jpg&q=75&width=325&height=250 400w, https://home-builder.imgix.net{{ .image_url }}?fm=jpg&q=75&width=600&height=450 600w, https://home-builder.imgix.net{{ .image_url }}?fm=jpg&q=75&width=800&height=525 800w" type="image/jpg">
 
-    <img src="{{ .image_url }}" width="600" height="450" class="solutions-img box_outline ml-4 ml-0-xl">   
+    <img src="{{ .image_url }}" width="600" height="450" class="solutions-img box_outline ml-4 ml-0-xl" alt="{{ .image_alt }}">   
 </picture>

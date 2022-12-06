@@ -4,7 +4,7 @@ seo:
   page_title:
   meta_description:
   featured_image: /uploads/feature-project-5.jpg
-  featured_image_alt:
+  featured_image_alt: text 5
 recent_projects:
   enabled: true
   heading: 

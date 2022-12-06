@@ -62,7 +62,7 @@
                     {{ range where (where .Site.RegularPages "Section" "projects" ) "Params.featured" "=" true }}
                         <div class="featured">
                             <div class="cover-image">
-                                <a href="{{ .Permalink }}"><img src="{{ .Params.seo.featured_image }}"></a>
+                                <a href="{{ .Permalink }}"><img src="{{ .Params.seo.featured_image }}" alt="{{ .Params.seo.featured_image_alt }}"></a>
                             </div>
                             <div class="featured__body">
                                 <h3 class="text-eggshell pt-1">{{ .Title }}</h3>
