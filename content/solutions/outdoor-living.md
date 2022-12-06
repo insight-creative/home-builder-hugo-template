@@ -16,7 +16,7 @@ hero:
   button_url: /projects
   button_text: Let's Talk
   image_url: /uploads/fancy_brick_house.jpg
-  image_alt:
+  image_alt: Random alt text
 outdoor:
   enabled: true
   heading: Outdoor Living Solutions

@@ -37,7 +37,7 @@ interior:
   body: >-
     When it comes to your home, the beauty is built in. Services provided by our on-staff interior designer are included with your project! There are many decisions to be made throughout the building process. Get a professional opinion from someone with a trained eye at every turn.
   image_url: /uploads/white_house.jpg
-  image_alt:
+  image_alt: Random alt text
   button: true
   button_text: Interior Design
 outdoor:

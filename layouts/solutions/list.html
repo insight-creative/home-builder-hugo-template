@@ -4,7 +4,7 @@
 {{ with .Params.custom }}
 <div class="flex-center wrapper-lg flex flex-column flex-row-m w-100 mt-5 mb-5">
   <div class="custom-solutions-image w-100 w-50-m">
-    <img src="{{ .image_url }}" class="solutions-img box_outline ml-4">
+    <img src="{{ .image_url }}" class="solutions-img box_outline ml-4" alt="{{ .featured_image_alt}}">
   </div>
   <div class="custom-solutions-content w-100 w-50-m flow">
     <h2>{{ .heading }}</h2>
@@ -23,7 +23,7 @@
 {{ with .Params.interior}}
 <div class="flex-center wrapper-lg flex flex-column flex-row-reverse-m w-100 mt-5 mb-5">
   <div class="interior-solutions-image w-100 w-50-m">
-    <img src="{{ .image_url }}" class="solutions-img box_outline ml-4">
+    <img src="{{ .image_url }}" class="solutions-img box_outline ml-4" alt="{{ .image_alt }}">
   </div>
   <div class="interior-solutions-content w-100 w-50-m flow">
     <h2>{{ .heading }}</h2>
@@ -42,7 +42,7 @@
 {{ with .Params.outdoor }}
 <div class="flex-center wrapper-lg flex flex-row-m flex-column w-100 mt-5 mb-5">
   <div class="outdoor-solutions-image w-100 w-50-m">
-    <img src="{{ .image_url }}" class="solutions-img box_outline ml-4">
+    <img src="{{ .image_url }}" class="solutions-img box_outline ml-4" alt="{{ .image_alt }}">
   </div>
   <div class="outdoor-solutions-content w-100 w-50-m flow">
     <h2>{{ .heading }}</h2>
@@ -61,7 +61,7 @@
 {{ with .Params.licensed }}
 <div class="flex-center wrapper-lg flex flex-row-reverse-m flex-column flex-row-m w-100 mt-5 mb-5">
   <div class="licensed-solutions-image w-100 w-50-m">
-    <img src="{{ .image_url }}" class="solutions-img box_outline ml-4">
+    <img src="{{ .image_url }}" class="solutions-img box_outline ml-4" alt="{{ .image_alt }}">
   </div>
   <div class="licensed-solutions-content w-100 w-50-m flow">
     <h2>{{ .heading }}</h2>
@@ -80,7 +80,7 @@
 {{ with .Params.remodeling }}
 <div class="flex-center wrapper-lg flex flex-column flex-row-m w-100 mt-5 mb-5">
   <div class="licensed-solutions-image w-100 w-50-m">
-    <img src="{{ .image_url }}" class="solutions-img box_outline ml-4">
+    <img src="{{ .image_url }}" class="solutions-img box_outline ml-4" alt="{{ .image_alt }}">
   </div>
   <div class="licensed-solutions-content w-100 w-50-m flow">
     <h2>{{ .heading }}</h2>
