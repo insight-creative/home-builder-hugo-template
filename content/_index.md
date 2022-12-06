@@ -11,7 +11,7 @@ hero:
   body: >-
     Our team transforms your ideas into the custom home of your dreams.
   image_url: /uploads/fancy_brick_house.jpg
-  image_alt:
+  image_alt: Alt text
   button: true
   button_url: /floor-plans
   button_text: See Our Work

@@ -4,7 +4,7 @@ seo:
   page_title:
   meta_description:
   featured_image: /uploads/
-  featured_image_alt:
+  featured_image_alt: 
 hero:
   enabled: false
   heading:
