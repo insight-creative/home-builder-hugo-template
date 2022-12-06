@@ -5,6 +5,8 @@ console.log("%c Crafted by Insight Creative, Inc. Designed and Developed by Just
 const siteHeader = document.querySelector(".site-header")
 const mobileMenu = document.querySelector('.site-header__mobile-nav')
 const hamburger = document.querySelector('.hamburger')
+const searchButton = document.querySelector('.search__open');
+const closeButton = document.querySelector('.search__close');
 
 hamburger.addEventListener('click', toggleMobileMenu)
 
@@ -72,9 +74,6 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-const searchButton = document.querySelector('.search__open');
-const closeButton = document.querySelector('.search__close');
-
 function openSearchModal() {
   const searchModal = document.querySelector('.search-modal');
   
@@ -91,5 +90,10 @@ function closeSearchModal() {
   document.body.style.overflow = "auto";
 }
 
-searchButton.addEventListener('click', openSearchModal);
-closeButton.addEventListener('click', closeSearchModal);
+if (document.body.contains(searchButton)) {
+  searchButton.addEventListener('click', openSearchModal);
+}
+
+if (document.body.contains(closeButton)) {
+  closeButton.addEventListener('click', closeSearchModal);
+}

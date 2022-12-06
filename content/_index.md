@@ -2,7 +2,7 @@
 title:
 seo:
   page_title:
-  meta_description:
+  meta_description: Your trusted home builder
   featured_image: /uploads/
   featured_image_alt:
 hero:
