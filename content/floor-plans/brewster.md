@@ -4,7 +4,7 @@ seo:
   page_title:
   meta_description:
   featured_image: /uploads/brewster-1.jpg
-  featured_image_alt:
+  featured_image_alt: random text
 plan_details:
   id: 32525
   sqft: 2814

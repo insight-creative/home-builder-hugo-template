@@ -4,7 +4,7 @@ seo:
   page_title:
   meta_description:
   featured_image: /uploads/aurora-1.jpg
-  featured_image_alt:
+  featured_image_alt: random text
 plan_details:
   id: 57029
   sqft: 7419

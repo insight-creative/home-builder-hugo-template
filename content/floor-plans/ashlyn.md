@@ -4,7 +4,7 @@ seo:
   page_title:
   meta_description:
   featured_image: /uploads/ashlyn-1.jpg
-  featured_image_alt:
+  featured_image_alt: random text
 plan_details:
   id: 35737
   sqft: 3390
