@@ -43,7 +43,7 @@
                         <div class="grid-4 mt-4">
                             {{ range .card }}
                             <div class="card bg-primary text-white text-center flow inner-box">
-                                <img src="{{ .icon }}" class="card__img">
+                                <img src="{{ .icon }}" class="card__img" alt="{{ .image_alt }}">
                                 <h3 class="text-eggshell">{{ .sub_heading }}</h3>
                                 <p class="card__p">{{ .body }}</p>
                             </div>

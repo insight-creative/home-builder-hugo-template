@@ -35,15 +35,19 @@ our_process:
   heading: Our Process
   card:
     - icon: /uploads/pencil-alt.svg
+      image_alt: alt text
       sub_heading: Consult
       body: We come to understand your personal needs, identify your style, and establish project requirements.
     - icon: /uploads/pencil-ruler.svg
+      image_alt: alt text
       sub_heading: Design
       body: Architects develop and submit a preliminary design concept based on your desired floorplan and budget.
     - icon: /uploads/hammer-alt.svg
+      image_alt: alt text
       sub_heading: Build
       body: Our expert builders bring your home to life with the finest quality materials and unparalleled craftsmanship.
     - icon: /uploads/house.svg
+      image_alt: alt text
       sub_heading: Reveal
       body: Upon completion, we perform a quality assurance walkthrough and hand over the keys to your new home.
 recent_projects:
