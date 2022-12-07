@@ -1,11 +1,10 @@
 ---
 title: Unveiling Our Cedar Shake Transitional Home
 seo:
-  page_title:
-  meta_description: >-
-
+  page_title: Unveiling Our Cedar Shake Transitional Home
+  meta_description: Unveiling Our Cedar Shake Transitional Home
   featured_image:  /uploads/outdoor-pool-with-sun-room.jpg
-  featured_image_alt:
+  featured_image_alt: jibberish
 date: 2022-10-28
 author: Home Builder
 categories:

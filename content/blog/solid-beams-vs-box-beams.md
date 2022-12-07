@@ -1,11 +1,10 @@
 ---
 title: Solid Beams vs. Box Beams
 seo:
-  page_title:
-  meta_description: >-
-
+  page_title: Solid Beams vs. Box Beams
+  meta_description: Solid Beams vs. Box Beams
   featured_image:  /uploads/living-room-open-concept.jpg
-  featured_image_alt:
+  featured_image_alt: jibberish
 date: 2022-10-28
 author: Home Builder
 categories:

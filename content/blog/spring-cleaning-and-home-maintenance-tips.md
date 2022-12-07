@@ -1,11 +1,10 @@
 ---
 title: Spring Cleaning and Home Maintenance Tips
 seo:
-  page_title:
-  meta_description: >-
-
+  page_title: Spring Cleaning and Home Maintenance Tips
+  meta_description: Spring Cleaning and Home Maintenance Tips
   featured_image:  /uploads/elegant-kitchen-redesign.jpg
-  featured_image_alt:
+  featured_image_alt: jibberish
 date: 2022-10-28
 author: Home Builder
 categories:

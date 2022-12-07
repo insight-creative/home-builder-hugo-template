@@ -1,11 +1,10 @@
 ---
 title: Big Reveal - Houston's Historic La Colombe D'Or Mansion
 seo:
-  page_title:
-  meta_description: >-
-
+  page_title: Big Reveal - Houston's Historic La Colombe D'Or Mansion
+  meta_description: Big Reveal - Houston's Historic La Colombe D'Or Mansion
   featured_image:  /uploads/2 Quartz 2.jpg
-  featured_image_alt:
+  featured_image_alt: jibberish
 date: 2022-10-28
 author: Home Builder
 categories:

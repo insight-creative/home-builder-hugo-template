@@ -1,11 +1,10 @@
 ---
 title: Making the Most of Your Plumbing Showroom Visit
 seo:
-  page_title:
-  meta_description: >-
-
+  page_title: Making the Most of Your Plumbing Showroom Visit
+  meta_description: Making the Most of Your Plumbing Showroom Visit
   featured_image:  /uploads/luxurious-bathroom-design.jpg
-  featured_image_alt:
+  featured_image_alt: jibberish
 date: 2022-10-28
 author: Home Builder
 categories:

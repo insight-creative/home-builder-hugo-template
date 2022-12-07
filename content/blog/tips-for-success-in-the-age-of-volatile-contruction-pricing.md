@@ -1,11 +1,10 @@
 ---
 title: Tips for Success in the Age of Volatile Construction Pricing
 seo:
-  page_title:
-  meta_description: >-
-
+  page_title: Tips for Success in the Age of Volatile Construction Pricing
+  meta_description: Tips for Success in the Age of Volatile Construction Pricing
   featured_image:  /uploads/spa-wellness-care-design.jpg
-  featured_image_alt:
+  featured_image_alt: jibberish
 date: 2022-10-28
 author: Home Builder
 categories:

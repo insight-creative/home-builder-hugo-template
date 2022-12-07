@@ -1,11 +1,10 @@
 ---
 title: 2021 Prism Awards
 seo:
-  page_title:
-  meta_description: >-
-
+  page_title: 2021 Prism Awards
+  meta_description: 2021 Prism Awards
   featured_image:  /uploads/1 Quartzite 2.jpg
-  featured_image_alt:
+  featured_image_alt: jibberish
 date: 2022-10-28
 author: Home Builder
 categories:

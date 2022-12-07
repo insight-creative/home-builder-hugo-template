@@ -1,11 +1,10 @@
 ---
 title: Quartzite vs. Quartz
 seo:
-  page_title:
-  meta_description: >-
-
+  page_title: Quartzite vs. Quartz
+  meta_description: Quartzite vs. Quartz
   featured_image:  /uploads/king-bedroom-renovation.jpg
-  featured_image_alt:
+  featured_image_alt: jibberish
 date: 2022-10-28
 author: Home Builder
 categories:

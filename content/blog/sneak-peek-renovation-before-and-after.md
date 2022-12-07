@@ -1,11 +1,10 @@
 ---
 title: Sneak Peek - Renovation Before & After
 seo:
-  page_title:
-  meta_description: >-
-
+  page_title: Sneak Peek - Renovation Before & After
+  meta_description: Sneak Peek - Renovation Before & After
   featured_image:  /uploads/kitchen-quartz-countertop.jpg
-  featured_image_alt:
+  featured_image_alt: jibberish
 date: 2022-10-28
 author: Home Builder
 categories:

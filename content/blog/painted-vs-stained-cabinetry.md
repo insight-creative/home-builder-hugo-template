@@ -1,11 +1,10 @@
 ---
 title: Painted vs. Stained Cabinetry
 seo:
-  page_title:
-  meta_description: >-
-
+  page_title: Painted vs. Stained Cabinetry
+  meta_description: Painted vs. Stained Cabinetry
   featured_image:  /uploads/living-room-modern-design.jpg
-  featured_image_alt:
+  featured_image_alt: jibberish
 date: 2022-11-11
 author: Jane Doe
 categories:

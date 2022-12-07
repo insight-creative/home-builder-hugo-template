@@ -1,11 +1,10 @@
 ---
 title: 10 Ways to Make Any Home Look Custom
 seo:
-  page_title:
-  meta_description: >-
-
+  page_title: 10 Ways to Make Any Home Look Custom
+  meta_description: 10 Ways to Make Any Home Look Custom
   featured_image:  /uploads/kitchen-quartz-countertop.jpg
-  featured_image_alt:
+  featured_image_alt: jibberish
 date: 2022-10-28
 author: Home Builder
 categories:

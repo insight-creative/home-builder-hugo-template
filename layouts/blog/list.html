@@ -14,14 +14,12 @@
   <div class="wrapper-lg flex blog-card-wrapper w-100 w-70-m">
     {{ $pages := .Site.RegularPages }}
     {{ $posts := where $pages "Type" "blog" }}
-    <!-- {{ $postCount := len $posts }} -->
     <div class="blog-card__card">
       {{ $paginator := .Paginate ( where .Data.Pages "Type" "blog" ) }}
       {{ range $paginator.Pages }}
       {{ .Render "blog-card" }}
       {{ end }}
     </div>
-
     <div class="blog-card--categories__wrapper">
       <p class="blog-card-follow-us shift-up text-center h3">Follow Us on Social</p>
       <div class="blog-card__social-media">
@@ -43,7 +41,6 @@
               <div>
                 {{ .Page.Title }}</a>
               </div>
-            <!-- ({{ .Count }}) -->
           </li>
         {{ end }}
       </ul>
@@ -53,8 +50,5 @@
 <div class="wrapper-lg">
 {{ partial "blog/custom-pagination.html" . }}
 </div>
-
-
-
 {{ partial "site-cta" . }}
 {{ end }}

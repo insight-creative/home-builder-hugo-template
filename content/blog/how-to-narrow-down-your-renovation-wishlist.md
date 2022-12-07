@@ -1,11 +1,10 @@
 ---
 title: How to Narrow Down Your Renovation Wishlist
 seo:
-  page_title:
-  meta_description: >-
-
+  page_title: How to Narrow Down Your Renovation Wishlist
+  meta_description: How to Narrow Down Your Renovation Wishlist
   featured_image:  /uploads/winding-staircase-modern-design.jpg
-  featured_image_alt:
+  featured_image_alt: jibberish
 date: 2022-10-28
 author: Home Builder
 categories:

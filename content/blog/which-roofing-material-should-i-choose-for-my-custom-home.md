@@ -1,11 +1,10 @@
 ---
 title: The Right Way to Install Stucco
 seo:
-  page_title:
-  meta_description: >-
-
+  page_title: The Right Way to Install Stucco
+  meta_description: The Right Way to Install Stucco
   featured_image:  /uploads/drone-view-overhead-home.jpg
-  featured_image_alt:
+  featured_image_alt: jibberish
 date: 2022-10-28
 author: Home Builder
 categories:

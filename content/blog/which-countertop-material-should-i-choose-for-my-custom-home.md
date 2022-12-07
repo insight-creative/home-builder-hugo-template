@@ -1,11 +1,10 @@
 ---
 title: Which Countertop Material Should I Choose for My Custom Home?
 seo:
-  page_title:
-  meta_description: >-
-
+  page_title: Which Countertop Material Should I Choose for My Custom Home?
+  meta_description: Which Countertop Material Should I Choose for My Custom Home?
   featured_image:  /uploads/kitchen-quartz-countertop.jpg
-  featured_image_alt:
+  featured_image_alt: jibberish
 date: 2022-10-28
 author: Home Builder
 categories:

@@ -1,11 +1,10 @@
 ---
 title: Cased vs. Kerfed (Trimless) Windows
 seo:
-  page_title:
-  meta_description: >-
-
+  page_title: Cased vs. Kerfed (Trimless) Windows
+  meta_description: Cased vs. Kerfed (Trimless) Windows
   featured_image:  /uploads/1 Quartzite 4.jpg
-  featured_image_alt:
+  featured_image_alt: jibberish
 date: 2022-10-28
 author: Home Builder
 categories:

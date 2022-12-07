@@ -1,11 +1,10 @@
 ---
 title: How Do I Know If My Builder's Budget Is Thorough And Accurate?
 seo:
-  page_title:
-  meta_description: >-
-
+  page_title: How Do I Know If My Builder's Budget Is Thorough And Accurate?
+  meta_description: How Do I Know If My Builder's Budget Is Thorough And Accurate?
   featured_image:  /uploads/luxury-modern-bedroom-interior.jpg
-  featured_image_alt: 
+  featured_image_alt: jibberish
 date: 2022-10-28
 author: Chue Vang
 categories:

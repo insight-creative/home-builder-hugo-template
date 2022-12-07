@@ -1,11 +1,10 @@
 ---
 title: What Should My Builder Be Doing During the Pre-Construction Phase?
 seo:
-  page_title:
-  meta_description: >-
-
+  page_title: What Should My Builder Be Doing During the Pre-Construction Phase?
+  meta_description: What Should My Builder Be Doing During the Pre-Construction Phase?
   featured_image:  /uploads/home-theater-setup.jpg
-  featured_image_alt:
+  featured_image_alt: jibberish
 date: 2022-10-28
 author: Home Builder
 categories:
