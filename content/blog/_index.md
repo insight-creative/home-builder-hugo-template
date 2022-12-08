@@ -10,7 +10,7 @@ seo:
   meta_description: >-
     Resources to Help Create the Home You Have Always Envisioned
   featured_image: /uploads/white_house.jpg
-  featured_image_alt: 
+  featured_image_alt: White house
 hero:
   enabled: true
   heading: Home Builder Blog
