@@ -28,7 +28,7 @@
       <ul class="blog-card--categories">
         {{ range .Site.Taxonomies.categories }}
           <li class="blog-card__category-list flex">
-            <a href="{{ .Page.Permalink }}" class="blog-card__category-link"></a>
+            <a href="{{ .Page.Permalink }}" class="blog-card__category-link">
             <div>
               {{ if eq .Page.Title "Custom Homes"}}{{ partialCached "svg-icons/custom-home.svg" . }}
               {{ else if eq .Page.Title "Design Idea" }}{{ partialCached "svg-icons/design-idea.svg" . }}
@@ -41,6 +41,7 @@
             <div>
               {{ .Page.Title }}
             </div>
+          </a>
           </li>
         {{ end }}
       </ul>
