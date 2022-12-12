@@ -2,7 +2,7 @@
 title: Wills Point
 seo:
   page_title:
-  meta_description:
+  meta_description: Check the Available Homes for new homes for sale. Constructed with quality craftmanship and materials in Green Bay, Wisconsin.
   featured_image: /uploads/wills-point-1.jpg
   featured_image_alt: random text
 plan_details:
