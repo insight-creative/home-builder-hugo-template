@@ -2,8 +2,14 @@
 	<a href="{{ .Permalink }}" class="blog-card__link">
 		<div class="cover-image blog-card__img">
 			<picture>
-				<img loading="lazy" src="{{ .Params.seo.featured_image }}" alt="{{ .Params.seo.featured_image_alt}} ">
-			</picture>
+				<source sizes="(min-width: 993px) 100vw, 50vw" srcset="https://home-builder.imgix.net{{ .Params.seo.featured_image }}?fm=avif&q=75&width=600&height=450 600w" type="image/avif">
+		
+				<source sizes="(min-width: 993px) 100vw, 50vw" srcset="https://home-builder.imgix.net{{ .Params.seo.featured_image }}?fm=webp&q=75&width=600&height=450 600w" type="image/webp">
+		
+				<source sizes="(min-width: 993px) 100vw, 50vw" srcset="https://home-builder.imgix.net{{ .Params.seo.featured_image }}?fm=jpg&q=75&width=600&height=450 600w" type="image/jpg">
+		
+				<img src="{{ .Params.seo.featured_image }}" width="600" height="450" alt="{{ .Params.seo.featured_image_alt }}">   
+		</picture>
 		</div>
 		<div class="blog-card__content flow flex flex-column flex-justify-between p-1">
 			<div>

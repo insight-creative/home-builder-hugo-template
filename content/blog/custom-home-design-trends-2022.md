@@ -3,7 +3,7 @@ title: Custom Home Design Trends 2022
 seo:
   page_title: Custom Home Design Trends 2022
   meta_description: Custom Home Design Trends 2022
-  featured_image:  /uploads/2 Quartz 4.jpg
+  featured_image:  /uploads/2-Quartz-4.jpg
   featured_image_alt: jibberish
 date: 2022-10-28
 author: Home Builder

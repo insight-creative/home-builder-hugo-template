@@ -3,7 +3,7 @@ title: Gas vs Wood Burning Fireplaces
 seo:
   page_title: Gas vs Wood Burning Fireplaces
   meta_description: Gas vs Wood Burning Fireplaces
-  featured_image:  /uploads/1 Quartzite 3.jpg
+  featured_image:  /uploads/1-Quartzite-3.jpg
   featured_image_alt: jibberish
 date: 2022-10-28
 author: Home Builder
