@@ -6,7 +6,7 @@ menu:
   company:
 seo:
   page_title: Home Builder Demo
-  meta_description: 
+  meta_description: The construction of your dream home can also be a profoundly emotional undertaking. The investment runs deep on every level. You need a builder who understands and respects that, too.
   featured_image: 
   featured_image_alt:
 hero:
@@ -14,7 +14,7 @@ hero:
   heading: Luxury Home Builders
   body:
   image_url: /uploads/modern-home-design.jpg
-  image_alt: 
+  image_alt: Test
   button: false
   button_url: 
   button_text: 

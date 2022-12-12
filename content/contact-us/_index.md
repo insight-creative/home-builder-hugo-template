@@ -7,10 +7,9 @@ menu:
     weight: 5
 seo:
   page_title: Contact Us
-  meta_description: >-
-
+  meta_description: Need to get ahold of a Matthews Tire mechanic? Fill out the form below or give us a call at one of our locations in Northeast Wisconsin!
   featured_image: /uploads/modern-kitchen-design.jpg
-  featured_image_alt: 
+  featured_image_alt: Test
 hero:
   enabled: true
   heading: Contact Us

@@ -1,6 +1,5 @@
 {{ define "main"}}
 {{ partial "solutions-hero" . }}
-
 {{ if .Params.custom.enabled }}
 {{ with .Params.custom }}
 <div class="flex-center wrapper-lg flex flex-column flex-row-m w-100 mt-5 mb-5">
@@ -15,13 +14,20 @@
 </div>
 {{ end }}
 {{ end }}
-
-
 {{ if .Params.interior.enabled}}
 {{ with .Params.interior}}
 <div class="flex-center wrapper-lg flex flex-column flex-row-m w-100 mt-5 mb-5">
   <div class="interior-solutions-image w-100 w-50-m">
-    <img src="{{ .image_url }}" class="solutions-img box_outline ml-4">
+    <!-- <img src="{{ .image_url }}" class="solutions-img box_outline ml-4"> -->
+    <picture>
+      <source sizes="(min-width: 993px) 100vw, 50vw" srcset="https://home-builder.imgix.net{{ .image_url }}?fm=avif&q=75&width=600&height=450 600w" type="image/avif">
+  
+      <source sizes="(min-width: 993px) 100vw, 50vw" srcset="https://home-builder.imgix.net{{ .image_url }}?fm=webp&q=75&width=600&height=450 600w" type="image/webp">
+  
+      <source sizes="(min-width: 993px) 100vw, 50vw" srcset="https://home-builder.imgix.net{{ .image_url }}?fm=jpg&q=75&width=600&height=450 600w" type="image/jpg">
+  
+      <img src="{{ .image_url }}" width="600" height="450" alt="{{ .image_alt }}">   
+  </picture>
   </div>
   <div class="interior-solutions-content w-100 w-50-m flow">
     <h2>{{ .heading }}</h2>
@@ -31,7 +37,6 @@
 </div>
 {{ end }}
 {{ end }}
-
 {{ if .Params.outdoor.enabled}}
 {{ with .Params.outdoor }}
 <div class="flex-center wrapper-lg flex flex-row-m flex-column w-100 mt-5 mb-5">
@@ -46,7 +51,6 @@
 </div>
 {{ end }}
 {{ end }}
-
 {{ if .Params.licensed.enabled}}
 {{ with .Params.licensed }}
 <div class="flex-center wrapper-lg flex flex-row-m flex-column flex-row-m w-100 mt-5 mb-5">
@@ -61,7 +65,6 @@
 </div>
 {{ end }}
 {{ end }}
-
 {{ if .Params.remodeling.enabled }}
 {{ with .Params.remodeling }}
 <div class="flex-center wrapper-lg flex flex-column flex-row-m w-100 mt-5 mb-5">
@@ -76,7 +79,5 @@
 </div>
 {{ end }}
 {{ end }}
-
-
 {{ partial "site-cta" . }}
 {{ end }}
