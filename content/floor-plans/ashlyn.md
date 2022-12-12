@@ -14,17 +14,17 @@ plan_details:
   garage: 2 Car
   images:
     - image:
-        image_url: /uploads/ashlyn-1.jpg
-        image_alt: random alt text
+      image_url: /uploads/ashlyn-1.jpg
+      image_alt: random alt text
     - image:
-        image_url: /uploads/ashlyn-2.jpg
-        image_alt: random alt text
+      image_url: /uploads/ashlyn-2.jpg
+      image_alt: random alt text
     - image:
-        image_url: /uploads/ashlyn-3.jpg
-        image_alt: random alt text
+      image_url: /uploads/ashlyn-3.jpg
+      image_alt: random alt text
     - image:
-        image_url: /uploads/ashlyn-4.jpg
-        image_alt: random alt text
+      image_url: /uploads/ashlyn-4.jpg
+      image_alt: random alt text
 plan_description:
   sub_heading: Plan Description
   sub_body: >-

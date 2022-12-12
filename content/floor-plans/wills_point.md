@@ -13,11 +13,21 @@ plan_details:
   floors: 2
   garage: 3 Car
   images:
-    - images_url: /uploads/wills-point-1.jpg
-    - images_url: /uploads/wills-point-2.jpg
-    - images_url: /uploads/wills-point-3.jpg
-    - images_url: /uploads/wills-point-4.jpg
-    - images_url: /uploads/wills-point-5.jpg
+    - image:
+      image_url: /uploads/wills-point-1.jpg
+      image_alt: random alt text
+    - image:
+      image_url: /uploads/wills-point-2.jpg
+      image_alt: random alt text
+    - image:
+      image_url: /uploads/wills-point-3.jpg
+      image_alt: random alt text
+    - image:
+      image_url: /uploads/wills-point-4.jpg
+      image_alt: random alt text
+    - image:
+      image_url: /uploads/wills-point-5.jpg
+      image_alt: random alt text
   plan_description:
   sub_heading: Plan Description
   sub_body: >-

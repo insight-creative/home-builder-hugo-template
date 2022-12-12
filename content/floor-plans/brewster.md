@@ -13,12 +13,24 @@ plan_details:
   floors: 2
   garage: 1 Car
   images:
-    - image_url: /uploads/brewster-1.jpg
-    - image_url: /uploads/brewster-2.jpg
-    - image_url: /uploads/brewster-3.jpg
-    - image_url: /uploads/brewster-4.jpg
-    - image_url: /uploads/brewster-5.jpg
-    - image_url: /uploads/brewster-6.jpg
+    - image: 
+      image_url: /uploads/brewster-1.jpg
+      image_alt: random alt text
+    - image: 
+      image_url: /uploads/brewster-2.jpg
+      image_alt: random alt text
+    - image: 
+      image_url: /uploads/brewster-3.jpg
+      image_alt: random alt text
+    - image: 
+      image_url: /uploads/brewster-4.jpg
+      image_alt: random alt text
+    - image: 
+      image_url: /uploads/brewster-5.jpg
+      image_alt: random alt text
+    - image: 
+      image_url: /uploads/brewster-6.jpg
+      image_alt: random alt text
   plan_description:
   sub_heading: Plan Description
   sub_body: >-

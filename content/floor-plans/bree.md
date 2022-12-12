@@ -13,12 +13,24 @@ plan_details:
   floors: 1
   garage: 3 Car
   images:
-    - image_url: /uploads/bree-1.jpg
-    - image_url: /uploads/bree-2.jpg
-    - image_url: /uploads/bree-3.jpg
-    - image_url: /uploads/bree-4.jpg
-    - image_url: /uploads/bree-5.jpg
-    - image_url: /uploads/bree-6.jpg
+    - image:
+      image_url: /uploads/bree-1.jpg
+      image_alt: random alt text
+    - image:
+      image_url: /uploads/bree-2.jpg
+      image_alt: random alt text
+    - image:
+      image_url: /uploads/bree-3.jpg
+      image_alt: random alt text
+    - image:
+      image_url: /uploads/bree-4.jpg
+      image_alt: random alt text
+    - image:
+      image_url: /uploads/bree-5.jpg
+      image_alt: random alt text
+    - image:
+      image_url: /uploads/bree-6.jpg
+      image_alt: random alt text
   plan_description:
   sub_heading: Plan Description
   sub_body: >-

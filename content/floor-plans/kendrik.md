@@ -13,10 +13,18 @@ plan_details:
   floors: 1
   garage: 2 Car
   images:
-    - image_url: /uploads/kendrick-1.jpg
-    - image_url: /uploads/kendrick-2.jpg
-    - image_url: /uploads/kendrick-3.jpg
-    - image_url: /uploads/kendrick-4.jpg
+    - image:
+      image_url: /uploads/kendrick-1.jpg
+      image_alt: random alt text
+    - image:
+      image_url: /uploads/kendrick-2.jpg
+      image_alt: random alt text
+    - image:
+      image_url: /uploads/kendrick-3.jpg
+      image_alt: random alt text
+    - image:
+      image_url: /uploads/kendrick-4.jpg
+      image_alt: random alt text
   plan_description:
   sub_heading: Plan Description
   sub_body: >-

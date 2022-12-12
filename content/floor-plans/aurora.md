@@ -21,10 +21,18 @@ plan_details:
   primary_style: Modern
   secondary_style: Contemporary
   images:
-    - image_url: /uploads/aurora-1.jpg
-    - image_url: /uploads/aurora-2.jpg
-    - image_url: /uploads/aurora-3.jpg
-    - image_url: /uploads/aurora-4.jpg
+    - image:
+      image_url: /uploads/aurora-1.jpg
+      image_alt: random alt text
+    - image:
+      image_url: /uploads/aurora-2.jpg
+      image_alt: random alt text
+    - image:
+      image_url: /uploads/aurora-3.jpg
+      image_alt: random alt text
+    - image:
+      image_url: /uploads/aurora-4.jpg
+      image_alt: random alt text
   description: "An elegant home of mountain modern design exemplifying the fusion of the clean crisp linear look of a very modern design into a mountainous environment. Soaring expanse of glass and natural reclaimed wood allows the homeowner the open living environmement sought after by most of today's homebuyers. Additionally, many very private spaces are incorporated within the design for the separation of lifestyles for each person of the family's individual requirements. There is even a safe room incorporated in the home for the safety of the family. Simply stated, an amazing statement of the homeowners lifestyle and status statement."
 collections:
   - 2 Story House Plans

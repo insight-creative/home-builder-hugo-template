@@ -18,12 +18,12 @@
               {{ with .Params.plan_details }}
               {{ range .images }}
               <div class="swiper-slide">
-                <a data-fslightbox="gallery" href="{{ .image.image_url }}">
+                <a data-fslightbox="gallery" href="{{ .image_url }}">
                   <img
                     src="{{ .image_url }}"
                     width="700"
                     height="450"
-                    alt="{{ .image.image_alt }}"
+                    alt="{{ .image_alt }}"
                   />
                 </a>
               </div>

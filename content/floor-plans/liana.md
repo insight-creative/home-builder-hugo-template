@@ -13,10 +13,18 @@ plan_details:
   floors: 2
   garage: 2 Car
   images:
-    - images_url: /uploads/liana-1.jpg
-    - images_url: /uploads/liana-2.jpg
-    - images_url: /uploads/liana-3.jpg
-    - images_url: /uploads/liana-4.jpg
+    - image:
+      image_url: /uploads/liana-1.jpg
+      image_alt: random alt text
+    - image:
+      image_url: /uploads/liana-2.jpg
+      image_alt: random alt text
+    - image:
+      image_url: /uploads/liana-3.jpg
+      image_alt: random alt text
+    - image:
+      image_url: /uploads/liana-4.jpg
+      image_alt: random alt text
   plan_description:
   sub_heading: Plan Description
   sub_body: >-
