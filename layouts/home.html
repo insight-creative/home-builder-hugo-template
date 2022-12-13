@@ -63,16 +63,16 @@
                         <div class="featured">
                             <div class="cover-image">
                                 <a href="{{ .Permalink }}">
-                                    <!-- <img src="{{ .Params.seo.featured_image }}" alt="{{ .Params.seo.featured_image_alt }}"></a> -->
                                     <picture>
-                                        <source sizes="(min-width: 993px) 100vw, 50vw" srcset="https://home-builder.imgix.net{{ .Params.seo.featured_image }}?fm=avif&q=75&width=325&height=250 400w, https://home-builder.imgix.net{{ .Params.seo.featured_image }}?fm=avif&q=75&width=600&height=450 600w, https://home-builder.imgix.net{{ .Params.seo.featured_image }}?fm=avif&q=75&width=800&height=525 800w" type="image/avif">
+                                        <source sizes="(min-width: 993px) 100vw, 50vw" srcset=" https://home-builder.imgix.net{{ .Params.seo.featured_image }}?fm=avif&q=75&width=600&height=450 600w" type="image/avif">
                                     
-                                        <source sizes="(min-width: 993px) 100vw, 50vw" srcset="https://home-builder.imgix.net{{ .Params.seo.featured_image }}?fm=webp&q=75&width=325&height=250 400w, https://home-builder.imgix.net{{ .Params.seo.featured_image }}?fm=webp&q=75&width=600&height=450 600w, https://home-builder.imgix.net{{ .Params.seo.featured_image }}?fm=webp&q=75&width=800&height=525 800w" type="image/webp">
+                                        <source sizes="(min-width: 993px) 100vw, 50vw" srcset=" https://home-builder.imgix.net{{ .Params.seo.featured_image }}?fm=webp&q=75&width=600&height=450 600w" type="image/webp">
                                     
-                                        <source sizes="(min-width: 993px) 100vw, 50vw" srcset="https://home-builder.imgix.net{{ .Params.seo.featured_image }}?fm=jpg&q=75&width=325&height=250 400w, https://home-builder.imgix.net{{ .Params.seo.featured_image }}?fm=jpg&q=75&width=600&height=450 600w, https://home-builder.imgix.net{{ .Params.seo.featured_image }}?fm=jpg&q=75&width=800&height=525 800w" type="image/jpg">
+                                        <source sizes="(min-width: 993px) 100vw, 50vw" srcset="https://home-builder.imgix.net{{ .Params.seo.featured_image }}?fm=jpg&q=75&width=600&height=450 600w" type="image/jpg">
                                     
                                         <img src="{{ .Params.seo.featured_image }}" width="600" height="450" alt="{{ .Params.seo.featured_image_alt }}">   
                                     </picture>
+                                </a>
                             </div>
                             <div class="featured__body">
                                 <h3 class="text-eggshell pt-1">{{ .Title }}</h3>
