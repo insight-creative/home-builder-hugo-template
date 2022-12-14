@@ -16,7 +16,7 @@
 				{{ $author := index .Site.Data.authors (.Params.author | default "default") }}
 				{{- if $author -}}
 				<div class="blog-card__author flex flex-center">
-					<h3 class="blog-card__name h6 no-margin">{{ $author.name }}</h3>
+					<h2 class="blog-card__name h6 no-margin">{{ $author.name }}</h2>
 				</div>
 				{{ end }}
 				<h3 class="blog-card__title h5">{{ .Title }}</h3>
