@@ -6,7 +6,7 @@ menu:
   company:
 seo:
   page_title:
-  meta_description:
+  meta_description: Custom floor plans that offer you the ability to modify details to fit your family’s needs. From custom mother-in-law suites to home gyms, we can make most anything happen!
   featured_image: /uploads/
   featured_image_alt:
 hero:
