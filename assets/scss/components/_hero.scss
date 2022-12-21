@@ -39,21 +39,10 @@
 
 .hero-- {
   .hero__image {
-    picture {
-      img {
-        position: relative;
-        top: 2rem;
-        left: 6rem;
-
-        @include breakpoint(sm) {
-          top: 2rem;
-        }
-
-        @include breakpoint(md) {
-          top: 7rem;
-        }
-      }
-    }
+    position: relative;
+    top: 3rem;
+    left: 5rem;
+    align-self: end;
   }
 }
 
