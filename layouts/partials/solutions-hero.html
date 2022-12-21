@@ -1,15 +1,22 @@
 {{ with .Params.hero }}
 <div class="wrapper-lg">
   <div class="hero bg-primary">
-      <div class="flex flex-column flex-row-m flex-center">
-          {{ partial "hero-image" . }}
-          <div class="hero__body w-100 flex flex-column">
-            <div class="hero-container-upper">
+      <div class="box">
+          <div class="inner-box"></div>
+      </div>
+      {{ partial "hero-image" . }}
+      <div class="hero__body flex flex-center w-100">
+          <div class="wrapper-lg text-center flow">
               <h1 class="hero__title text-eggshell">{{ .heading }}</h1>
               <div class="divider"></div>
-              <p class="hero__solutions text-white">{{ .body }}</p>
+              <p class="text-white">{{ .body }}</p>
+              <div class="text-center">
+                  {{ if .button }}
+                  <a href="{{ .button_url }}" class="btn btn-secondary">{{ .button_text }}</a>
+                  {{ else }}
+                  {{ end }}
+              </div>
               <div class="hero__oval-inner-arrow"></div>
-            </div>
           </div>
       </div>
   </div>

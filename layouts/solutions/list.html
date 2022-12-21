@@ -1,5 +1,26 @@
 {{ define "main" }}
 {{ partial "solutions-hero" . }}
+{{ range .Pages }}
+<div class="flex-center wrapper-lg flex flex-column flex-row-m w-100 mt-5 mb-5">
+  <div class="custom-solutions-image w-100 w-50-m">
+    <picture>
+      <source sizes="(min-width: 993px) 100vw, 50vw" srcset="https://home-builder.imgix.net{{ .Params.hero.image_url }}?fm=avif&q=75&width=600&height=450 600w" type="image/avif">
+  
+      <source sizes="(min-width: 993px) 100vw, 50vw" srcset="https://home-builder.imgix.net{{ .Params.hero.image_url }}?fm=webp&q=75&width=600&height=450 600w" type="image/webp">
+  
+      <source sizes="(min-width: 993px) 100vw, 50vw" srcset="https://home-builder.imgix.net{{ .Params.hero.image_url }}?fm=jpg&q=75&width=600&height=450 600w" type="image/jpg">
+  
+      <img src="{{ .Params.hero.image_url }}" class="solutions-img box_outline ml-4" alt="{{ .Params.hero.image_alt }}">   
+  </picture>
+  </div>
+  <div class="custom-solutions-content w-100 w-50-m flow">
+    <h2>{{ .Title }}</h2>
+    <div class="divider"></div>
+    <p class="w-90">{{ .Params.intro.body }}</p>
+    <a href="{{ .Permalink }}" class="btn btn-primary">{{ .Title }}</a>
+  </div>
+</div>
+{{ end }}
 {{ if .Params.custom.enabled }}
 {{ with .Params.custom }}
 <div class="flex-center wrapper-lg flex flex-column flex-row-m w-100 mt-5 mb-5">

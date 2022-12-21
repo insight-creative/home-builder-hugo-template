@@ -1,0 +1,100 @@
+## Design
+
+### Navigation
+
+Style Contact Us link to stand out more as a button so this one stands out from the rest of the navigation items.
+
+Remove font-size: clamp(.8rem,1vw,18px); from the navigation links, this could be set to just a 1.2rem or similar instead
+
+### Homepage
+
+Update hero border to color #0E152F
+
+Remove hero-- and just use a home-hero class. The hero parameter is not generating a unique class in this instance. Refector HTML slightly to 
+
+<div class="home-hero wrapper-lg pos-r mb-3">
+    <div class="flex flex-column flex-row-m inner-box bg-primary">
+        <div class="home-hero__content w-100 w-30-m flow">
+            <h1 class="h2 text-eggshell">{{ .heading }}</h1>
+            <div class="divider"></div>
+            <p class="text-white">{{ .body }}</p>
+            <a href="{{ .button_url }}" class="btn btn-secondary">{{ .button_text }}</a>
+        </div>
+        <div class="home-hero__image w-100 w-70-m flex">
+            {{ partial "hero-image" . }}
+        </div>
+    </div>
+</div>
+
+Use <section> element for most core sections of pages along with aria-label to provide additional accessibility information
+
+#### Intro section
+
+Add background color to a child div of our outer wrapper
+
+#### Solutions section
+
+Add height and width property to svg in our solutions list, this will ensure that each svg is the same size, where now they are slightly different
+
+.solutions-li svg {
+    vertical-align: middle;
+    margin-right: 1em;
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+#### Our Process Section
+
+Switch breakpoint of our grid-4 class to maintain a 2 x 2 grid until we get to more of a 1400px or 1600px range
+
+#### Featured Projects Section
+
+Build a hover/focus effect for the featured projects so it's clear that these are interactive
+
+### Interior Pages
+
+Update hero section to remove some unused classes
+
+Add border to hero section 
+
+.inner-box {
+    border: 20px solid #192657;
+    box-shadow: inset 0 0 0 2px black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.box {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+
+    .inner-box {
+        box-sizing: border-box;
+        position: absolute;
+        height: calc(100% - 40px);
+        width: calc(100% - 40px);
+        z-index: 2;
+        border: 2px solid #0E152F;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+#### Floor Plans page
+
+Add hover/focus effect on floor plan cards. Maybe have a box-shadow + translateY(5px) to have it looks as if it sort of lifts off the page when hovered?
+
+Style swiper pagination indicators to match our brand colors rather than their default light blue.
+
+#### Solutions Page
+
+Hero CTA center Let's Talk button
+
+#### Contact Page
+
+Remove double shadow that is coming from the contact form itself. Add padding to the Contact Our Experts and Have questions copy

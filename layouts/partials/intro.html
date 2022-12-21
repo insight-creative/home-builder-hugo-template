@@ -1,10 +1,12 @@
 {{ if .Params.intro.enabled }}
 {{ with .Params.intro }}
 <section class="intro block">
-    <div class="bg-primary wrapper-lg flow text-center p-8 mt-5">
-        <h1 class="intro h2 text-eggshell">{{ .heading }}</h1>
-        <div class="intro divider"></div>
-        <p class="intro text-white">{{ .body }}</p>
+    <div class="wrapper-lg flow text-center p-8 mt-5">
+        <div class="bg-primary block">
+            <h1 class="intro h2 text-eggshell">{{ .heading }}</h1>
+            <div class="intro divider"></div>
+            <p class="intro text-white">{{ .body }}</p>
+        </div>
     </div>
 </section>
 {{ end }}

@@ -7,3 +7,72 @@
 @import "pages";
 
 @import "utilities";
+
+
+// New CSS starts here
+
+.home-hero {
+  overflow: visible !important;
+  margin: 0;
+}
+
+.home-hero__content {
+  margin: 10rem 1rem;
+}
+
+.hero {
+  max-height: 700px;
+}
+
+.home-hero,
+.hero,
+.cover {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba($primary-color, 0.8);
+    mix-blend-mode: multiply;
+  }
+
+  &__body {
+    position: relative;
+    top: 0;
+    z-index: 3;
+    height: 100%;
+  }
+}
+
+.box {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+
+  .inner-box {
+      box-sizing: border-box;
+      box-shadow: none;
+      position: absolute;
+      height: calc(100% - 40px);
+      width: calc(100% - 40px);
+      z-index: 2;
+      border: 2px solid #0E152F;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+}
