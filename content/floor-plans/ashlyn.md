@@ -28,7 +28,7 @@ plan_details:
       image_url: /uploads/ashlyn-4.jpg
       image_alt: random alt text
 plan_description:
-  sub_heading: Plan Description Test Test
+  sub_heading: Plan Description
   sub_body: >-
     An elegant home of mountain modern design exemplifying the fusion of the
     clean crisp linear look of a very modern design into a mountainous
